@@ -13,22 +13,22 @@ There are two main elements that we want to pull into our view. The page title, 
 
 3.Add the following to the context object in your view file
 
-*screenshot here*
+![Add title](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/R2DgkCYC3d3GzBm/Screen%20Shot%202015-01-16%20at%202.23.43%20PM.png)
 
 This will select and return an item with the class `title`.
 
 4. Add another key to the context object called `listing` that returns an element with the class `category-listing`
 
-*screenshot here*
+![Add listing](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/vcvvYmEejHVb9WQ/Screen%20Shot%202015-01-16%20at%2012.15.40%20PM.png)
 
 5. Open the file `category.dust` found in /adaptation/templates
 6. Override the `contentBlock` that was defined in `base.dust` by adding the following:
 
-*screenshot here*
+![Override the contentBlock](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/XQKwUSv5WGo064c/Screen%20Shot%202015-01-16%20at%2012.15.59%20PM.png)
 
 7. Within the contentBlock add the two keys defined in our view file
 
-*screenshot here*
+![Add title and listing to the Content Block](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/bYedZdOMkX4e6JQ/Screen%20Shot%202015-01-16%20at%2012.16.12%20PM.png)
 
 
 8. Run `grunt preview`
@@ -38,7 +38,8 @@ You should see a page very similar to the one in the previous step, but now we'r
 
 ##Ready to Continue?
 
-Once you've got the view set up we can move onto adding some styling to it. Run the following command to move on:
+Once you've got the view set up we can move on to adding some styling to it. Run the following command to move on:
 
 ```
+git clean -f && git checkout step-3-style-category-page
 ```
