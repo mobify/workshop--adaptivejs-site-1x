@@ -8,6 +8,20 @@ function($, Base, template) {
         template: template,
         extend: Base,
 
+        postProcess: function(context) {
+            context = Base.postProcess(context);
+
+            var $listing = $(context.listing);
+
+            // Apply missing component classes
+            $listing.addClass('c-product-list');
+            $listing.find('li').addClass('c-product-list__item')
+                .removeAttr('style');
+            $listing.find('.price').addClass('c-price');
+
+            return context;
+        },
+
         context: {
             templateName: 'category',
             title: function() {

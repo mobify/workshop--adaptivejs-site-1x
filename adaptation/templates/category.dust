@@ -1,7 +1,9 @@
 {>"templates/base"/}
 
 {<contentBlock}
-    {title}
+    <div class="t-category__title">
+        {title}
+    </div>
     {listing}
 {/contentBlock}
 
