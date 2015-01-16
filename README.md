@@ -1,76 +1,43 @@
-#merlins-potions-workshop
+#Adaptive.js Workshop
 
-This repository contains the code for the merlins-potions-workshop Adaptive.js project. 
+The site we'll be using for this workshop is http://www.merlinspotions.com. 
 
-## Documentation
+Please follow the installation steps below to get set up for the workshop. Once you're done, follow the directions in the **Ready to Start** section. 
 
-For documentation for Adaptive.js, including tool installation, and information on running your project in the Mobify Cloud, please see our [cloud documentation](https://cloud.mobify.com/docs/adaptivejs/).
+##Workshop Pre-requisites
 
-## Support 
+To run this workshop, you'll need to have all the pre-requisites installed. Please follow this guide to get everything installed correctly:
 
-Please contact <support@mobify.com> for assistance.
+[Adaptive.js Install Guide](https://cloud.mobify.com/docs/adaptivejs/install-guide/)
 
-## Project Information
 
-- **Project Slug**: merlins-potions-workshop
-- **Site URL**: www.merlinspotions.com
-
-## Installation
-
-To install, first clone the repository:
+To install the workshop, first clone the repository.
 
 ```
-git clone https://github.com/<organization>/merlins-potions-workshop.git
+git clone https://github.com/mobify/workshop--adaptivejs-site.git
 ```
 
-## Running locally
-
-Adaptive.js uses [grunt.js](http://gruntjs.com/) to run, build, test, and deploy. The following grunt tasks are available:
-
-### `grunt preview`
-
-Builds the project and runs a local development server, allowing the project to be run locally. The preview command additionally outputs the preview URL of the target site, allowing you to easily navigate to [preview.mobify.com](https://preview.mobify.com) to enable previewing.
-
-For more information on previewing, please see our [preview documentation](https://cloud.mobify.com/docs/adaptivejs/getting-started/#/previewing-your-adaptation/).
-
-### `grunt lint`
-
-Runs jshint and jscs against the project, ensuring that code style and stynax are correct. For more information on lint errors, please see [jslinterrors.com](http://jslinterrors.com).
-
-To find out more about Mobify's code style rules, please see the [Mobify Code Style](https://github.com/mobify/mobify-code-style) repository.
-
-### `grunt test`
-
-Runs our unit and integration tests.
+Then install the dependencies:
 
 ```
-// runs tests in the terminal/command line
-grunt test
-
-// runs tests in the browser, viewable at http://localhost:8888/tests/runner
-grunt test_browser
+bower install && npm install
 ```
 
-### `grunt nightwatch`
+To test your installation, please follow these directions on previewing:
 
-Runs nightwatch, our WebDriver system test framework written in Node.js.
+[Previewing your Adaptation](https://cloud.mobify.com/docs/adaptivejs/getting-started/#/previewing-your-adaptation/)
 
-```
-// runs all tests
-grunt nightwatch
 
-// runs a specific group
-grunt nightwatch --group path/to/my/tests/
+##Ready to Start
 
-// runs a specific test file
-grunt nightwatch --test path/to/my/tests/test.js
-```
+Once you've previewed the site, you're ready to move on to the next step. 
 
-### `grunt push`
-
-Builds and deploys a version of this project to [cloud.mobify.com](https://cloud.mobify.com).
+Run the following command to proceed to step 1:
 
 ```
-grunt push -m "Bundle for January 1st"
+
 ```
 
+## Some Additional Information
+
+We've already done the initial set up for this project, however in the future to set up a new project you can use our [Adaptive.js project generator](https://github.com/mobify/generator-adaptivejs). Follow the steps in the readme file to get started with the generator.
