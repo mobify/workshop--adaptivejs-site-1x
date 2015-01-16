@@ -5,7 +5,7 @@ In addition to generating a new project, the Adaptive.js Generator has a sub-gen
 
 ##Task
 
-###Generate a view called 'categories'
+###Create a new view called 'category'
 
 Start by running the following command in the terminal within your project folder.
 
@@ -13,12 +13,12 @@ Start by running the following command in the terminal within your project folde
 yo adaptivejs:view
 ```
 
-1. When prompted for a name type `categories` and hit enter
+1. When prompted for a name type `category` and hit enter
 2. Select `base` as the view to extend and hit enter
 
 *screenshot here*
 
-We've created a new view, but the router doesn't know about it yet. In order to see the view we need to tell the router when it should be used.
+We've generated all the files we need for a view, but we now need to add the view to the router file.
 
 3. Open the file `router.js` found in the adaptation folder of your project
 4. Add the path for the new view file to the dependecies array.
