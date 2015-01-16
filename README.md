@@ -16,7 +16,7 @@ yo adaptivejs:view
 1. When prompted for a name type `category` and hit enter
 2. Select `base` as the view to extend and hit enter
 
-*screenshot here*
+![View Generator](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/VXQhsUYEz8Jjnqj/Screen%20Shot%202015-01-15%20at%205.05.49%20PM.png)
 
 We've generated all the files we need for a view, but we now need to add the view to the router file.
 
@@ -24,13 +24,13 @@ We've generated all the files we need for a view, but we now need to add the vie
 4. Add the path for the new view file to the dependecies array.
 5. List the view (Category) as an argument in corresponding function definition
 
-*screenshot here*
+![Add View to Router](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/2ISxRvJ4zAQItfs/Screen%20Shot%202015-01-16%20at%2010.16.10%20AM.png)
 
 Now that the new view is included in the router file, we need to define when the router should use that view.
 
 6. Remove the generated calls to router.add() and replace them with the following:
 
-*screenshot here*
+![Add Route for Category](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/IPlrxZHNWkmHwBI/Screen%20Shot%202015-01-16%20at%2010.19.19%20AM.png)
 
 The .add() function creates a new route that will load the given view when the function returns a truthy value. Router.selectorMatch() returns true when an element matching the selector exists on the current page.
 
@@ -45,5 +45,5 @@ You should see a page similar to the homepage, but with content from the categor
 When you're ready to continue, run the following command:
 
 ```
-git clean -f && git checkout 
+git clean -f && git checkout step-2-populate-category-page
 ```
