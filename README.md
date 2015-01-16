@@ -1,6 +1,6 @@
 #Step 3: Style the Category page
 
-The CSS naming convention we use is a modified version of BEM that we call CSM (Component, Sub-component, Modifier). More information on that and all of our CSS best practices check out the CSS section of our [Mobify Code Style Repo](https://github.com/mobify/mobify-code-style/tree/master/css).
+The CSS naming convention we use is a modified version of BEM that we call CSM (Component, Sub-component, Modifier). For more information on that and all of our CSS best practices check out the CSS section of our [Mobify code style project](https://github.com/mobify/mobify-code-style/tree/master/css).
 
 
 In order to follow our best practices we often need to add classes to the desktop HTML, as well as make changes to the markup for elements. In this step will cover a few examples of that, and add the SCSS needed to style this page.
