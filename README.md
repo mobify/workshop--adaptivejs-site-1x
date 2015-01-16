@@ -10,26 +10,24 @@ There are two main elements that we want to pull into our view. The page title, 
 
 1. Open the file `category.js` found in /adaptation/views/
 2. Remove the `body` key found under `context`
+3. Add the following to the context object in your view file
 
-3.Add the following to the context object in your view file
+    ![Add title](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/R2DgkCYC3d3GzBm/Screen%20Shot%202015-01-16%20at%202.23.43%20PM.png)
 
-![Add title](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/R2DgkCYC3d3GzBm/Screen%20Shot%202015-01-16%20at%202.23.43%20PM.png)
-
-This will select and return an item with the class `title`.
+    This will select and return an item with the class `title`.
 
 4. Add another key to the context object called `listing` that returns an element with the class `category-listing`
 
-![Add listing](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/vcvvYmEejHVb9WQ/Screen%20Shot%202015-01-16%20at%2012.15.40%20PM.png)
+    ![Add listing](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/vcvvYmEejHVb9WQ/Screen%20Shot%202015-01-16%20at%2012.15.40%20PM.png)
 
 5. Open the file `category.dust` found in /adaptation/templates
 6. Override the `contentBlock` that was defined in `base.dust` by adding the following:
 
-![Override the contentBlock](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/XQKwUSv5WGo064c/Screen%20Shot%202015-01-16%20at%2012.15.59%20PM.png)
+    ![Override the contentBlock](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/XQKwUSv5WGo064c/Screen%20Shot%202015-01-16%20at%2012.15.59%20PM.png)
 
 7. Within the contentBlock add the two keys defined in our view file
 
-![Add title and listing to the Content Block](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/bYedZdOMkX4e6JQ/Screen%20Shot%202015-01-16%20at%2012.16.12%20PM.png)
-
+    ![Add title and listing to the Content Block](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/bYedZdOMkX4e6JQ/Screen%20Shot%202015-01-16%20at%2012.16.12%20PM.png)
 
 8. Run `grunt preview`
 9. Preview to http://www.merlinspotions.com/potions in your browser
