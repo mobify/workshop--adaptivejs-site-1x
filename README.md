@@ -35,7 +35,7 @@ Once you've previewed the site, you're ready to move on to the next step.
 Run the following command to proceed to step 1:
 
 ```
-
+git checkout step-1-generate-view
 ```
 
 ## Some Additional Information
