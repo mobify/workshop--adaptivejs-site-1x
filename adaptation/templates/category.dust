@@ -1,5 +1,10 @@
 {>"templates/base"/}
 
+{<contentBlock}
+    {title}
+    {listing}
+{/contentBlock}
+
 {<uiScripts}
     <script>
     // Note: Add any JavaScript that should be run on this page into

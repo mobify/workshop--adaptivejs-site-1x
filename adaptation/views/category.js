@@ -10,8 +10,11 @@ function($, Base, template) {
 
         context: {
             templateName: 'category',
-            body: function() {
-                return $('body');
+            title: function() {
+                return $('.title');
+            },
+            listing: function() {
+                return $('.category-listing');
             }
         }
 
