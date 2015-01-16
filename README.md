@@ -25,9 +25,9 @@ We can also change the output HTML by modifying the elements that get returned b
 
     This function will execute after we've selected all the elements for the view, so we can grab one of those elements and make a few changes to it.
 
-3. Store the `context.listing` zepto element in a variable
+3. Store the `context.listing` zepto object in a variable
 4. Add the class `c-product-list` to the ul
-5. Add the class `c-product-list__item` to each li and remove the inline styles for the element
+5. Add the class `c-product-list__item` to each li and remove the inline styles
 6. Add the class `c-price` to the `.price` div
 
 Your view file should end up looking like this:
