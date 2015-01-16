@@ -1,43 +1,49 @@
-#Adaptive.js Workshop
+#Step 1: Generate a View
 
-The site we'll be using for this workshop is http://www.merlinspotions.com. 
-
-Please follow the installation steps below to get set up for the workshop. Once you're done, follow the directions in the **Ready to Start** section. 
-
-##Workshop Pre-requisites
-
-To run this workshop, you'll need to have all the pre-requisites installed. Please follow this guide to get everything installed correctly:
-
-[Adaptive.js Install Guide](https://cloud.mobify.com/docs/adaptivejs/install-guide/)
+In addition to generating a new project, the Adaptive.js Generator has a sub-generator that can be used to set up a new view for your project. The sub-generator will create a view file, the dust template, a view-script file and a view test file.
 
 
-To install the workshop, first clone the repository.
+##Task
+
+###Generate a view called 'categories'
+
+Start by running the following command in the terminal within your project folder.
 
 ```
-git clone https://github.com/mobify/workshop--adaptivejs-site.git
+yo adaptivejs:view
 ```
 
-Then install the dependencies:
+1. When prompted for a name type `categories` and hit enter
+2. Select `base` as the view to extend and hit enter
+
+*screenshot here*
+
+We've created a new view, but the router doesn't know about it yet. In order to see the view we need to tell the router when it should be used.
+
+3. Open the file `router.js` found in the adaptation folder of your project
+4. Add the path for the new view file to the dependecies array.
+5. List the view (Category) as an argument in corresponding function definition
+
+*screenshot here*
+
+Now that the new view is included in the router file, we need to define when the router should use that view.
+
+6. Remove the generated calls to router.add() and replace them with the following:
+
+*screenshot here*
+
+The .add() function creates a new route that will load the given view when the function returns a truthy value. Router.selectorMatch() returns true when an element matching the selector exists on the current page.
+
+
+8. Run `grunt preview`
+9. Preview to http://www.merlinspotions.com/potions in your browser
+
+You should see a page almost identical to the one you saw before, but if you inspect the #x-root element you'll see it has the class t-category, instead of t-home.
+
+##Ready to Continue?
+
+When you're ready to continue, run the following command:
 
 ```
-bower install && npm install
+git clean -f && git checkout 
 ```
-
-To test your installation, please follow these directions on previewing:
-
-[Previewing your Adaptation](https://cloud.mobify.com/docs/adaptivejs/getting-started/#/previewing-your-adaptation/)
-
-
-##Ready to Start
-
-Once you've previewed the site, you're ready to move on to the next step. 
-
-Run the following command to proceed to step 1:
-
-```
-
-```
-
-## Some Additional Information
-
-We've already done the initial set up for this project, however in the future to set up a new project you can use the generator that you installed in the install guide. Take a look at the [generator's readme](https://github.com/mobify/generator-adaptivejs) for more information on using it.
