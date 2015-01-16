@@ -14,14 +14,14 @@ There are a few different areas where we can affect the HTML that is output by t
 1. Open `category.dust` found in /adaptation/templates
 2. Wrap the `{title}` key in a div with the class `t-category__title`
 
-*screenshot here*
+    ![Wrap title in a div](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/AoTbBtkdqrBznRL/Screen%20Shot%202015-01-16%20at%201.25.40%20PM.png)
 
-We can also change the output HTML by modifieing the elements that get returned by the view.
+We can also change the output HTML by modifying the elements that get returned by the view.
 
 1. Open category view file found in /adaptation/views
 2. Add a postProcess function to the view. We'll need to make sure that this postProcess first calls the postProcess function in the base view file.
 
-*screenshot here*
+    ![Add postProcess](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/jcLAXHR4dtYiXsi/Screen%20Shot%202015-01-16%20at%201.27.27%20PM.png)
 
 This function will execute after we've selected all the elements for the view, so we can grab one of those elements and make a few changes to it.
 
@@ -32,7 +32,7 @@ This function will execute after we've selected all the elements for the view, s
 
 Your view file should end up looking like this:
 
-*screenshot here*
+![Update listing element](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/TFDwYRj5dy23ZRX/Screen%20Shot%202015-01-16%20at%201.28.36%20PM.png)
 
 ##TASK
 
@@ -41,32 +41,32 @@ Your view file should end up looking like this:
 1. Create a new file under assets/styles/templates called `_category.scss`
 2. Add the following styles for the `t-category__title` element
 
-*screenshot here*
+    ![Add style for t-category](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/RiIAUlbG8Nmwfqu/Screen%20Shot%202015-01-16%20at%201.29.39%20PM.png)
 
 3. Open the file `_templates.scss` found under /assets/styles
 4. Add the `_category` scss file to the list of page templates
 
-*screenshot here*
+    ![Add category scss to stylesheet](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/MNL05OsdR0MApeW/Screen%20Shot%202015-01-16%20at%202.44.42%20PM.png)
 
 5. Create a new file under assets/styles/components called `_product-list.scss`
 6. Add the following styles:
 
-*screenshot here*
+    ![Product list styles](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/I8Jy5Eu2Wbt6HZA/Screen%20Shot%202015-01-16%20at%201.35.45%20PM.png)
 
 7. Open the file `_components.scss` found under /assets/styes
 8. Add the `_product-list` scss file to the list of components
 
-*screenshot here*
+    ![Add product-list scss to stylesheet](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/8zb6m0NP9ow14yv/Screen%20Shot%202015-01-16%20at%201.36.41%20PM.png)
 
 9. Repeat steps 5-8 to add a component file called `_price.scss` with the following styles:
 
-*screenshot here*
+    ![Price component styles](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/nxmJ8p0GC527QW6/Screen%20Shot%202015-01-16%20at%201.37.01%20PM.png)
 
 10. Run `grunt preview`
 11. Preview to http://www.merlinspotions.com/potions in your browser
 
 The potions category page should look like this:
-*screenshot here*
+![Potions page](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/nxmJ8p0GC527QW6/Screen%20Shot%202015-01-16%20at%201.37.01%20PM.png)
 
 
 ##Ready to Continue?
@@ -74,6 +74,6 @@ The potions category page should look like this:
 Once the page looks good and you're ready to move on, run the following command:
 
 ```
-git clean -f && git checkout 
+git clean -f && git checkout step-4-update-header
 ```
 
