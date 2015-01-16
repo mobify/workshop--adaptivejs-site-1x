@@ -38,7 +38,7 @@ The .add() function creates a new route that will load the given view when the f
 8. Run `grunt preview`
 9. Preview to http://www.merlinspotions.com/potions in your browser
 
-You should see a page almost identical to the one you saw before, but if you inspect the #x-root element you'll see it has the class t-category, instead of t-home.
+You should see a page similar to the homepage, but with content from the category page included under the header.
 
 ##Ready to Continue?
 
