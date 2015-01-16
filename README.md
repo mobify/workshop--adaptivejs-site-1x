@@ -23,7 +23,7 @@ We can also change the output HTML by modifying the elements that get returned b
 
     ![Add postProcess](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/jcLAXHR4dtYiXsi/Screen%20Shot%202015-01-16%20at%201.27.27%20PM.png)
 
-This function will execute after we've selected all the elements for the view, so we can grab one of those elements and make a few changes to it.
+    This function will execute after we've selected all the elements for the view, so we can grab one of those elements and make a few changes to it.
 
 4. Store the `listing` element in a variable
 5. Add the class `c-product-list` to the ul
@@ -66,7 +66,8 @@ Your view file should end up looking like this:
 11. Preview to http://www.merlinspotions.com/potions in your browser
 
 The potions category page should look like this:
-![Potions page](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/nxmJ8p0GC527QW6/Screen%20Shot%202015-01-16%20at%201.37.01%20PM.png)
+
+![Potions page](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/sYtMKGfRqXkKOr4/Screen%20Shot%202015-01-16%20at%202.04.06%20PM.png)
 
 
 ##Ready to Continue?
