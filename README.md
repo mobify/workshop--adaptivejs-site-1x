@@ -2,7 +2,7 @@
 
 The Adaptive.js generator has already created a header view and template for us, but we need to add some content to it from the site.
 
-##Task 
+##Task
 
 ###Add Content to the header
 
@@ -26,9 +26,6 @@ The Adaptive.js generator has already created a header view and template for us,
     ![Header template with logo](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/xpIjXKi4nTnUzeb/Screen%20Shot%202015-01-16%20at%205.08.42%20PM.png)
 
     *Note:* `"{@getUrl path="images/logo.png" /}"` will prepend the bundle URL to the image path during the build process. When previewing locally that will look like `http://localhost:8080/images/logo.png`
-
-8. Run `grunt preview`
-9. View the potions page in your browser
 
 
 ## Ready to Continue?
