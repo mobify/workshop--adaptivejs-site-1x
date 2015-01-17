@@ -9,12 +9,12 @@ The Adaptive.js generator has already created a header view and template for us,
 1. Open `_header.js` found under /adaptation/views/includes
 2. Remove the `title` key and replace it with the following:
 
-    *screenshot here*
+    ![Header view](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/mzrVgFqr5IwAYJe/Screen%20Shot%202015-01-16%20at%205.02.22%20PM.png)
 
 3. Open `_header.dust` found under /adaptation/templates/partials
 4. Replace the content within `<header>` with the following:
 
-    *screenshot here*
+    ![Header template](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/ceuMpLqbsr3zCiK/Screen%20Shot%202015-01-16%20at%205.06.11%20PM.png)
 
 5. Inspect the logo on the desktop site.
 
@@ -23,7 +23,7 @@ The Adaptive.js generator has already created a header view and template for us,
 6. Browse to *logo url* and save the logo as `logo.png` under /assets/images
 7. Open `_header.dust` again and add an img element for the logo:
 
-    *screenshot here*
+    ![Header template with logo](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/xpIjXKi4nTnUzeb/Screen%20Shot%202015-01-16%20at%205.08.42%20PM.png)
 
 8. Run `grunt preview`
 9. View the potions page in your browser
