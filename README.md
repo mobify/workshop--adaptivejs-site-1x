@@ -1,6 +1,6 @@
 #Step 6: Update the Footer
 
-We're done with the header, so now lets move on to last part of this page, the footer. We'll start with adding content to the template and making a few adjustments to the mark up that will come in handy later when we look at styling it.
+We're done with the header, so now let's move on to last part of this page, the footer. We'll start with adding content to the template and making a few adjustments to the mark up that will come in handy later when we look at styling it.
 
 ##Task
 
