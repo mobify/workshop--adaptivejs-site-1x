@@ -1,11 +1,14 @@
 define(['$'], function($) {
     return {
         context: {
-            documentationLink: function() {
-                return {
-                    text: 'Adaptive.js Documentation',
-                    href: 'https://cloud.mobify.com/docs/adaptivejs/'
-                };
+            newsletter: function() {
+                var $newsletter = $('.footer-newsletter');
+                $newsletter.find('input, button').wrapAll('<div class="c-newsletter"></div>');
+                $newsletter.find('button').addClass('c-button c--accent');
+                return $newsletter;
+            },
+            copyright: function() {
+                return $('copyright');
             }
         }
     };
