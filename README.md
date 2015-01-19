@@ -1,37 +1,39 @@
-#Step 6: Update the Footer
+#Step 7: Style the Footer
 
-We're done with the header, so now let's move on to last part of this page, the footer. We'll start with adding content to the template and making a few adjustments to the mark up that will come in handy later when we look at styling it.
 
 ##Task
 
-###Add Content to the Footer
+###Style the Footer
 
-1. Open `_footer.js` found under /adaptation/views/includes
-2. Remove the `documentationLink` function
-3. Add functions to select and return the newsletter sign up and copyright text
+1. Open `_button.scss` found under /assets/styles/components
+2. Add the following to the file:
 
-    ![Newsletter and copyright in view](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/ly5Fa1XROUNc1DV/Screen%20Shot%202015-01-19%20at%2012.44.30%20PM.png)
+    ![Additional Button styles](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/k2lEmoQCuMNb2EN/Screen%20Shot%202015-01-19%20at%201.23.35%20PM.png)
 
-3. Open `_footer.dust` found under /adaptation/templates/partials/
-4. Add the two footer elements to the template file
+3. Add a new file called `_footer.scss` under /assets/styles/templates/partials
+4. Add the following to the new file:
 
-    ![Newsletter and copyright in template](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/6ba569IE1y4ypn5/Screen%20Shot%202015-01-19%20at%2012.45.06%20PM.png)
+    ![Footer styles](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/HKDf4OmcQicXMms/Screen%20Shot%202015-01-19%20at%201.24.24%20PM.png)
 
-5. Wrap each element in a div within the template file. Use the classes pictured:
+5. Open `_templates.scss` found under /assets/styles
+6. Add the `_footer.scss` file to the list of templates (make sure you have the correct path)
 
-    ![Add classes to newsletter elements](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/pSIIxys6vjlhhH5/Screen%20Shot%202015-01-19%20at%2012.47.56%20PM.png)
+    ![Add footer to templates scss](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/XOqVNqsdNFxbG8A/Screen%20Shot%202015-01-19%20at%201.24.45%20PM.png)
 
-6. Open the footer view file again, so we can make a few changes to the newsletter element
-7. Add the classes `c-button` and `c--accent` to the button found in the newsletter element
-8. Wrap the input and button in a div with the class `c-newsletter`
+7. Add a new component scss file called `_newsletter.scss` with the following styles
 
-    ![Wrap footer elements in template](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/2ZnSsCAPUQE8WVV/Screen%20Shot%202015-01-19%20at%2012.56.59%20PM.png)
+    ![Newsletter styles](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/dFVpSy98wVejeZB/Screen%20Shot%202015-01-19%20at%201.37.13%20PM.png)
+
+    Your footer should now look like this:
+
+    ![Footer](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/KcuPmBLRbJMAG0Y/Screen%20Shot%202015-01-19%20at%201.28.56%20PM.png)
+
 
 ## Ready to Continue?
 
 When you're ready to continue, run the following command:
 
 ```
-git clean -f && git checkout step-7-style-footer
+git clean -f && git checkout step-8-update-homepage
 ```
 
