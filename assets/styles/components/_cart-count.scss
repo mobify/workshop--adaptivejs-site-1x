@@ -1,0 +1,45 @@
+// Cart Count
+// ===
+//
+// 1. Absolutely positioned number badge relative to the parent .c-cart-count
+// 2. Width must account for the presence of the number badge
+
+$cart-count__cauldron-width: 30px;
+$cart-count__cauldron-height: 40px;
+$cart-count__badge-size: 20px;
+$cart-count__width-with-badge: $cart-count__cauldron-width + ($cart-count__badge-size / 2);
+
+.c-cart-count {
+    position: relative; // 1
+
+    width: $cart-count__width-with-badge; // 2
+    height: $cart-count__cauldron-height;
+
+    background: url('/images/cauldron.png') top left no-repeat;
+
+    .c-cart-count__number {
+        position: absolute; // 1
+        top: 0;
+        right: 0;
+    }
+}
+
+
+// Card Count: Number
+// ---
+//
+// 1. Make a circle!
+
+.c-cart-count__number {
+    display: block;
+    width: $cart-count__badge-size;
+    height: $cart-count__badge-size;
+    border-radius: 50%; // 1
+
+    background-color: $accent-color;
+    color: #fff;
+
+    font-family: $oswald;
+    font-weight: 300;
+    text-align: center;
+}
