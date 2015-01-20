@@ -35,6 +35,6 @@ We'll add the tab styling along with the styling for the active classes in the n
 When you're ready to continue, run the following command:
 
 ```
-git clean -f && git checkout step-10
+git clean -f && git checkout step-10-style-homepage
 ```
 
