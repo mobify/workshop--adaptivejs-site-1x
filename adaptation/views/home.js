@@ -9,8 +9,34 @@ function($, BaseView, template) {
         extend: BaseView,
         context: {
             templateName: 'home',
-            firstp: function() {
-                return $('p').first().text() || 'Could not find the first paragraph text in your page';
+            hero: function() {
+                return $('.hero');
+            },
+            shipping: function() {
+                return $('.header .shipping').text();
+            },
+            discountBanner: function() {
+                return $('.banner-message');
+            },
+            categories: function() {
+                return $('.categories .carousel').map(function(){
+                    var $category = $(this);
+
+                    return {
+                        title: $category.find('h3').text(),
+                        products: $category.find('.jcarousel li a').map(function() {
+                            var $item = $(this);
+                            return {
+                                href: $item.attr('href'),
+                                image: $item.find('img'),
+                                // Find and remove the price before selecting 
+                                // the description to separate the two elements.
+                                price: $item.find('.price').remove().text(),
+                                title: $item.find('.description').text().replace(' - ', '')
+                            };
+                        })
+                    };
+                });
             }
         }
 
