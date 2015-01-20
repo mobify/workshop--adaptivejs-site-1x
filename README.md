@@ -1,40 +1,35 @@
-#Step 9: Implement Tab Behaviour on the Home Page.
+#Step 10: Style the Homepage
 
 ##Task
 
-###Add click handlers to the homepage view-script
+###Style the Homepage
 
-1. Open `home.js` found under /assets/js/ui/view-scripts
-2. In the homeUI function, add a click handler for `.js-tab__header`
+1. Open the file `_home.scss` found under /assets/styles/templates
+2. Replace the existing styles with the following:
 
-    ![Tab click handler](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/Uj39dM3AuQnPuAC/Screen%20Shot%202015-01-20%20at%2010.38.55%20AM.png)
+    ![Homepage Styles](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/qbbhRA8tRreLuVg/Screen%20Shot%202015-01-20%20at%2011.14.03%20AM.png)
 
-3. Within the new click handler add an active class to the clicked tab, and remove the active class from all other tabs.
+3. Create a new component scss file for the tabs component called `_tabs.scss` with the following styles:
 
-    ![Tab active class](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/4NkNIKLoY5J3I3w/Screen%20Shot%202015-01-20%20at%2010.40.54%20AM.png)
+    ![Tab Styles](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/cgch6SGV7fScVc9/Screen%20Shot%202015-01-20%20at%2011.15.48%20AM.png)
 
-    We'll use this class to apply a few styles to active tabs.
+    *Note:* Don't forget to import the tabs scss file in `_components.scss`
 
-4. Update the click handler so that an active class is added to the corresponding tab section and make sure that the active class is removed from other tab sections.
+    ![Component scss file](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/SoFEeWrXUru6TIq/Screen%20Shot%202015-01-20%20at%2011.16.08%20AM.png)
 
-    ![Tab section active class](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/wlJ79QrtMDzx4Zw/Screen%20Shot%202015-01-20%20at%2010.49.29%20AM.png)
+4. Create a component scss file called `_heading.scss` with the following styles:
 
-5. Finally, trigger a click on the first tab.
+    ![Heading Styles](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/yoRZlQYOtndOHCM/Screen%20Shot%202015-01-20%20at%201.39.17%20PM.png)
 
-    ![Trigger click](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/YyVccSknECqyMJy/Screen%20Shot%202015-01-20%20at%2010.47.42%20AM.png)
+5. Create a component scss file called `_shipping-banner.scss` with the following styles:
+
+    ![Shipping Banner](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/CtCzB7LkdZK2vqe/Screen%20Shot%202015-01-20%20at%201.39.35%20PM.png)
 
 6. Run `grunt preview`
-7. Preview the homepage in your browser
-8. Test that the active classes are applied correctly by inspecting the tabs
-
-We'll add the tab styling along with the styling for the active classes in the next step.
+7. Preview the site in your browser
 
 
 ## Ready to Continue?
 
-When you're ready to continue, run the following command:
-
-```
-git clean -f && git checkout step-10
-```
+We're done! For now at least. 
 
