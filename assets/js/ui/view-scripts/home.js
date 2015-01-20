@@ -3,7 +3,19 @@ define([
 ],
 function($) {
     var homeUI = function() {
-        // Add any scripts you would like to run only on the home page here
+        $('.js-tabs__header').on('click', function() {
+            var $tab = $(this);
+            var tabIndex = $tab.index();
+            var $sections = $('.js-tabs__sections');
+
+            $tab.siblings().removeClass('c--active');
+            $tab.addClass('c--active');
+
+            $sections.removeClass('c--active');
+            $sections.eq(tabIndex).addClass('c--active');
+        });
+
+        $('.js-tabs__header').first().click();
     };
 
     return homeUI;
