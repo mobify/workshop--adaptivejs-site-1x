@@ -38,6 +38,8 @@ Run the following command to proceed to step 1:
 git checkout step-1-generate-view
 ```
 
+Then, follow the directions in that branch's [README](https://github.com/mobify/workshop--adaptivejs-site/blob/step-1-generate-view/README.md)
+
 ## Some Additional Information
 
 We've already done the initial set up for this project, however in the future to set up a new project you can use the generator that you installed in the install guide. Take a look at the [generator's readme](https://github.com/mobify/generator-adaptivejs) for more information on using it.
