@@ -33,6 +33,7 @@ The Adaptive.js generator has already created a header view and template for us,
 When you're ready to continue, run the following command:
 
 ```
-git clean -f && git checkout *next-branch*
+git clean -f && git checkout step-5-style-header
 ```
 
+Then, follow the directions in that branch's [README](https://github.com/mobify/workshop--adaptivejs-site/blob/step-5-style-header/README.md)
