@@ -41,3 +41,5 @@ Once you've got the view set up we can move on to adding some styling to it. Run
 ```
 git clean -f && git checkout step-3-style-category-page
 ```
+
+Then, follow the directions in that branch's [README](https://github.com/mobify/workshop--adaptivejs-site/blob/step-3-style-category-page/README.md)
