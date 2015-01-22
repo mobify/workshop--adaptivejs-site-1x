@@ -59,3 +59,4 @@ When you're ready to continue, run the following command:
 git clean -f && git checkout step-9-homepage-tabs
 ```
 
+Then, follow the directions in that branch's [README](https://github.com/mobify/workshop--adaptivejs-site/blob/step-9-homepage-tabs/README.md)
