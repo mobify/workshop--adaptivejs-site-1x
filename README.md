@@ -38,3 +38,4 @@ When you're ready to continue, run the following command:
 git clean -f && git checkout step-10-style-homepage
 ```
 
+Then, follow the directions in that branch's [README](https://github.com/mobify/workshop--adaptivejs-site/blob/step-10-style-homepage/README.md)
