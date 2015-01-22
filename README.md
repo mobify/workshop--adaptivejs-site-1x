@@ -78,3 +78,4 @@ Once the page looks good and you're ready to move on, run the following command:
 git clean -f && git checkout step-4-update-header
 ```
 
+Then, follow the directions in that branch's [README](https://github.com/mobify/workshop--adaptivejs-site/blob/step-4-update-header/README.md)
