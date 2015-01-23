@@ -1,9 +1,0 @@
-{
-    "activeProfile": "default",
-    "profiles": {
-        "default": {
-            "bundleUrl": "http://localhost:8080/adaptive.js",
-            "siteUrl": "www.merlinspotions.com"
-        }
-    }
-}
