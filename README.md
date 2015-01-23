@@ -32,7 +32,7 @@ We're done with the header, so now let's move on to last part of this page, the 
 When you're ready to continue, run the following command:
 
 ```
-git clean -f && git checkout step-7-style-footer
+git reset --hard HEAD && git clean -df && git checkout step-7-style-footer
 ```
 
 Then, follow the directions in that branch's [README](https://github.com/mobify/workshop--adaptivejs-site/blob/step-7-style-footer/README.md)
