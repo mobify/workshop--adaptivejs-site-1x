@@ -39,7 +39,7 @@ The footer contains a new component that we haven't styled yet, the newsletter. 
 When you're ready to continue, run the following command:
 
 ```
-git clean -f && git checkout step-8-update-homepage
+git reset --hard HEAD && git clean -df && git checkout step-8-update-homepage
 ```
 
 Then, follow the directions in that branch's [README](https://github.com/mobify/workshop--adaptivejs-site/blob/step-8-update-homepage/README.md)
