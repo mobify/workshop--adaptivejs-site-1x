@@ -16,6 +16,10 @@ There are a few different areas where we can affect the HTML that is output by t
 
     ![Wrap title in a div](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/AoTbBtkdqrBznRL/Screen%20Shot%202015-01-16%20at%201.25.40%20PM.png)
 
+Let's break down the class name to understand how it follows our [class naming convention](https://github.com/mobify/mobify-code-style/tree/master/css/class-naming-conventions#class-naming-conventions). The `t-` prefix indicates that it is part of a template ([More on css class prefix conventions](https://github.com/mobify/mobify-code-style/tree/master/css/class-naming-conventions#class-prefix-conventions)).
+Next follows `category` which indicates the name of the template.
+Lastly `__title` indicates that this is a subcomponent of the category template, in this case a title.
+
 We can also change the output HTML by modifying the elements that get returned by the view.
 
 1. Open category view file found in /adaptation/views
@@ -26,9 +30,9 @@ We can also change the output HTML by modifying the elements that get returned b
     This function will execute after we've selected all the elements for the view, so we can grab one of those elements and make a few changes to it.
 
 3. Store the `context.listing` zepto object in a variable
-4. Add the class `c-product-list` to the ul
-5. Add the class `c-product-list__item` to each li and remove the inline styles
-6. Add the class `c-price` to the `.price` div
+4. Add the class `c-product-list` to the ul. The class name `c-product-list` indicates that it is a self-contained component, and by applying it to the ul, the ul acts as the container for the component.
+5. Add the class `c-product-list__item` to each li and remove the inline styles. The class name `c-product-list__item` indicates that it is a sub-component of the `c-product-list` component, and must be a child of the `c-product-list` element.
+6. Add the class `c-price` to the `.price` div. `c-price` is another self-contained component.
 
 Your view file should end up looking like this:
 
