@@ -82,4 +82,11 @@ Then, follow the directions in that branch's [README](https://github.com/mobify/
 
 ## Some Additional Information
 
-We've already done the initial set up for this project, however in the future to set up a new project you can use the generator that you installed in the install guide. Take a look at the [generator's readme](https://github.com/mobify/generator-adaptivejs) for more information on using it.
+The generator that we used to create the project also has a default setting, which will automatically choose the same settings that we used above. In the future you can generate projects using the defaults by typing:
+
+```
+yo adaptivejs --defaults mobify
+```
+
+For more information on options available for the generator, view the [generator's readme](https://github.com/mobify/generator-adaptivejs).
+
