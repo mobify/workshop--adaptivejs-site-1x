@@ -12,43 +12,43 @@ One of the tools that you installed previously was the Adaptive.js Generator. We
     ```
 3. When prompted type `workshop--adaptivejs-site` for the project name and hit enter
 
-    *screenshot here*
+    ![Project Name](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/UAfzq5whtPon5UV/Screen%20Shot%202015-01-22%20at%204.12.37%20PM.png)
 
 4. Type `http://www.merlinspotions.com` as the URL of the project and hit enter
 
-    *screenshot here*
+    ![Project URL](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/7buMlNzOgC2laMf/Screen%20Shot%202015-01-22%20at%204.13.48%20PM.png)
 
 5. Type `y` to using dust templating and hit enter
 
-    *screenshot here*
+    ![Dust Templating](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/oqbf2lAduDXzTTk/Screen%20Shot%202015-01-22%20at%204.55.01%20PM.png)
 
 6. Type `y` to using Mobify's Vellum framework and hit enter
 
-    *screenshot here*
+    ![Vellum](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/yVuAllBWOV3DbdI/Screen%20Shot%202015-01-22%20at%204.18.08%20PM.png)
 
 7. Type `y` to using the Nightwatch testing framework and hit enter
     
-    *screenshot here*
+    ![Nightwatch](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/5xGrRACwJ0wklx3/Screen%20Shot%202015-01-22%20at%204.19.05%20PM.png)
 
 8. Type `y` to linting your JavaScript files and hit enter
 
-    *screenshot here*
+    ![Lint JS](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/DD9IwuARtzyxoQo/Screen%20Shot%202015-01-22%20at%204.19.44%20PM.png)
 
 9. Type `n` to using PRE and hit enter
 
-    *screenshot here*
+    ![PRE](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/zW1rEVD0zVEHLMi/Screen%20Shot%202015-01-22%20at%204.20.17%20PM.png)
 
 10. Select `Zepto` and hit enter
 
-    *screenshot here*
+    ![jQuery or Zepto](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/eytQdVG1wlvW7Ro/Screen%20Shot%202015-01-22%20at%204.20.50%20PM.png)
 
 11. Select the most recent version of Zepto and hit enter
 
-    *screenshot here*
+    ![Zepto Version](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/pgGyeLJEcpGlkbC/Screen%20Shot%202015-01-22%20at%204.21.34%20PM.png)
 
 12. View the contents of the folder that was created
 
-    *screenshot here*
+    ![Project folder contents](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/ttx79uuNjVCzD0K/Screen%20Shot%202015-01-22%20at%204.33.50%20PM.png)
 
     The adaptation folder is where you'll find the router, the view files and the template files.
 
