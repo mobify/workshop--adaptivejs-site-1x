@@ -44,7 +44,7 @@ You should see a page similar to the homepage, but with content from the categor
 When you're ready to continue, run the following command:
 
 ```
-git clean -f && git checkout step-2-populate-category-page
+git reset --hard HEAD && git clean -df && git checkout step-2-populate-category-page
 ```
 
 Then, follow the directions in that branch's [README](https://github.com/mobify/workshop--adaptivejs-site/blob/step-2-populate-category-page/README.md)
