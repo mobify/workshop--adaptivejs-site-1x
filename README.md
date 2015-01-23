@@ -42,22 +42,22 @@ Your view file should end up looking like this:
 
 ### Add SCSS files for the Template and Components
 
-1. Create a new file under assets/styles/templates called `_category.scss`
+1. Create a new file under assets/styles/templates called `_category.scss` following the [file naming convention](https://github.com/mobify/mobify-code-style/tree/master/css/sass-best-practices#filename-naming-convention).
 2. Add the following styles for the `t-category__title` element
 
     ![Add style for t-category](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/RiIAUlbG8Nmwfqu/Screen%20Shot%202015-01-16%20at%201.29.39%20PM.png)
 
-3. Open the file `_templates.scss` found under /assets/styles
-4. Add the `_category` scss file to the list of page templates
+3. Open the file `_templates.scss` found under /assets/styles. This is where all of the template SCSS files get imported.
+4. Add the `_category.scss` file to the list of template SCSS partials.
 
     ![Add category scss to stylesheet](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/MNL05OsdR0MApeW/Screen%20Shot%202015-01-16%20at%202.44.42%20PM.png)
 
-5. Create a new file under assets/styles/components called `_product-list.scss`
+5. Create a new file under assets/styles/components called `_product-list.scss` for the product-list component.
 6. Add the following styles:
 
     ![Product list styles](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/I8Jy5Eu2Wbt6HZA/Screen%20Shot%202015-01-16%20at%201.35.45%20PM.png)
 
-7. Open the file `_components.scss` found under /assets/styes
+7. Open the file `_components.scss` found under /assets/styes. This is where all of the component SCSS files get imported.
 8. Add the `_product-list` scss file to the list of components
 
     ![Add product-list scss to stylesheet](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/8zb6m0NP9ow14yv/Screen%20Shot%202015-01-16%20at%201.36.41%20PM.png)
