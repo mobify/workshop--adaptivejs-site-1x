@@ -75,7 +75,7 @@ Once you've previewed the site, you're ready to move on to the next step.
 Run the following command to proceed:
 
 ```
-git reset && git clean -f && git checkout step-1-generate-view
+git reset --hard HEAD && git clean -df && git checkout step-1-generate-view
 ```
 
 Then, follow the directions in that branch's [README](https://github.com/mobify/workshop--adaptivejs-site/blob/step-1-generate-view/README.md)
