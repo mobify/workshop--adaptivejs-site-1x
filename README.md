@@ -43,7 +43,7 @@ Now that we've added content to the header, we need to style it.
 When you're ready to continue, run the following command:
 
 ```
-git clean -f && git checkout step-6-update-footer
+git reset --hard HEAD && git clean -df && git checkout step-6-update-footer
 ```
 
 Then, follow the directions in that branch's [README](https://github.com/mobify/workshop--adaptivejs-site/blob/step-6-update-footer/README.md)
