@@ -12,13 +12,24 @@ There are two main elements that we want to pull into our view. The page title, 
 2. Remove the `body` key found under `context`
 3. Add the following to the context object in your view file
 
-    ![Add title](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/R2DgkCYC3d3GzBm/Screen%20Shot%202015-01-16%20at%202.23.43%20PM.png)
+    ```
+    title: function() {
+        return $('.title');
+    }
+    ```
 
     This will select and return an item with the class `title`.
 
 4. Add another key to the context object called `listing` that returns an element with the class `category-listing`
 
-    ![Add listing](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/vcvvYmEejHVb9WQ/Screen%20Shot%202015-01-16%20at%2012.15.40%20PM.png)
+    ```
+    title: function() {
+        return $('.title');
+    },
+    listing: function() {
+        return $('.category-listing');
+    }
+    ```
 
 5. Open the file `category.dust` found in /adaptation/templates
 6. Override the `contentBlock` that was defined in `base.dust` by adding the following:
@@ -27,7 +38,12 @@ There are two main elements that we want to pull into our view. The page title, 
 
 7. Within the contentBlock add the two keys defined in our view file
 
-    ![Add title and listing to the Content Block](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/bYedZdOMkX4e6JQ/Screen%20Shot%202015-01-16%20at%2012.16.12%20PM.png)
+    ```
+    {<contentBlock}
+        {title}
+        {listing}
+    {/contentBlock}
+    ```
 
 8. Run `grunt preview`
 9. Preview to http://www.merlinspotions.com/potions in your browser
