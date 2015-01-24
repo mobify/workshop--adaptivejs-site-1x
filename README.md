@@ -30,7 +30,12 @@ yo adaptivejs:view
 
 6. Remove the generated calls to router.add() and replace them with the following:
 
-    ![Add Route for Category](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/IPlrxZHNWkmHwBI/Screen%20Shot%202015-01-16%20at%2010.19.19%20AM.png)
+    ```
+    router
+        .add(Router.selectorMatch('body.home'), Home)
+        .add(Router.selectorMatch('body.category'), Category);
+    ```
+
 
     The .add() function creates a new route that will load the given view when the function returns a truthy value. Router.selectorMatch() returns true when an element matching the selector exists on the current page.
 
