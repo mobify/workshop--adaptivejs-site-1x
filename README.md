@@ -9,12 +9,35 @@ The Adaptive.js generator has already created a header view and template for us,
 1. Open `_header.js` found under /adaptation/views/includes
 2. Remove the `title` key and replace it with the following:
 
-    ![Header view](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/mzrVgFqr5IwAYJe/Screen%20Shot%202015-01-16%20at%205.02.22%20PM.png)
+    ```
+    logoHref: function() {
+        return $('.logo a').attr('href');
+    },
+    cartCount: function() {
+        return $('.header-count span').text();
+    }
+    ```
 
 3. Open `_header.dust` found under /adaptation/templates/partials
 4. Replace the content within `<header>` with the following:
 
-    ![Header template](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/ceuMpLqbsr3zCiK/Screen%20Shot%202015-01-16%20at%205.06.11%20PM.png)
+    ```
+    <div class="t-header__menu">
+        <a class="c-button c--brand js-header-menu__link"></a>
+    </div>
+
+    <div class="t-header__logo">
+        <a href="{logoHref}"></a>
+    </div>
+
+    <div class="t-header__cart">
+        <div class="c-cart-count">
+            <div class="c-cart-count__text">
+                <span class="c-cart-count__number">{cartCount}</span>
+            </div>
+        </div>
+    </div>
+    ```
 
 5. Inspect the logo on the desktop site.
 
@@ -23,7 +46,13 @@ The Adaptive.js generator has already created a header view and template for us,
 6. Browse to http://www.merlinspotions.com/img/logo.62e1.png and save the logo as `logo.png` under /assets/images
 7. Open `_header.dust` again and add an img element for the logo:
 
-    ![Header template with logo](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/xpIjXKi4nTnUzeb/Screen%20Shot%202015-01-16%20at%205.08.42%20PM.png)
+    ```
+    <div class="t-header__logo">
+        <a href="{logoHref}">
+            <img src="{@getUrl path="images/logo.png" /}" alt="Merlins Potions">
+        </a>
+    </div>
+    ```
 
     *Note:* `"{@getUrl path="images/logo.png" /}"` will prepend the bundle URL to the image path during the build process. When previewing locally that will look like `http://localhost:8080/images/logo.png`
 
