@@ -7,21 +7,94 @@
 1. Open `home.js` found under /assets/js/ui/view-scripts
 2. In the homeUI function, add a click handler for `.js-tab__header`
 
-    ![Tab click handler](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/Uj39dM3AuQnPuAC/Screen%20Shot%202015-01-20%20at%2010.38.55%20AM.png)
+    ```
+    define([
+        '$'
+    ],
+    function($) {
+        var homeUI = function() {
+            $('.js-tabs__header').on('click', function(e) {
+                console.log('tab header clicked');
+            });
+        };
+
+        return homeUI;
+    });
+    ```
 
 3. Within the new click handler add an active class to the clicked tab, and remove the active class from all other tabs.
 
-    ![Tab active class](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/4NkNIKLoY5J3I3w/Screen%20Shot%202015-01-20%20at%2010.40.54%20AM.png)
+    ```
+    define([
+        '$'
+    ],
+    function($) {
+        var homeUI = function() {
+            $('.js-tabs__header').on('click', function(e) {
+                var $tab = $(this);
+
+                $tab.siblings().removeClass('c--active');
+                $tab.addClass('c--active');
+            });
+        };
+
+        return homeUI;
+    });
+    ```
 
     We'll use this class to apply a few styles to active tabs.
 
 4. Update the click handler so that an active class is added to the corresponding tab section and make sure that the active class is removed from other tab sections.
 
-    ![Tab section active class](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/wlJ79QrtMDzx4Zw/Screen%20Shot%202015-01-20%20at%2010.49.29%20AM.png)
+    ```
+    define([
+        '$'
+    ],
+    function($) {
+        var homeUI = function() {
+            $('.js-tabs__header').on('click', function(e) {
+                var $tab = $(this);
+                var tabIndex = $tab.index();
+                var $sections = $('.js-tabs__sections');
+
+                $tab.siblings().removeClass('c--active');
+                $tab.addClass('c--active');
+
+                $sections.removeClass('c--active');
+                $sections.eq(tabIndex).addClass('c--active');
+            });
+        };
+
+        return homeUI;
+    });
+    ```
 
 5. Finally, trigger a click on the first tab.
 
-    ![Trigger click](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/YyVccSknECqyMJy/Screen%20Shot%202015-01-20%20at%2010.47.42%20AM.png)
+    ```
+    define([
+        '$'
+    ],
+    function($) {
+        var homeUI = function() {
+            $('.js-tabs__header').on('click', function(e) {
+                var $tab = $(this);
+                var tabIndex = $tab.index();
+                var $sections = $('.js-tabs__sections');
+
+                $tab.siblings().removeClass('c--active');
+                $tab.addClass('c--active');
+
+                $sections.removeClass('c--active');
+                $sections.eq(tabIndex).addClass('c--active');
+            });
+
+            $('.js-tabs__header').first().click();
+        };
+
+        return homeUI;
+    });
+    ```
 
 6. Run `grunt preview`
 7. Preview the homepage in your browser
