@@ -10,22 +10,63 @@ We're done with the header, so now let's move on to last part of this page, the 
 2. Remove the `documentationLink` function
 3. Add functions to select and return the newsletter sign up and copyright text
 
-    ![Newsletter and copyright in view](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/ly5Fa1XROUNc1DV/Screen%20Shot%202015-01-19%20at%2012.44.30%20PM.png)
+    ```
+    context: {
+        newsletter: function() {
+            return $('.footer-newsletter');
+        },
+        copyright: function() {
+            return $('copyright');
+        }
+    }
+    ```
 
 3. Open `_footer.dust` found under /adaptation/templates/partials/
 4. Add the two footer elements to the template file
 
-    ![Newsletter and copyright in template](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/6ba569IE1y4ypn5/Screen%20Shot%202015-01-19%20at%2012.45.06%20PM.png)
+    ```
+    {#footer}
+        <footer class="t-footer" role="contentinfo">
+            {newsletter}
+            {copyright}
+        </footer>
+    {/footer}
+    ```
 
-5. Wrap each element in a div within the template file. Use the classes pictured:
+5. Wrap each element in a div within the template file. Use the classes below:
 
-    ![Add classes to newsletter elements](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/pSIIxys6vjlhhH5/Screen%20Shot%202015-01-19%20at%2012.47.56%20PM.png)
+    ```
+    {#footer}
+        <footer class="t-footer" role="contentinfo">
+            <div class="t-footer__form">
+                {newsletter}
+            </div>
+            <div class="t-footer__fineprint">
+                {copyright}
+            </div>
+        </footer>
+    {/footer}
+    ```
 
 6. Open the footer view file again, so we can make a few changes to the newsletter element
 7. Add the classes `c-button` and `c--accent` to the button found in the newsletter element
 8. Wrap the input and button in a div with the class `c-newsletter`
 
-    ![Wrap footer elements in template](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/2ZnSsCAPUQE8WVV/Screen%20Shot%202015-01-19%20at%2012.56.59%20PM.png)
+    ```
+    context: {
+        newsletter: function() {
+            var $newsletter = $('.footer-newsletter');
+
+            $newsletter.find('input, button').wrapAll('<div class="c-newsletter">');
+            $newsletter.find('button').addClass('c-button c--accent');
+
+            return $newsletter
+        },
+        copyright: function() {
+            return $('copyright');
+        }
+    }
+    ```
 
 ## Ready to Continue?
 
