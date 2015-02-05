@@ -92,11 +92,6 @@ Right now you should have the terminal open to the workshop folder. If you don't
 
     The **package.json** file defines your project information, such as its name, project slug, and dependencies.
 
-12. Navigate to the new folders parent:
-
-    ```
-    cd ../
-    ```
 
     **Note:** The generator has created a folder within the repository called `workshop--adaptivejs-site`. Which means our current folder structure contains two folders with the same name:
 
@@ -104,14 +99,18 @@ Right now you should have the terminal open to the workshop folder. If you don't
 
     To avoid any further confusion we've fixed this issue in the next step.
 
-To test your installation, please follow these directions on previewing:
+12: To test your installation, please follow these directions on previewing:
 
-[Previewing your Adaptation](https://cloud.mobify.com/docs/adaptivejs/getting-started/new-project/#/start-adaptivejs-server)
+    [Previewing your Adaptation](https://cloud.mobify.com/docs/adaptivejs/getting-started/new-project/#/start-adaptivejs-server)
+
+13. Stop preview by typing `ctrl c` within the terminal
+14. Navigate back to the repositories root folder:
+    ```
+        cd ../
+    ```
 
 
 ##Ready to Start
-
-Once you've previewed the site, you're ready to move on to the next step. 
 
 Run the following command from the repositories root folder to proceed:
 
