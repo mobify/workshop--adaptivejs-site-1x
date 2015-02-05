@@ -23,7 +23,7 @@ To install the workshop:
     git clone https://github.com/mobify/workshop--adaptivejs-site.git
     ```
 
-4. Navigate to the new folder that was created:
+4. Navigate into the new folder that was created:
     ```
     cd workshop--adaptivejs-site/
     ```
