@@ -31,7 +31,7 @@ In addition to generating a new project, the Adaptive.js Generator has a sub-gen
 
 7. Remove the generated calls to router.add() and replace them with the following:
 
-    ```
+    ```javascript
     router
         .add(Router.selectorMatch('body.home'), Home)
         .add(Router.selectorMatch('body.category'), Category);
