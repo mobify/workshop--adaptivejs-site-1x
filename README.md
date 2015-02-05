@@ -11,8 +11,9 @@ In order to follow our best practices we often need to add classes to the deskto
 
 There are a few different areas where we can affect the HTML that is output by the template. The first is within the template itself.
 
-1. Open `category.dust` found in /adaptation/templates
-2. Wrap the `{title}` key in a div with the class `t-category__title`
+1. Run `grunt preview`
+2. Open `category.dust` found in /adaptation/templates
+3. Wrap the `{title}` key in a div with the class `t-category__title`
 
     ![Wrap title in a div](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/AoTbBtkdqrBznRL/Screen%20Shot%202015-01-16%20at%201.25.40%20PM.png)
 
@@ -25,14 +26,27 @@ We can also change the output HTML by modifying the elements that get returned b
 1. Open category view file found in /adaptation/views
 2. Add a postProcess function to the view. We'll need to make sure that this postProcess first calls the postProcess function in the base view file.
 
-    ![Add postProcess](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/jcLAXHR4dtYiXsi/Screen%20Shot%202015-01-16%20at%201.27.27%20PM.png)
+    ```javascript
+    {
+        template: template,
+        extend: Base, 
+        postProcess: function() {
+            context = Base.postProcess(context);
 
-    This function will execute after we've selected all the elements for the view, so we can grab one of those elements and make a few changes to it.
+            return context;
+        },
+
+        context: {
+    ```
+
+    The postProcess function will be executed after we've selected all the elements for the view, so we can grab one of those elements and make a few changes to it. The base view contains it's own postProcess function that makes a few global changes, in order to keep these changes, we need to call the postProcess for the base. More information on the postProcess function can be found [here](https://cloud.mobify.com/docs/adaptivejs/adapting/views/#/postprocess/).
 
 3. Store the `context.listing` zepto object in a variable
-4. Add the class `c-product-list` to the ul. The class name `c-product-list` indicates that it is a self-contained component, and by applying it to the ul, the ul acts as the container for the component.
+4. Add the class `c-product-list` to the listing element. The class name `c-product-list` indicates that it is a self-contained component, and by applying it to the listing element, the listing element acts as the container for the component.
 5. Add the class `c-product-list__item` to each li and remove the inline styles. The class name `c-product-list__item` indicates that it is a sub-component of the `c-product-list` component, and must be a child of the `c-product-list` element.
 6. Add the class `c-price` to the `.price` div. `c-price` is another self-contained component.
+
+    The `c-` prefix is used to indicate that the element is a component. In our case, we're dealing with two components `c-product-list` (which has a sub-component item) and `c-price`.
 
 Your view file should end up looking like this:
 
@@ -132,13 +146,14 @@ Your view file should end up looking like this:
     }
     ```
 
-10. Run `grunt preview`
-11. Preview to http://www.merlinspotions.com/potions in your browser
+10. [Preview](https://cloud.mobify.com/docs/adaptivejs/getting-started/new-project/#/start-adaptivejs-server) to http://www.merlinspotions.com/potions in your browser
 
 The potions category page should look like this:
 
 ![Potions page](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/sYtMKGfRqXkKOr4/Screen%20Shot%202015-01-16%20at%202.04.06%20PM.png)
 
+
+11. Stop preview by typing `ctrl c` in the terminal window.
 
 ##Ready to Continue?
 
