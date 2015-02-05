@@ -1,6 +1,8 @@
 #Adaptive.js Workshop
 
-The site we'll be using for this workshop is http://www.merlinspotions.com. 
+The site we'll be using for this workshop is http://www.merlinspotions.com.
+
+We'll be using git to switch between steps in the workshop. If you're not familiar with git, take a look through some of their [documentation](http://git-scm.com/documentation).
 
 Please follow the installation steps below to get your computer ready for the workshop. Once you're done, follow the directions in the **Ready to Start** section. 
 
@@ -11,21 +13,30 @@ To run this workshop, you'll need to have all the pre-requisites installed. Plea
 [Adaptive.js Install Guide](https://cloud.mobify.com/docs/adaptivejs/install-guide/)
 
 
-To install the workshop, first clone the repository.
+To install the workshop:
 
-```
-git clone https://github.com/mobify/workshop--adaptivejs-site.git
-```
+1. Open the terminal
+2. Within the terminal navigate to your development folder
+3. Run the following command to clone the workshop repository:
+
+    ```
+    git clone https://github.com/mobify/workshop--adaptivejs-site.git
+    ```
+
+4. Navigate to the new folder that was created:
+    ```
+    cd workshop--adaptivejs-site/
+    ```
 
 
 ##Ready to Start
 
-Once you've previewed the site, you're ready to move on to the next step. 
+Once you've installed the workshop, you're ready to move on to the next step. 
 
-Run the following command to proceed to the project set up:
+Run the following command to proceed to the project set up branch:
 
 ```
 git checkout set-up
 ```
 
-Then, follow the directions in that branch's [README](https://github.com/mobify/workshop--adaptivejs-site/blob/set-up/README.md)
+Then, follow the directions in the set up branch's [README](https://github.com/mobify/workshop--adaptivejs-site/blob/set-up/README.md)
