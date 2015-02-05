@@ -99,7 +99,7 @@ Right now you should have the terminal open to the workshop folder. If you don't
 
     To avoid any further confusion we've fixed this issue in the next step.
 
-12: To test your installation, please follow these directions on previewing:
+12. To test your installation, please follow these directions on previewing:
 
     [Previewing your Adaptation](https://cloud.mobify.com/docs/adaptivejs/getting-started/new-project/#/start-adaptivejs-server)
 
