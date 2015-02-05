@@ -32,7 +32,7 @@ There are two main elements that we want to pull into our view. The page title, 
 5. Remove the `body` key found under `context` since we won't need it for this page
 6. Add the `title` key to the context object in your view file
 
-    ```
+    ```javascript
     title: function() {
         return $('.title');
     }
@@ -42,7 +42,7 @@ There are two main elements that we want to pull into our view. The page title, 
 
 7. Add the `listing` key that returns an element with the class `category-listing`
 
-    ```
+    ```javascript
     title: function() {
         return $('.title');
     },
