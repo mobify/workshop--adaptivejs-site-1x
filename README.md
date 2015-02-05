@@ -27,7 +27,7 @@ In addition to generating a new project, the Adaptive.js Generator has a sub-gen
 6. List the view (Category) as an argument in corresponding function definition
 
 
-    ![Add View to Router](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/cbyB4QiZs1m2KgY/Screen%20Shot%202015-02-05%20at%201.18.21%20PM.png)
+    ![Add View to Router](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/6ShtDgoKJvxKuCq/Screen%20Shot%202015-02-05%20at%201.15.29%20PM.png)
 
 7. Remove the generated calls to router.add() and replace them with the following:
 
