@@ -27,30 +27,15 @@ In addition to generating a new project, the Adaptive.js Generator has a sub-gen
 6. List the view (Category) as an argument in corresponding function definition
 
 
-        define([
-            '$',
-            'adaptivejs/router',
-            'views/home',
-            **'views/category'**
-        ],
-        function($, Router, Home, **Category**) {
-            var router = new Router();
-
-            router
-                .add(Router.selectorMatch('body.home'), Home)
-                .add(Router.urlMatch('/foo'), Home)
-                .add(function() {return true;}, Home);
-
-            return router;
-        });
+    ![Add View to Router](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/cbyB4QiZs1m2KgY/Screen%20Shot%202015-02-05%20at%201.18.21%20PM.png)
 
 7. Remove the generated calls to router.add() and replace them with the following:
 
-        var router = new Router();
-
-        router
-            **.add(Router.selectorMatch('body.home'), Home)**
-            **.add(Router.selectorMatch('body.category'), Category);**
+    ```
+    router
+        .add(Router.selectorMatch('body.home'), Home)
+        .add(Router.selectorMatch('body.category'), Category);
+    ```
 
 
     The .add() function creates a new route that will load the given view when the function returns a truthy value. Router.selectorMatch() returns true when an element matching the selector exists on the current page.
