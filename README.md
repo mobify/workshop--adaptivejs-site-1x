@@ -24,7 +24,7 @@ Lastly `__title` indicates that this is a subcomponent of the category template,
 We can also change the output HTML by modifying the elements that get returned by the view.
 
 1. Open category view file found in /adaptation/views
-2. Add a postProcess function to the view. We'll need to make sure that this postProcess first calls the postProcess function in the base view file.
+2. Add a `postProcess` function to the view. We'll need to make sure that this `postProcess` first calls the `postProcess` function in the base view file.
 
     ```javascript
     {
@@ -39,7 +39,7 @@ We can also change the output HTML by modifying the elements that get returned b
         context: {
     ```
 
-    The postProcess function will be executed after we've selected all the elements for the view, so we can grab one of those elements and make a few changes to it. The base view contains it's own postProcess function that makes a few global changes, in order to keep these changes, we need to call the postProcess for the base. More information on the postProcess function can be found [here](https://cloud.mobify.com/docs/adaptivejs/adapting/views/#/postprocess/).
+    The `postProcess` function will be executed after we've selected all the elements for the view, so we can grab one of those elements and make a few changes to it. The base view contains it's own `postProcess` function that makes a few global changes, in order to keep these changes, we need to call the `postProcess` for the base. More information on the `postProcess` function can be found [here](https://cloud.mobify.com/docs/adaptivejs/adapting/views/#/postprocess/).
 
 3. Store the `context.listing` zepto object in a variable
 4. Add the class `c-product-list` to the listing element. The class name `c-product-list` indicates that it is a self-contained component, and by applying it to the listing element, the listing element acts as the container for the component.
