@@ -89,6 +89,7 @@ Your view file should end up looking like this:
 
     // Product List Item
     // ---
+
     .c-product-list__item {
         float: left;
 
