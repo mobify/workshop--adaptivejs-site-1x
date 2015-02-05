@@ -13,11 +13,11 @@ There are two main elements that we want to pull into our view. The page title, 
 
     ![Override the contentBlock](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/XQKwUSv5WGo064c/Screen%20Shot%202015-01-16%20at%2012.15.59%20PM.png)
 
-    If you remember in the previous step, we said that the new view should extend the base view. This means that the category template will pull in all of the mark up from the base dust file. Which by default just displays the full contents of the desktop HTML.
+    If you remember in the previous step, we said that the new view should extend the base view. This means that the category template will use all of the mark up from the base dust file. Which by default just displays the full contents of the desktop HTML.
 
     ![Base template contentBlock](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/Hehqa43UYdVBQxW/Screen%20Shot%202015-02-05%20at%201.41.56%20PM.png)
 
-    By overriding the contentBlock key, we can add our own markup that is specific to this new page.
+    By overriding the contentBlock key, we can add our own markup that is specific to this new page. For more information, view our documentation on [view inheritance](https://cloud.mobify.com/docs/adaptivejs/adapting/views/#/view-inheritance/) and [block overrides](https://cloud.mobify.com/docs/adaptivejs/adapting/dustjs-cheat-sheet/#/block-overrides/).
 
 3. Within the contentBlock add the two keys defined in our view file
 
