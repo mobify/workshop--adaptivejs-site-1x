@@ -26,39 +26,37 @@ In addition to generating a new project, the Adaptive.js Generator has a sub-gen
 5. Add the path for the new view file to the dependecies array.
 6. List the view (Category) as an argument in corresponding function definition
 
-    ```
+
         define([
-        '$',
-        'adaptivejs/router',
-        'views/home',
-        **'views/category'**
-    ],
-    function($, Router, Home, **Category**) {
-        var router = new Router();
+            '$',
+            'adaptivejs/router',
+            'views/home',
+            **'views/category'**
+        ],
+        function($, Router, Home, **Category**) {
+            var router = new Router();
 
-        router
-            .add(Router.selectorMatch('body.home'), Home)
-            .add(Router.urlMatch('/foo'), Home)
-            .add(function() {return true;}, Home);
+            router
+                .add(Router.selectorMatch('body.home'), Home)
+                .add(Router.urlMatch('/foo'), Home)
+                .add(function() {return true;}, Home);
 
-        return router;
-    });
-    ```
+            return router;
+        });
 
 7. Remove the generated calls to router.add() and replace them with the following:
 
-    ```
-    var router = new Router();
+        var router = new Router();
 
-    router
-        **.add(Router.selectorMatch('body.home'), Home)**
-        **.add(Router.selectorMatch('body.category'), Category);**
-    ```
+        router
+            **.add(Router.selectorMatch('body.home'), Home)**
+            **.add(Router.selectorMatch('body.category'), Category);**
+
 
     The .add() function creates a new route that will load the given view when the function returns a truthy value. Router.selectorMatch() returns true when an element matching the selector exists on the current page.
 
 8. Run `grunt preview`
-9. [Preview] to http://www.merlinspotions.com/potions in your browser
+9. [Preview](https://cloud.mobify.com/docs/adaptivejs/getting-started/new-project/#/start-adaptivejs-server) to http://www.merlinspotions.com/potions in your browser
 
     You should see a page similar to the homepage, but with content from the category page included under the header.
 
