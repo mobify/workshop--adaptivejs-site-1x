@@ -45,92 +45,84 @@ Your view file should end up looking like this:
 1. Create a new file under assets/styles/templates called `_category.scss` following the [file naming convention](https://github.com/mobify/mobify-code-style/tree/master/css/sass-best-practices#filename-naming-convention).
 2. Add the following styles for the `t-category__title` element
 
-    ```
-    // Category
-    // ===
+    > // Category
+    > // ===
+    >
+    > .t-category {
+    > }
+    >
+    >
+    > // Category Title
+    > // ---
+    >
+    > .t-category__title {
+    >     padding: 0 $h-space;
+    > }
 
-    .t-category {
-    }
-
-
-    // Category Title
-    // ---
-
-    .t-category__title {
-        padding: 0 $h-space;
-    }
-    ```
 
 3. Open the file `_templates.scss` found under /assets/styles. This is where all of the template SCSS files get imported.
 4. Add the `_category.scss` file to the list of template SCSS partials.
 
-    ```
-    // Page Templates
-    // --------------
+    > // Page Templates
+    > // --------------
+    >
+    > @import "templates/home";
+    > **@import "templates/category";**
 
-    @import "templates/home";
-    \**@import "templates/category";\**
-    ```
 
 5. Create a new file under assets/styles/components called `_product-list.scss` for the product-list component.
 6. Add the following styles:
 
-    ```
-    // Product List
-    // ===
-
-    .c-product-list {
-        @include clearfix;
-
-        font-family: $serif;
-        text-align: center;
-    }
-
-
-    // Product List Item
-    // ---
-    .c-product-list__item {
-        float: left;
-
-        display: block;
-        width: 50%;
-        padding: $v-space $small-h-space;
-
-        color: $grey-20;
-
-        &:nth-child(odd) {
-            clear: both;
-        }
-    }
-    ```
+    > // Product List
+    > // ===
+    >
+    > .c-product-list {
+    >     @include clearfix;
+    >
+    >     font-family: $serif;
+    >     text-align: center;
+    > }
+    >
+    >
+    > // Product List Item
+    > // ---
+    > .c-product-list__item {
+    >     float: left;
+    >
+    >     display: block;
+    >     width: 50%;
+    >     padding: $v-space $small-h-space;
+    >
+    >     color: $grey-20;
+    >
+    >     &:nth-child(odd) {
+    >         clear: both;
+    >     }
+    > }
 
 7. Open the file `_components.scss` found under /assets/styes. This is where all of the component SCSS files get imported.
 8. Add the `_product-list` scss file to the list of components
 
-    ```
-    // Project Components
-    // ------------------
-    //
-    // Styles for project-specific components.
-    //
-    // eg. @import 'components/button';
-
-    @import 'components/card';
-    \**@import 'components/product-list';\**
-    ```
+    > // Project Components
+    > // ------------------
+    > //
+    > // Styles for project-specific components.
+    > //
+    > // eg. @import 'components/button';
+    >
+    > @import 'components/card';
+    > **@import 'components/product-list';**
 
 9. Repeat steps 5-8 to add a component file called `_price.scss` with the following styles:
 
-    ```
-    // Price
-    // ===
-
-    .c-price {
-        color: $accent-color;
-        font-family: $sans-serif;
-        font-weight: bold;
-    }
-    ```
+    > // Price
+    > // ===
+    >
+    > .c-price {
+    >     color: $accent-color;
+    >     font-family: $sans-serif;
+    >     font-weight: bold;
+    > }
 
 10. Run `grunt preview`
 11. Preview to http://www.merlinspotions.com/potions in your browser
