@@ -15,7 +15,7 @@ Right now you should have the terminal open to the workshop folder. If you don't
     [sudo] yo adaptivejs
     ```
 
-    **Note:** This command will eventually run `npm install` so depending on your permissions on the current directory, you may need to use `sudo`. 
+    **Note:** This command will eventually run `npm install` so depending on your permissions for the current directory, you may need to use `sudo`. 
     In general, if you run into permission errors when running any of the commands mentioned, try re-running the command using `sudo`.
 
 2. When prompted type `workshop--adaptivejs-site` for the project name and hit enter
@@ -30,7 +30,7 @@ Right now you should have the terminal open to the workshop folder. If you don't
 
     ![Dust Templating](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/oqbf2lAduDXzTTk/Screen%20Shot%202015-01-22%20at%204.55.01%20PM.png)
 
-    For our builds we use dust templating to build out the HTML structure of our pages. For more information on the dust templating syntax, view our documentation [here](https://cloud.mobify.com/docs/adaptivejs/adapting/dustjs-cheat-sheet/).
+    We use dust templating to build out the HTML structure of our pages. For more information on the dust templating syntax, view our documentation [here](https://cloud.mobify.com/docs/adaptivejs/adapting/dustjs-cheat-sheet/).
 
 5. Type `y` to using Mobify's Vellum framework and hit enter
 
@@ -92,12 +92,17 @@ Right now you should have the terminal open to the workshop folder. If you don't
 
     The **package.json** file defines your project information, such as its name, project slug, and dependencies.
 
+12. Navigate to the new folders parent:
 
-**Note:** The generator has created a folder within the repository called `workshop--adaptivejs-site`. Which means our current folder structure contains two folders with the same name:
+    ```
+    cd ../
+    ```
 
-    /workshop--adaptivejs-site/workshop--adaptivejs-site/(project files)
+    **Note:** The generator has created a folder within the repository called `workshop--adaptivejs-site`. Which means our current folder structure contains two folders with the same name:
 
-To avoid any further confusion we've fixed this issue in the next step.
+        /workshop--adaptivejs-site/workshop--adaptivejs-site/(project files)
+
+    To avoid any further confusion we've fixed this issue in the next step.
 
 To test your installation, please follow these directions on previewing:
 
@@ -108,7 +113,7 @@ To test your installation, please follow these directions on previewing:
 
 Once you've previewed the site, you're ready to move on to the next step. 
 
-Run the following command to proceed:
+Run the following command from the repositories root folder to proceed:
 
 ```
 git reset --hard HEAD && git clean -df && git checkout step-1-generate-view
