@@ -69,7 +69,7 @@ Your view file should end up looking like this:
     // --------------
 
     @import "templates/home";
-    **@import "templates/category";**
+    \**@import "templates/category";\**
     ```
 
 5. Create a new file under assets/styles/components called `_product-list.scss` for the product-list component.
@@ -116,7 +116,7 @@ Your view file should end up looking like this:
     // eg. @import 'components/button';
 
     @import 'components/card';
-    **@import 'components/product-list';**
+    \**@import 'components/product-list';\**
     ```
 
 9. Repeat steps 5-8 to add a component file called `_price.scss` with the following styles:
