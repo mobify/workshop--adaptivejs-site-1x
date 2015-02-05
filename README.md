@@ -15,8 +15,8 @@ Right now you should have the terminal open to the workshop folder. If you don't
     [sudo] yo adaptivejs
     ```
 
-    *Note:* This command will eventually run `npm install` so depending on your permissions on the current directory, you may need to use `sudo`. 
-    In general, if you run into permission errors when running any of the commands mentioned try re-running the command using `sudo`.
+    **Note:** This command will eventually run `npm install` so depending on your permissions on the current directory, you may need to use `sudo`. 
+    In general, if you run into permission errors when running any of the commands mentioned, try re-running the command using `sudo`.
 
 2. When prompted type `workshop--adaptivejs-site` for the project name and hit enter
 
@@ -80,20 +80,20 @@ Right now you should have the terminal open to the workshop folder. If you don't
         bower.json
     ```
 
-    The *adaptation* folder is where you'll find the router, the view files and the template files.
+    The **adaptation** folder is where you'll find the router, the view files and the template files.
 
-    The *assets* folder contains files that will be used on the mobile version of the site. This includes the sites SCSS files, any images we add and JavaScript that runs on the page after it's been adapted.
+    The **assets** folder contains files that will be used on the mobile version of the site. This includes the sites SCSS files, any images we add and JavaScript that runs on the page after it's been adapted.
 
-    The *bower_components* folder contains plugins and other JavaScript tools that we'll use on the site.
+    The **bower_components** folder contains plugins and other JavaScript tools that we'll use on the site.
 
-    The *node_modules* folder contains the Node modules used by the project.
+    The **node_modules** folder contains the Node modules used by the project.
 
-    The *Gruntfile.js* file defines tasks you may want to run, such as building your project, running tests, and uploading bundles to the Mobify Cloud.
+    The **Gruntfile.js** file defines tasks you may want to run, such as building your project, running tests, and uploading bundles to the Mobify Cloud.
 
-    The *package.json* file defines your project information, such as its name, project slug, and dependencies.
+    The **package.json** file defines your project information, such as its name, project slug, and dependencies.
 
 
-*Note:* The generator has created a folder within the repository called `workshop--adaptivejs-site`. Which means our current folder structure contains two folders with the same name:
+**Note:** The generator has created a folder within the repository called `workshop--adaptivejs-site`. Which means our current folder structure contains two folders with the same name:
 
     /workshop--adaptivejs-site/workshop--adaptivejs-site/(project files)
 
