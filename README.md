@@ -1,34 +1,38 @@
 #Step 1: Generate a View
 
-In addition to generating a new project, the Adaptive.js Generator has a sub-generator that can be used to set up a new view for your project. The sub-generator will create a view file, the dust template, a view-script file and a view test file.
+In addition to generating a new project, the Adaptive.js Generator has a sub-generator that can be used to set up a new view for your project. The sub-generator will create:
+* a view file
+* the dust template
+* a view-script file
+* a view test file.
 
 
 ##Task
 
 ###Create a new view called 'category'
 
-Start by running the following command in the terminal within your project folder.
+1. Run the following command in the terminal within your project folder.
 
-```
-yo adaptivejs:view
-```
+    ```
+    yo adaptivejs:view
+    ```
 
-1. When prompted for a name type `category` and hit enter
-2. Select `base` as the view to extend and hit enter
+2. When prompted for a name type `category` and hit enter
+3. Select `base` as the view to extend and hit enter
 
     ![View Generator](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/VXQhsUYEz8Jjnqj/Screen%20Shot%202015-01-15%20at%205.05.49%20PM.png)
 
     We've generated all the files we need for a view, but we now need to add the view to the router file.
 
-3. Open the file `router.js` found in the adaptation folder of your project
-4. Add the path for the new view file to the dependecies array.
-5. List the view (Category) as an argument in corresponding function definition
+4. Open the file `router.js` found in the adaptation folder of your project
+5. Add the path for the new view file to the dependecies array.
+6. List the view (Category) as an argument in corresponding function definition
 
     ![Add View to Router](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/2ISxRvJ4zAQItfs/Screen%20Shot%202015-01-16%20at%2010.16.10%20AM.png)
 
     Now that the new view is included in the router file, we need to define when the router should use that view.
 
-6. Remove the generated calls to router.add() and replace them with the following:
+7. Remove the generated calls to router.add() and replace them with the following:
 
     ```
     router
