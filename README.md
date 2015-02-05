@@ -45,7 +45,7 @@ Your view file should end up looking like this:
 1. Create a new file under assets/styles/templates called `_category.scss` following the [file naming convention](https://github.com/mobify/mobify-code-style/tree/master/css/sass-best-practices#filename-naming-convention).
 2. Add the following styles for the `t-category__title` element
 
-    ```
+    ```scss
     // Category
     // ===
 
@@ -64,7 +64,7 @@ Your view file should end up looking like this:
 3. Open the file `_templates.scss` found under /assets/styles. This is where all of the template SCSS files get imported.
 4. Add the `_category.scss` file to the list of template SCSS partials.
 
-    ```
+    ```scss
     // Page Templates
     // --------------
 
@@ -75,7 +75,7 @@ Your view file should end up looking like this:
 5. Create a new file under assets/styles/components called `_product-list.scss` for the product-list component.
 6. Add the following styles:
 
-    ```
+    ```scss
     // Product List
     // ===
 
@@ -107,7 +107,7 @@ Your view file should end up looking like this:
 7. Open the file `_components.scss` found under /assets/styes. This is where all of the component SCSS files get imported.
 8. Add the `_product-list` scss file to the list of components
 
-    ```
+    ```scss
     // Project Components
     // ------------------
     //
@@ -121,7 +121,7 @@ Your view file should end up looking like this:
 
 9. Repeat steps 5-8 to add a component file called `_price.scss` with the following styles:
 
-    ```
+    ```scss
     // Price
     // ===
 
