@@ -23,14 +23,6 @@ The footer contains a new component that we haven't styled yet, the newsletter. 
             margin-left: $small-h-space;
         }
     }
-
-
-    // Newsletter: field
-    // ---
-
-    .c-newsletter__field {
-        flex: 1 1 auto;
-    }
     ```
 
 2. Open `_button.scss` found under **/assets/styles/components**
