@@ -6,7 +6,9 @@ The footer contains a new component that we haven't styled yet, the newsletter. 
 
 ###Style the Footer
 
-1. Add a new component scss file called `_newsletter.scss` with the following styles
+1. Run `grunt preview`
+2. [Preview](https://cloud.mobify.com/docs/adaptivejs/getting-started/new-project/#/start-adaptivejs-server) the potions category page in your browser
+3. Add a new component scss file called `_newsletter.scss` with the following styles
 
     ```SCSS
     // Newsletter
@@ -25,9 +27,9 @@ The footer contains a new component that we haven't styled yet, the newsletter. 
     }
     ```
 
-2. Open `_button.scss` found under **/assets/styles/components**
+4. Open `_button.scss` found under **/assets/styles/components**
 
-3. Add the following to the file:
+5. Add the following to the file:
 
     ```SCSS
     .c-button.c--accent {
@@ -39,9 +41,9 @@ The footer contains a new component that we haven't styled yet, the newsletter. 
     }
     ```
 
-4. Add a new file called `_footer.scss` under **/assets/styles/templates/partials**
+6. Add a new file called `_footer.scss` under **/assets/styles/templates/partials**
 
-5. Add the following to the new file:
+7. Add the following to the new file:
 
     ```SCSS
     // Footer
@@ -92,8 +94,8 @@ The footer contains a new component that we haven't styled yet, the newsletter. 
     }
     ```
 
-6. Open `_templates.scss` found under **/assets/styles**
-7. Add the `_footer.scss` file to the list of templates (make sure you have the correct path)
+8. Open `_templates.scss` found under **/assets/styles**
+9. Add the `_footer.scss` file to the list of templates (make sure you have the correct path)
 
     ```SCSS
     // Partial Templates
@@ -104,8 +106,7 @@ The footer contains a new component that we haven't styled yet, the newsletter. 
     @import 'templates/partials/footer
     ```
 
-8. Run `grunt preview`
-9. Preview the potions category page in your browser
+10. View the mobile version of the potions category page in your browser
 
     Your footer should now look like this:
 
