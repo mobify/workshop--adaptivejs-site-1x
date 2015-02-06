@@ -19,7 +19,7 @@ function($, BaseView, template) {
                 return $('.banner-message');
             },
             categories: function() {
-                return $('.categories .carousel').map(function(){
+                return $('.categories .carousel').map(function() {
                     var $category = $(this);
 
                     return {
@@ -29,7 +29,7 @@ function($, BaseView, template) {
                             return {
                                 href: $item.attr('href'),
                                 image: $item.find('img'),
-                                // Find and remove the price before selecting 
+                                // Find and remove the price before selecting
                                 // the description to separate the two elements.
                                 price: $item.find('.price').remove().text(),
                                 title: $item.find('.description').text().replace(' - ', '')
