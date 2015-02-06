@@ -18,6 +18,7 @@ Now that we've added content to the header, we need to style it.
 
     .t-header {
         display: flex;
+        justify-content: space-between;
         padding: $v-space $small-h-space;
     }
 
@@ -29,7 +30,6 @@ Now that we've added content to the header, we need to style it.
     // 2. Legacy flexbox fix
 
     .t-header__logo {
-        flex: 1 1 auto;
         padding: 0 $h-space;
 
         a {
@@ -42,25 +42,6 @@ Now that we've added content to the header, we need to style it.
         }
     }
 
-
-    // Header: Cart
-    // ---
-
-    .t-header__cart {
-        flex: 1 0 auto;
-    }
-
-
-    // Header: Menu, Logo AND Cart!
-    // ---
-
-    .t-header__menu,
-    .t-header__logo,
-    .t-header__cart {
-        display: flex;
-        align-items: center;
-    }
-    ```
 
     We've got the header layout set up, but the menu and cart buttons aren't visible yet.
 
@@ -114,8 +95,6 @@ Now that we've added content to the header, we need to style it.
     // ---
 
     .t-header__menu {
-        flex: 1 0 auto;
-
         .c-button {
             display: block;
             min-width: 45px;
@@ -161,11 +140,11 @@ Now that we've added content to the header, we need to style it.
         display: block;
         width: 20px;
         height: 20px;
+
         border-radius: 50%;
-
         background-color: $accent-color;
-        color: #fff;
 
+        color: #fff;
         font-family: $oswald;
         font-weight: 300;
         text-align: center;
