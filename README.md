@@ -7,9 +7,25 @@ Now that we've gone over some of the basics, we can get back to the homepage. We
 
 ###Update the Homepage
 
-1. Open the file `home.js` under /adaptation/views
-2. Remove the 'firstp' key
-3. Add keys that select and return the hero banner, shipping message and discount banner:
+1. View the desktop version of the homepage in a new tab in your browser (http://www.merlinspotions.com)
+2. Inspect the HTML for the page
+    Specifically take a look at:
+        * the hero image
+        * the free shipping banner
+        * the discount banner
+        * the three carousels for Potions, Ingredients and Books
+
+    We'll be adding these elements to our mobile version of the page.
+
+3. Run `grunt preview`
+4. [Preview](https://cloud.mobify.com/docs/adaptivejs/getting-started/new-project/#/start-adaptivejs-server)  to http://www.merlinspotions.com/ in your browser
+
+    Refresh the page in the browser as you make changes to the homepage view and template files.
+
+
+5. Open the file `home.js` under /adaptation/views
+6. Remove the 'firstp' key
+7. Add keys that select and return the hero banner, shipping message and discount banner:
 
     ```javascript
     context: {
@@ -26,8 +42,8 @@ Now that we've gone over some of the basics, we can get back to the homepage. We
     }
     ```
 
-4. Open the file `home.dust` under /adaptation/templates
-5. Add the three elements to the template
+8. Open the file `home.dust` under /adaptation/templates
+9. Add the three elements to the template
 
     ```html
     {<contentBlock}
@@ -46,8 +62,8 @@ Now that we've gone over some of the basics, we can get back to the homepage. We
 
     Now we need to deal with the three carousels on the page. We'll be including these three sections as tabs instead of carousels, so we need to extract information out of the carousels. We can then define new markup for the tabs inside the template.
 
-6. Open the `home.js` view file
-7. Add a `categories` key that will return each `.categories .carousel` div
+10. Open the `home.js` view file
+11. Add a `categories` key that will return each `.categories .carousel` div
 
     ```javascript
     context: {
@@ -69,7 +85,7 @@ Now that we've gone over some of the basics, we can get back to the homepage. We
 
     This will just output the full markup for each carousel, which won't really work for us. So let's try breaking it down a bit more.
 
-8. Update the `categories` key so that it returns a list of objects that contain the category title, and collection of products for the category:
+12. Update the `categories` key so that it returns a list of objects that contain the category title, and collection of products for the category:
 
     ```javascript
         discountBanner: function() {
@@ -90,7 +106,7 @@ Now that we've gone over some of the basics, we can get back to the homepage. We
 
     Now let's take it one step further by changing the `products` zepto collection into a list of objects.
 
-9. Map the `products` collection into a list of objects with each products href, image, title and price:
+13. Map the `products` collection into a list of objects with each products href, image, title and price:
 
     ```javascript
         discountBanner: function() {
@@ -120,11 +136,11 @@ Now that we've gone over some of the basics, we can get back to the homepage. We
     }
     ```
 
-10. Open the `home.dust` file again
+14. Open the `home.dust` file again
 
     Using the list we built we can arrange the categories and products in tabs.
 
-11. Add the following markup to the home template:
+15. Add the following markup to the home template:
 
     ```html
          <div class="t-home__promo">
