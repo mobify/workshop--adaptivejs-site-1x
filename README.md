@@ -7,14 +7,14 @@
 1. Open `home.js` found under /assets/js/ui/view-scripts
 2. In the homeUI function, add a click handler for `.js-tab__header`
 
-    ```
+    ```javascript
     define([
         '$'
     ],
     function($) {
         var homeUI = function() {
             $('.js-tabs__header').on('click', function(e) {
-                console.log('tab header clicked');
+                // The click handler will go here.
             });
         };
 
@@ -24,7 +24,7 @@
 
 3. Within the new click handler add an active class to the clicked tab, and remove the active class from all other tabs.
 
-    ```
+    ```javascript
     define([
         '$'
     ],
@@ -46,7 +46,7 @@
 
 4. Update the click handler so that an active class is added to the corresponding tab section and make sure that the active class is removed from other tab sections.
 
-    ```
+    ```javascript
     define([
         '$'
     ],
@@ -71,7 +71,7 @@
 
 5. Finally, trigger a click on the first tab.
 
-    ```
+    ```javascript
     define([
         '$'
     ],
