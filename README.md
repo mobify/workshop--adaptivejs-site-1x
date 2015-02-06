@@ -6,7 +6,7 @@ We're done with the header, so now let's move on to last part of this page, the 
 
 ###Add Content to the Footer
 
-1. Run grunt preview
+1. Run `grunt preview`
 2. [Preview](https://cloud.mobify.com/docs/adaptivejs/getting-started/new-project/#/start-adaptivejs-server)  to http://www.merlinspotions.com/potions in your browser
 
     We'll be making changes to the footer's HTML, refresh the page as you go to see the results of the changes.
