@@ -9,7 +9,7 @@ We're done with the header, so now let's move on to last part of this page, the 
 1. Run grunt preview
 2. [Preview](https://cloud.mobify.com/docs/adaptivejs/getting-started/new-project/#/start-adaptivejs-server)  to http://www.merlinspotions.com/potions in your browser
 
-We'll be making changes to the footer's HTML, refresh the page as you go to see the results of the changes.
+    We'll be making changes to the footer's HTML, refresh the page as you go to see the results of the changes.
 
 3. Open `_footer.js` found under /adaptation/views/includes
 4. Remove the `documentationLink` function
