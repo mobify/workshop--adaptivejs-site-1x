@@ -52,7 +52,7 @@ The Adaptive.js generator has already created a header view and template for us,
 8. Browse to http://www.merlinspotions.com/img/logo.62e1.png and save the logo as `logo.png` under /assets/images
 9. Open `_header.dust` again and add an img element for the logo:
 
-    ```
+    ```html
     <div class="t-header__logo">
         <a href="{logoHref}">
             <img src="{@getUrl path="images/logo.png" /}" alt="Merlins Potions">
