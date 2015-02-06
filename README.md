@@ -1,6 +1,6 @@
 #Step 7: Style the Footer
 
-The footer contains a new component that we haven't styled yet, the newsletter. We'll need to add a new component SCSS file to style that. We also need to add a few styles to the existing button component. Finally, we'll add some template specific styles for the footer partial. 
+The footer contains a new component that we haven't styled yet, the newsletter. We'll need to add a new component SCSS file to style that. We also need to add a few styles to the existing button component. Finally, we'll add some template specific styles for the footer partial.
 
 ##Task
 
@@ -8,23 +8,109 @@ The footer contains a new component that we haven't styled yet, the newsletter. 
 
 1. Add a new component scss file called `_newsletter.scss` with the following styles
 
-    ![Newsletter styles](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/dFVpSy98wVejeZB/Screen%20Shot%202015-01-19%20at%201.37.13%20PM.png)
+    ```SCSS
+    // Newsletter
+    // ===
+    //
+    // 1. Legacy flexbox fix
+
+    .c-newsletter {
+        display: flex;
+
+        .c-button {
+            display: block; // 1
+            flex: 0 0 auto;
+            margin-left: $small-h-space;
+        }
+    }
 
 
-2. Open `_button.scss` found under /assets/styles/components
+    // Newsletter: field
+    // ---
+
+    .c-newsletter__field {
+        flex: 1 1 auto;
+    }
+    ```
+
+2. Open `_button.scss` found under **/assets/styles/components**
+
 3. Add the following to the file:
 
-    ![Additional Button styles](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/k2lEmoQCuMNb2EN/Screen%20Shot%202015-01-19%20at%201.23.35%20PM.png)
+    ```SCSS
+    .c-button.c--accent {
+        border: 0;
 
-4. Add a new file called `_footer.scss` under /assets/styles/templates/partials
+        background-color: $accent-color;
+
+        color: white;
+    }
+    ```
+
+4. Add a new file called `_footer.scss` under **/assets/styles/templates/partials**
+
 5. Add the following to the new file:
 
-    ![Footer styles](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/HKDf4OmcQicXMms/Screen%20Shot%202015-01-19%20at%201.24.24%20PM.png)
+    ```SCSS
+    // Footer
+    // ===
+
+    .t-footer {
+        text-align: center;
+
+        h3 {
+            font-family: $serif;
+            font-style: italic;
+            font-size: 15px;
+        }
+
+        p {
+            margin: $v-space 0;
+
+            font-size: 12px;
+        }
+    }
+
+
+    // Footer: Form
+    // ---
+
+    .t-footer__form {
+        padding: $v-space $h-space;
+
+        .c-newsletter {
+            @include clearfix;
+
+            padding: $v-space 0;
+        }
+    }
+
+
+    // Footer: Fineprint
+    // ---
+
+    .t-footer__fineprint {
+        display: block;
+        padding: $v-space 0;
+
+        background: $grey-90;
+
+        color: $grey-55;
+        font-size: 12px;
+    }
+    ```
 
 6. Open `_templates.scss` found under /assets/styles
 7. Add the `_footer.scss` file to the list of templates (make sure you have the correct path)
 
-    ![Add footer to templates scss](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/XOqVNqsdNFxbG8A/Screen%20Shot%202015-01-19%20at%201.24.45%20PM.png)
+    ```SCSS
+    // Partial Templates
+    // -----------------
+    // Like headers, footers
+
+    @import 'templates/partials/header';
+    @import 'templates/partials/footer
+    ```
 
 8. Run `grunt preview`
 9. Preview the potions category page in your browser
