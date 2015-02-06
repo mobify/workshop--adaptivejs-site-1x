@@ -50,7 +50,7 @@ We can also change the output HTML by modifying the elements that get returned b
 
 Your view file should end up looking like this:
 
-![Update listing element](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/TFDwYRj5dy23ZRX/Screen%20Shot%202015-01-16%20at%201.28.36%20PM.png)
+![Update listing element](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/zcWcEqnWvtO36hx/Screen%20Shot%202015-02-06%20at%202.21.32%20PM.png)
 
 ##TASK
 
