@@ -11,7 +11,7 @@ Now that we've gone over some of the basics, we can get back to the homepage. We
 2. Remove the 'firstp' key
 3. Add keys that select and return the hero banner, shipping message and discount banner:
 
-    ```
+    ```javascript
     context: {
         templateName: 'home',
         hero: function() {
@@ -29,7 +29,7 @@ Now that we've gone over some of the basics, we can get back to the homepage. We
 4. Open the file `home.dust` under /adaptation/templates
 5. Add the three elements to the template
 
-    ```
+    ```html
     {<contentBlock}
         {hero}
 
@@ -49,7 +49,7 @@ Now that we've gone over some of the basics, we can get back to the homepage. We
 6. Open the `home.js` view file
 7. Add a `categories` key that will return each `.categories .carousel` div
 
-    ```
+    ```javascript
     context: {
         templateName: 'home',
         hero: function() {
@@ -71,7 +71,7 @@ Now that we've gone over some of the basics, we can get back to the homepage. We
 
 8. Update the `categories` key so that it returns a list of objects that contain the category title, and collection of products for the category:
 
-    ```
+    ```javascript
         discountBanner: function() {
             return $('.banner-message');
         },
@@ -92,7 +92,7 @@ Now that we've gone over some of the basics, we can get back to the homepage. We
 
 9. Map the `products` collection into a list of objects with each products href, image, title and price:
 
-    ```
+    ```javascript
         discountBanner: function() {
             return $('.banner-message');
         },
