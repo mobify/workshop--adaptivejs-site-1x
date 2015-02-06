@@ -126,7 +126,7 @@ Now that we've gone over some of the basics, we can get back to the homepage. We
 
 11. Add the following markup to the home template:
 
-    ```
+    ```html
          <div class="t-home__promo">
             {discountBanner}
         </div>
