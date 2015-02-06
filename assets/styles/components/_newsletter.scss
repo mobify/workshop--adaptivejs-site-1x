@@ -1,18 +1,22 @@
 // Newsletter
 // ===
 //
-// 1. Legacy flexbox fix
+// 1, Legacy flexbox fix
 
 .c-newsletter {
     display: flex;
 
-    [type=email] {
-        flex: 1 1 auto;
-    }
-
-    button {
+    .c-button {
         display: block; // 1
         flex: 0 0 auto;
         margin-left: $small-h-space;
     }
+}
+
+
+// Newsletter: field
+// ---
+
+.c-newsletter__field {
+    flex: 1 1 auto;
 }
