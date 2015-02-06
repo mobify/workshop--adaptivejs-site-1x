@@ -138,16 +138,11 @@ Now that we've added content to the header, we need to style it.
     // 1. Absolutely positioned number badge relative to the parent .c-cart-count
     // 2. Width must account for the presence of the number badge
 
-    $cart-count__cauldron-width: 30px;
-    $cart-count__cauldron-height: 40px;
-    $cart-count__badge-size: 20px;
-    $cart-count__width-with-badge: $cart-count__cauldron-width + ($cart-count__badge-size / 2);
-
     .c-cart-count {
         position: relative; // 1
 
-        width: $cart-count__width-with-badge; // 2
-        height: $cart-count__cauldron-height;
+        width: 40px; // 2
+        height: 40px;
 
         background: url('/images/cauldron.png') top left no-repeat;
 
@@ -166,8 +161,8 @@ Now that we've added content to the header, we need to style it.
 
     .c-cart-count__number {
         display: block;
-        width: $cart-count__badge-size;
-        height: $cart-count__badge-size;
+        width: 20px;
+        height: 20px;
         border-radius: 50%; // 1
 
         background-color: $accent-color;
