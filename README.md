@@ -67,9 +67,9 @@
         @extend %heading;
 
         display: block;
-        widows: 100%;
+        width: 100%;
         min-height: $line-height;
-        paddin: 0;
+        padding: 0;
 
         font-size: $font-size - 1;
         text-transform: uppercase;
