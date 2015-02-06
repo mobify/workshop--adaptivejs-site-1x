@@ -129,7 +129,7 @@
     //
     // eg. @import 'components/button';
 
-    …
+    ...
     @import 'components/newsletter';
     @import 'components/tab';
     ```
