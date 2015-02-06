@@ -76,7 +76,7 @@ Now that we've gone over some of the basics, we can get back to the homepage. We
             return $('.banner-message');
         },
         categories: function() {
-            return $('.categories .carousel').map(fuction() {
+            return $('.categories .carousel').map(function() {
                 var $category = $(this);
 
                 return {
@@ -97,7 +97,7 @@ Now that we've gone over some of the basics, we can get back to the homepage. We
             return $('.banner-message');
         },
         categories: function() {
-            return $('.categories .carousel').map(fuction() {
+            return $('.categories .carousel').map(function() {
                 var $category = $(this);
 
                 return {
