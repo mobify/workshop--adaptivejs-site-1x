@@ -5,6 +5,9 @@
 ###Add click handlers to the homepage view-script
 
 1. Open `home.js` found under /assets/js/ui/view-scripts
+
+    The JavaScript files in this folder will be run on the page after it has been rendered. Any UI functionality for the page should be added here.
+
 2. In the homeUI function, add a click handler for `.js-tab__header`
 
     ```javascript
@@ -21,6 +24,8 @@
         return homeUI;
     });
     ```
+
+    We'll be setting up the tabs so that when a user clicks on a tab the matching section is displayed and all other panels are hidden. The click handler will add and remove classes from the tabs and tab section that we will then use to hide/show the elements with CSS.
 
 3. Within the new click handler add an active class to the clicked tab, and remove the active class from all other tabs.
 
@@ -42,7 +47,7 @@
     });
     ```
 
-    We'll use this class to apply a few styles to active tabs.
+    We'll use this class to highlight the active tab.
 
 4. Update the click handler so that an active class is added to the corresponding tab section and make sure that the active class is removed from other tab sections.
 
@@ -100,7 +105,9 @@
 7. Preview the homepage in your browser
 8. Test that the active classes are applied correctly by inspecting the tabs
 
-We'll add the tab styling along with the styling for the active classes in the next step.
+    We'll add the tab styling along with the styling for the active classes in the next step.
+
+9. Stop preview by typing `ctrl c` in the terminal window.
 
 
 ## Ready to Continue?
