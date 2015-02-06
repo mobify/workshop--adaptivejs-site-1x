@@ -8,8 +8,13 @@ Now that we have the new view working, we'll need to add some content to it. Cur
 
 There are two main elements that we want to pull into our view. The page title, and the list of products. We'll start by defining the HTML for the page within the template file, then within the view file, we'll select the elements on the desktop site that we need to add to the template.
 
-1. Open the file `category.dust` found in /adaptation/templates
-2. Override the `contentBlock` that was defined in `base.dust` by adding the following:
+1. Run `grunt preview`
+2. [Preview](https://cloud.mobify.com/docs/adaptivejs/getting-started/new-project/#/start-adaptivejs-server) to http://www.merlinspotions.com/potions in your browser
+
+    As we make changes to the category template and view files refresh the page to see the changes in the browser.
+
+3. Open the file `category.dust` found in /adaptation/templates
+4. Override the `contentBlock` that was defined in `base.dust` by adding the following:
 
     ![Override the contentBlock](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/XQKwUSv5WGo064c/Screen%20Shot%202015-01-16%20at%2012.15.59%20PM.png)
 
@@ -19,7 +24,7 @@ There are two main elements that we want to pull into our view. The page title, 
 
     By overriding the contentBlock key, we can add our own markup that is specific to this new page. For more information, view our documentation on [view inheritance](https://cloud.mobify.com/docs/adaptivejs/adapting/views/#/view-inheritance/) and [block overrides](https://cloud.mobify.com/docs/adaptivejs/adapting/dustjs-cheat-sheet/#/block-overrides/).
 
-3. Within the contentBlock add the two keys defined in our view file
+5. Within the contentBlock add the two keys defined in our view file
 
     ```
     {<contentBlock}
@@ -28,9 +33,9 @@ There are two main elements that we want to pull into our view. The page title, 
     {/contentBlock}
     ```
 
-4. Open the file `category.js` found in /adaptation/views/
-5. Remove the `body` key found under `context` since we won't need it for this page
-6. Add the `title` key to the context object in your view file
+6. Open the file `category.js` found in /adaptation/views/
+7. Remove the `body` key found under `context` since we won't need it for this page
+8. Add the `title` key to the context object in your view file
 
     ```javascript
     title: function() {
@@ -40,7 +45,7 @@ There are two main elements that we want to pull into our view. The page title, 
 
     This will select and return an item with the class `title`.
 
-7. Add the `listing` key that returns an element with the class `category-listing`
+9. Add the `listing` key that returns an element with the class `category-listing`
 
     ```javascript
     title: function() {
@@ -51,12 +56,11 @@ There are two main elements that we want to pull into our view. The page title, 
     }
     ```
 
-8. Run `grunt preview`
-9. [Preview](https://cloud.mobify.com/docs/adaptivejs/getting-started/new-project/#/start-adaptivejs-server) to http://www.merlinspotions.com/potions in your browser
+10. View the category page in your browser
 
     You should see a page very similar to the one in the previous step, but now we're only including the content we need.
 
-10. Stop preview by typing `ctrl c` in the terminal window.
+11. Stop preview by typing `ctrl c` in the terminal window.
 
 ##Ready to Continue?
 
