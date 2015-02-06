@@ -3,6 +3,7 @@
 
 .t-header {
     display: flex;
+    justify-content: space-between;
     padding: $v-space $small-h-space;
 }
 
@@ -11,8 +12,6 @@
 // ---
 
 .t-header__menu {
-    flex: 1 0 auto;
-
     .c-button {
         display: block;
         min-width: 45px;
@@ -33,34 +32,14 @@
 // 2. Legacy flexbox fix
 
 .t-header__logo {
-    flex: 1 1 auto;
     padding: 0 $h-space;
 
     a {
         display: block; // 2
-        height: 39px; // 1
+        height: 39px; //1
     }
 
     img {
         max-height: 100%;
     }
-}
-
-
-// Header: Cart
-// ---
-
-.t-header__cart {
-    flex: 1 0 auto;
-}
-
-
-// Header: Menu, Logo AND Cart!
-// ---
-
-.t-header__menu,
-.t-header__logo,
-.t-header__cart {
-    display: flex;
-    align-items: center;
 }
