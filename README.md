@@ -12,7 +12,7 @@ Now that we've added content to the header, we need to style it.
 
 2. Replace the file contents with the following:
 
-    ```
+    ```SCSS
     // Header
     // ===
 
@@ -68,7 +68,7 @@ Now that we've added content to the header, we need to style it.
 
 4. Add the following content to the file:
 
-    ```
+    ```SCSS
     // Button
     // ===
 
@@ -93,7 +93,7 @@ Now that we've added content to the header, we need to style it.
 
 6. Add the `_button scss` file to the list of components
 
-    ```
+    ```SCSS
     // Project Components
     // ------------------
     //
@@ -105,10 +105,11 @@ Now that we've added content to the header, we need to style it.
     @import 'components/product-list';
     @import 'components/price';
     @import 'components/button';
+    ```
 
 7. Now when we have common button styles we need to adjust our header menu button a little. Open `_header.scss` file found under **/assets/styles/templates/** partials again and add button modifications within .t-header__menu block
 
-    ```
+    ```SCSS
     // Header: Menu
     // ---
 
@@ -128,9 +129,9 @@ Now that we've added content to the header, we need to style it.
     }
     ```
 
-7. Repeat steps 3-6 to add another component called `_cart-count` with the following styles:
+8. Repeat steps 3-6 to add another component called `_cart-count` with the following styles:
 
-    ```
+    ```SCSS
     // Cart Count
     // ===
     //
@@ -178,9 +179,9 @@ Now that we've added content to the header, we need to style it.
     }
     ```
 
-8. Run `grunt preview`
+9. Run `grunt preview`
 
-9. View the mobile site in your browser
+10. View the mobile site in your browser
 
     Your header should look like this:
 
