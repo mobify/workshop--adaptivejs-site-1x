@@ -11,7 +11,7 @@ function($, Base, template) {
         postProcess: function(context) {
             context = Base.postProcess(context);
 
-            var $listing = $(context.listing);
+            var $listing = context.listing;
 
             // Apply missing component classes
             $listing.addClass('c-product-list');
