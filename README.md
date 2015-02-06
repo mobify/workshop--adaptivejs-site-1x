@@ -135,7 +135,7 @@ Now that we've added content to the header, we need to style it.
     // Cart Count
     // ===
     //
-    // 1. Relative for absolute positioned .c-cart-counr__number
+    // 1. Relative for absolutely positioned .c-cart-count__number
     // 2. Width must account for the presence of the number badge
 
     .c-cart-count {
