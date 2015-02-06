@@ -12,10 +12,10 @@ Now that we've gone over some of the basics, we can get back to the homepage. We
 
     Specifically take a look at:
 
-        * the hero image
-        * the free shipping banner
-        * the discount banner
-        * the three carousels for Potions, Ingredients and Books
+    * the hero image
+    * the free shipping banner
+    * the discount banner
+    * the three carousels for Potions, Ingredients and Books
 
     We'll be adding these elements to our mobile version of the page.
 
