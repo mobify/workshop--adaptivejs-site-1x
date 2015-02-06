@@ -135,7 +135,7 @@ Now that we've added content to the header, we need to style it.
     // Cart Count
     // ===
     //
-    // 1. Absolutely positioned number badge relative to the parent .c-cart-count
+    // 1. Relative for absolute positioned .c-cart-counr__number
     // 2. Width must account for the presence of the number badge
 
     .c-cart-count {
@@ -151,7 +151,7 @@ Now that we've added content to the header, we need to style it.
     // Card Count: Number
     // ---
     //
-    // 1. Make a circle!
+    // 1. Absolutely positioned number badge relative to the parent .c-cart-count
 
     .c-cart-count__number {
         position: absolute; // 1
@@ -161,7 +161,7 @@ Now that we've added content to the header, we need to style it.
         display: block;
         width: 20px;
         height: 20px;
-        border-radius: 50%; // 1
+        border-radius: 50%;
 
         background-color: $accent-color;
         color: #fff;
