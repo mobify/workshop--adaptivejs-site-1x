@@ -100,7 +100,7 @@ The footer contains a new component that we haven't styled yet, the newsletter. 
     }
     ```
 
-6. Open `_templates.scss` found under /assets/styles
+6. Open `_templates.scss` found under **/assets/styles**
 7. Add the `_footer.scss` file to the list of templates (make sure you have the correct path)
 
     ```SCSS
