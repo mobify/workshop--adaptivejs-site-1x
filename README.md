@@ -91,7 +91,7 @@ Now that we've added content to the header, we need to style it.
 
 5. Open the file `_components.scss` found under **/assets/styles**
 
-6. Add the `_button scss` file to the list of components
+6. Add the `_button.scss` file to the list of components
 
     ```SCSS
     // Project Components
@@ -107,7 +107,7 @@ Now that we've added content to the header, we need to style it.
     @import 'components/button';
     ```
 
-7. Now when we have common button styles we need to adjust our header menu button a little. Open `_header.scss` file found under **/assets/styles/templates/** partials again and add button modifications within .t-header__menu block
+7. Now when we have common button styles we need to adjust our header menu button a little. Open `_header.scss` file found under **/assets/styles/templates/** partials again and add button modifications within `.t-header__menu block`
 
     ```SCSS
     // Header: Menu
