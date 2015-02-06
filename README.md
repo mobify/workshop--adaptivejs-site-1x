@@ -2,7 +2,7 @@
 
 The site we'll be using for this workshop is http://www.merlinspotions.com.
 
-We'll be using git to switch between steps in the workshop. If you're not familiar with git, take a look through some of their [documentation](http://git-scm.com/documentation).
+We'll be using git to switch between steps in the workshop. If you're not familiar with git, take a look through some of their [documentation](http://git-scm.com/documentation). We'll also be using require.js in most of the JavaScript files in the project, documentation for require.js can be found [here](http://requirejs.org/docs/start.html).
 
 Please follow the installation steps below to get your computer ready for the workshop. Once you're done, follow the directions in the **Ready to Start** section. 
 
