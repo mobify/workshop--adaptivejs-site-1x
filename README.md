@@ -17,7 +17,7 @@
     function($) {
         var homeUI = function() {
             $('.js-tabs__header').on('click', function(e) {
-                // The click handler will go here.
+                // The tab functionality will be added up here.
             });
         };
 
