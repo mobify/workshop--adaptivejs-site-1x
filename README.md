@@ -9,6 +9,7 @@ Now that we've gone over some of the basics, we can get back to the homepage. We
 
 1. View the desktop version of the homepage in a new tab in your browser (http://www.merlinspotions.com)
 2. Inspect the HTML for the page
+
     Specifically take a look at:
         * the hero image
         * the free shipping banner
