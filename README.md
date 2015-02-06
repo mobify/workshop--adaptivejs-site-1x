@@ -5,7 +5,7 @@
 ###Style the Homepage
 
 1. Open the file `_home.scss` found under **/assets/styles/templates**
-2. Replace the existing styles with the following:
+2. Remove the existing styles for the homepage template, and add some styling for the promo image and t-home__content block:
 
     ``` SCSS
     // Home
@@ -119,7 +119,7 @@
     }
     ```
 
-    *Note:* Don't forget to import the tabs scss file in `_components.scss`
+    **Note:** Don't forget to import the tabs scss file in `_components.scss`
 
     ```SCSS
     // Project Components
@@ -154,6 +154,10 @@
 
 5. Run `grunt preview`
 6. Preview the site in your browser
+
+    The homepage should look something like this:
+
+    ![Homepage end result](https://s3.amazonaws.com/uploads.hipchat.com/15359/505985/z5EMBDFSro5vytT/upload.png)
 
 
 ## Ready to Continue?
