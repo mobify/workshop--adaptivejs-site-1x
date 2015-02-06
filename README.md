@@ -12,8 +12,12 @@ In order to follow our best practices we often need to add classes to the deskto
 There are a few different areas where we can affect the HTML that is output by the template. The first is within the template itself.
 
 1. Run `grunt preview`
-2. Open `category.dust` found in /adaptation/templates
-3. Wrap the `{title}` key in a div with the class `t-category__title`
+2. [Preview](https://cloud.mobify.com/docs/adaptivejs/getting-started/new-project/#/start-adaptivejs-server) to http://www.merlinspotions.com/potions in your browser
+
+    Refresh the page in your browser as we update the template's HTML and SCSS to view the changes.
+
+3. Open `category.dust` found in /adaptation/templates
+4. Wrap the `{title}` key in a div with the class `t-category__title`
 
     ![Wrap title in a div](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/AoTbBtkdqrBznRL/Screen%20Shot%202015-01-16%20at%201.25.40%20PM.png)
 
@@ -147,9 +151,9 @@ Your view file should end up looking like this:
     }
     ```
 
-10. [Preview](https://cloud.mobify.com/docs/adaptivejs/getting-started/new-project/#/start-adaptivejs-server) to http://www.merlinspotions.com/potions in your browser
+10. View the potions category page in your browser.
 
-    The potions category page should look like this:
+    The page should look like this:
 
     ![Potions page](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/sYtMKGfRqXkKOr4/Screen%20Shot%202015-01-16%20at%202.04.06%20PM.png)
 
