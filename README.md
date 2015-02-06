@@ -41,7 +41,7 @@ Now that we've added content to the header, we need to style it.
             max-height: 100%;
         }
     }
-
+    ```
 
     We've got the header layout set up, but the menu and cart buttons aren't visible yet.
 
