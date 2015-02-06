@@ -145,12 +145,6 @@ Now that we've added content to the header, we need to style it.
         height: 40px;
 
         background: url('/images/cauldron.png') top left no-repeat;
-
-        .c-cart-count__number {
-            position: absolute; // 1
-            top: 0;
-            right: 0;
-        }
     }
 
 
@@ -160,6 +154,10 @@ Now that we've added content to the header, we need to style it.
     // 1. Make a circle!
 
     .c-cart-count__number {
+        position: absolute; // 1
+        top: 0;
+        right: 0;
+
         display: block;
         width: 20px;
         height: 20px;
