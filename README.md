@@ -4,8 +4,13 @@
 
 ###Style the Homepage
 
-1. Open the file `_home.scss` found under **/assets/styles/templates**
-2. Remove the existing styles for the homepage template, and add some styling for the promo image and t-home__content block:
+1. Run `grunt preview`
+2. [Preview](https://cloud.mobify.com/docs/adaptivejs/getting-started/new-project/#/start-adaptivejs-server) the site in your browser
+
+    Refresh the page as we add styles to see the new styles applied to the page.
+
+3. Open the file `_home.scss` found under **/assets/styles/templates**
+4. Remove the existing styles for the homepage template, and add some styling for the promo image and t-home__content block:
 
     ``` SCSS
     // Home
@@ -38,7 +43,7 @@
     }
     ```
 
-3. Create a new component scss file for the tabs component called `_tab.scss` with the following styles:
+5. Create a new component scss file for the tabs component called `_tab.scss` with the following styles:
 
     ``` SCSS
     // Tab
@@ -134,7 +139,7 @@
     @import 'components/tab';
     ```
 
-4. Create a component scss file called `_shipping-banner.scss` with the following styles:
+6. Create a component scss file called `_shipping-banner.scss` with the following styles:
 
     ```SCSS
     // Shipping Banner
@@ -152,8 +157,7 @@
     }
     ```
 
-5. Run `grunt preview`
-6. Preview the site in your browser
+7. View the homepage in your browser
 
     The homepage should look something like this:
 
