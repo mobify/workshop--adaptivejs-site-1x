@@ -13,29 +13,9 @@ There are two main elements that we want to pull into our view. The page title, 
 
     As we make changes to the category template and view files refresh the page to see the changes in the browser.
 
-3. Open the file `category.dust` found in /adaptation/templates
-4. Override the `contentBlock` that was defined in `base.dust` by adding the following:
-
-    ![Override the contentBlock](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/XQKwUSv5WGo064c/Screen%20Shot%202015-01-16%20at%2012.15.59%20PM.png)
-
-    If you remember in the previous step, we said that the new view should extend the base view. This means that the category template will use all of the mark up from the base dust file. Which by default just displays the full contents of the desktop HTML.
-
-    ![Base template contentBlock](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/Hehqa43UYdVBQxW/Screen%20Shot%202015-02-05%20at%201.41.56%20PM.png)
-
-    By overriding the contentBlock key, we can add our own markup that is specific to this new page. For more information, view our documentation on [view inheritance](https://cloud.mobify.com/docs/adaptivejs/adapting/views/#/view-inheritance/) and [block overrides](https://cloud.mobify.com/docs/adaptivejs/adapting/dustjs-cheat-sheet/#/block-overrides/).
-
-5. Within the contentBlock add the two keys defined in our view file
-
-    ```
-    {<contentBlock}
-        {title}
-        {listing}
-    {/contentBlock}
-    ```
-
-6. Open the file `category.js` found in /adaptation/views/
-7. Remove the `body` key found under `context` since we won't need it for this page
-8. Add the `title` key to the context object in your view file
+3. Open the file `category.js` found in /adaptation/views/
+4. Remove the `body` key found under `context` since we won't need it for this page
+5. Add the `title` key to the context object in your view file
 
     ```javascript
     title: function() {
@@ -45,7 +25,7 @@ There are two main elements that we want to pull into our view. The page title, 
 
     This will select and return an item with the class `title`.
 
-9. Add the `listing` key that returns an element with the class `category-listing`
+6. Add the `listing` key that returns an element with the class `category-listing`
 
     ```javascript
     title: function() {
@@ -54,6 +34,26 @@ There are two main elements that we want to pull into our view. The page title, 
     listing: function() {
         return $('.category-listing');
     }
+    ```
+
+7. Open the file `category.dust` found in /adaptation/templates
+8. Override the `contentBlock` that was defined in `base.dust` by adding the following:
+
+    ![Override the contentBlock](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/XQKwUSv5WGo064c/Screen%20Shot%202015-01-16%20at%2012.15.59%20PM.png)
+
+    If you remember in the previous step, we said that the new view should extend the base view. This means that the category template will use all of the mark up from the base dust file. Which by default just displays the full contents of the desktop HTML.
+
+    ![Base template contentBlock](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/Hehqa43UYdVBQxW/Screen%20Shot%202015-02-05%20at%201.41.56%20PM.png)
+
+    By overriding the contentBlock key, we can add our own markup that is specific to this new page. For more information, view our documentation on [view inheritance](https://cloud.mobify.com/docs/adaptivejs/adapting/views/#/view-inheritance/) and [block overrides](https://cloud.mobify.com/docs/adaptivejs/adapting/dustjs-cheat-sheet/#/block-overrides/).
+
+9. Within the contentBlock add the two keys defined in our view file
+
+    ```
+    {<contentBlock}
+        {title}
+        {listing}
+    {/contentBlock}
     ```
 
 10. View the category page in your browser
