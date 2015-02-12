@@ -113,6 +113,8 @@ The footer contains a new component that we haven't styled yet, the newsletter. 
     ![Footer](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/KcuPmBLRbJMAG0Y/Screen%20Shot%202015-01-19%20at%201.28.56%20PM.png)
 
 
+11. Stop preview by typing `ctrl c` in the terminal window.
+
 ## Ready to Continue?
 
 When you're ready to continue, run the following command:
