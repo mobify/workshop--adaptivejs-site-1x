@@ -161,6 +161,8 @@ Now that we've added content to the header, we need to style it.
     ![Header final styling](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/Z8Dwb5hT0q9nYXO/Screen%20Shot%202015-01-19%20at%2010.28.56%20AM.png)
 
 
+12. Stop preview by typing `ctrl c` in the terminal window.
+
 ## Ready to Continue?
 
 When you're ready to continue, run the following command:
