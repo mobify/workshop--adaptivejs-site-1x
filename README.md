@@ -6,14 +6,25 @@ The Adaptive.js generator has already created a header view and template for us,
 
 ###Add Content to the header
 
-
 1. Run `grunt preview`
 2. [Preview](https://cloud.mobify.com/docs/adaptivejs/getting-started/new-project/#/start-adaptivejs-server) to http://www.merlinspotions.com/potions in your browser
     
     We'll be making changes to the header's HTML, refresh the page as you go to see the results of the changes.
 
-3. Open `_header.dust` found under /adaptation/templates/partials
-4. Replace the content within `<header>` with the following:
+3. Open `_header.js` found under /adaptation/views/includes
+4. Remove the `title` key and replace it with the following:
+
+    ```javascript
+    logoHref: function() {
+        return $('.logo a').attr('href');
+    },
+    cartCount: function() {
+        return $('.header-count span').text();
+    }
+    ```
+
+5. Open `_header.dust` found under /adaptation/templates/partials
+6. Replace the content within `<header>` with the following:
 
     ```html
     <div class="t-header__menu">
@@ -31,18 +42,6 @@ The Adaptive.js generator has already created a header view and template for us,
             </div>
         </div>
     </div>
-    ```
-
-5. Open `_header.js` found under /adaptation/views/includes
-6. Remove the `title` key and replace it with the following:
-
-    ```javascript
-    logoHref: function() {
-        return $('.logo a').attr('href');
-    },
-    cartCount: function() {
-        return $('.header-count span').text();
-    }
     ```
 
 7. Inspect the logo on the desktop site.
