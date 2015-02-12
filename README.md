@@ -176,6 +176,8 @@ Now that we've gone over some of the basics, we can get back to the homepage. We
 
     We're using `{#keyName}{/keyName}` to loop through items in a list. More on that as well as a few more dust templating tricks can be found [here](https://cloud.mobify.com/docs/adaptivejs/adapting/dustjs-cheat-sheet).
 
+16. Stop preview by typing `ctrl c` in the terminal window.
+
 
 
 ## Ready to Continue?
