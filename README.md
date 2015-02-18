@@ -1,29 +1,33 @@
 #Adaptive.js Workshop
 
-The site we'll be using for this workshop is http://www.merlinspotions.com.
+The example site for this workshop is [Merlin's Potions](http://www.merlinspotions.com).
 
-We'll be using git to switch between steps in the workshop. If you're not familiar with git, take a look through some of their [documentation](http://git-scm.com/documentation). We'll also be using require.js in most of the JavaScript files in the project, documentation for require.js can be found [here](http://requirejs.org/docs/start.html).
+We use Git to switch between steps in the workshop. Look through some of [Git's documentation](http://git-scm.com/documentation) if you're not already familiar with Git. Also, we use Require.js in most of the JavaScript files in the project. Its documentation is found [here](http://requirejs.org/docs/start.html).
 
-Please follow the installation steps below to get your computer ready for the workshop. Once you're done, follow the directions in the **Ready to Start** section. 
+Follow the installation steps in the **Workshop Pre-requisites** section below to get your computer ready for the workshop. Once you're done, follow the directions in the **Ready to Start** section. 
 
 ##Workshop Pre-requisites
 
-To run this workshop, you'll need to have all the pre-requisites installed. Please follow this guide to get everything installed correctly:
-
-[Adaptive.js Install Guide](https://cloud.mobify.com/docs/adaptivejs/install-guide/)
-
+To run this workshop, you need to have all the pre-requisites installed. Follow steps **1 A - F only** in the [Getting Started for an Existing Project](https://cloud.mobify.com/docs/adaptivejs/getting-started/existing-project/#/install-adaptivejs-sdk/) guide install everything correctly.
 
 To install the workshop:
 
-1. Open the terminal
-2. Within the terminal navigate to your development folder
-3. Run the following command to clone the workshop repository:
+1. Launch the Terminal app.
+2. In the terminal, change directories to your development folder with the command:
+
+
+    ```
+    cd path/to/my/project/folder
+    ```
+
+3. Run the following command to clone the Merlin's Potions sample site workshop repository:
 
     ```
     git clone https://github.com/mobify/workshop--adaptivejs-site.git
     ```
 
-4. Navigate into the new folder that was created:
+4. Change directories to the newly-created folder for the workshop site:
+
     ```
     cd workshop--adaptivejs-site/
     ```
@@ -31,12 +35,12 @@ To install the workshop:
 
 ##Ready to Start
 
-Once you've installed the workshop, you're ready to move on to the next step. 
+Once you install the workshop, you're ready to move on to the next step. 
 
-Run the following command to proceed to the project set up branch:
+In the `workshop--adaptivejs-site` directory, run the following command to proceed to the project set up branch:
 
 ```
 git checkout set-up
 ```
 
-Then, follow the directions in the set up branch's [README](https://github.com/mobify/workshop--adaptivejs-site/blob/set-up/README.md)
+Now, follow this link to the directions in the set up branch [README](https://github.com/mobify/workshop--adaptivejs-site/blob/set-up/README.md)
