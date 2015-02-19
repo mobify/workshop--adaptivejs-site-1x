@@ -43,4 +43,4 @@ In the `workshop--adaptivejs-site` directory, run the following command to proce
 git checkout set-up
 ```
 
-Now, follow this link to the directions in the set up branch [README](https://github.com/mobify/workshop--adaptivejs-site/blob/set-up/README.md)
+Now, follow this link to the directions in the set up branch [README](https://github.com/mobify/workshop--adaptivejs-site/blob/set-up/README.md).
