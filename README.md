@@ -35,9 +35,9 @@ Templates: Templates define the layout of your page on mobile. They use the cont
     title: function() {
         return $('.title');
     }
-    ```
+ ```
 
-    This selects and returns an item with the class `title`.
+ This selects and returns an item with the class `title`.
 
 6. Underneath the `title` key, add the `listing` key that returns an element with the class `category-listing` with the following code snippet:
 
