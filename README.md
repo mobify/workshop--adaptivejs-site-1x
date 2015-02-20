@@ -73,6 +73,8 @@ Start with the HTML definition for the page in the template file. Then in the vi
     {/contentBlock}
     ```
 
+ Save and close the `category.dust` template file.
+
 10. View the category page in your browser.
 
     A page similar to the one in the previous step appears but now only with the title and listing as contents.
