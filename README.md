@@ -23,13 +23,16 @@ In addition to generating a new project, the Adaptive.js Generator has a sub-gen
     ![View Generator](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/VXQhsUYEz8Jjnqj/Screen%20Shot%202015-01-15%20at%205.05.49%20PM.png)
 
 4. Add the view to the router file. Navigate to your project folder in Finder. Locate the `adaptation` folder. Open the file `router.js` with an editor app.
-5. Add the path for the new view file to the dependecies array.
-6. List the view `Category` as an argument in corresponding function definition:
+5. In the `router.js` file, in the `define` dependencies array code block, add the new `views/category` path for the new view file. Remember to append a comma the previous `views/home` last entry. 
+
+    ![Add View to Router](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/6ShtDgoKJvxKuCq/Screen%20Shot%202015-02-05%20at%201.15.29%20PM.png)
+    
+6. In the function definition, list the view `Category` as an argument after the `Home` argument. Remember to append the comma after `Home`.
 
 
     ![Add View to Router](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/6ShtDgoKJvxKuCq/Screen%20Shot%202015-02-05%20at%201.15.29%20PM.png)
 
-7. Remove the generated calls to `router.add()` and replace them with the following:
+7. Remove the default calls to `router.add()` and replace them with the following lines of code:
 
     ```javascript
     router
@@ -37,6 +40,7 @@ In addition to generating a new project, the Adaptive.js Generator has a sub-gen
         .add(Router.selectorMatch('body.category'), Category);
     ```
 
+    Save the `router.js` file with these changes in your editor.
 
     The `.add()` function creates a new route that loads the given view upon the return of a Boolean value from the function. The `Router.selectorMatch()` function returns true when an element that matches the selector exists on the current page.
 
