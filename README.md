@@ -93,7 +93,7 @@ Ensure that you change the path to reflect your project folder structure.
     ls -l
     ```
 
-The folder includes these items:
+    The folder includes these items:
 
     ```
     adaptation/
