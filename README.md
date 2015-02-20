@@ -55,7 +55,7 @@ Templates: Templates define the layout of your page on mobile. They use the cont
 
     As you remember from the Overview of the Mobify bundle, the template file defines the layout of your page on mobile. Each template uses the content from its corresponding view. This is why the `category.js` and `category.dust` files have parallel names.
 
-8. In the `category.dust` template file, override the `contentBlock` key from its default in `base.dust`.  Adding the following lines of code instead:
+8. In the `category.dust` template file, erase the contes of the `contentBlock` key to override it from its default in `base.dust`. 
 
     ![Override the contentBlock](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/XQKwUSv5WGo064c/Screen%20Shot%202015-01-16%20at%2012.15.59%20PM.png)
 
