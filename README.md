@@ -119,7 +119,7 @@ The folder includes these items:
 
     The **package.json** file defines your project information such as its name, project slug, and dependencies.
 
-13. Test your installation with a preview. Follow the instructions in Section 3 of the [Preview the Adaptive.js Site of our Getting Started Existing Project](https://cloud.mobify.com/docs/adaptivejs/getting-started/existing-project/#preview-adaptivejs-site) guide.
+13. Test your installation with a preview. Follow the instructions in Section 3, Preview the Adaptive.js Site, of our [Getting Started Existing Project](https://cloud.mobify.com/docs/adaptivejs/getting-started/existing-project/#preview-adaptivejs-site) guide.
 
 14. Stop the preview with the command keyboard shortcut `[control] c` on the command line.
 
