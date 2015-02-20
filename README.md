@@ -8,8 +8,8 @@ Now that the new view works, let's add content to it. Currently the contents of 
 
 There are two main elements to pull into our view:
 
-1. the page title, and 
-2. the list of products.
+* the page title, and 
+* the list of products.
  
 Start with the HTML definition for the page in the template file. Then in the view file, select the elements on the desktop site to add to the template.
 
