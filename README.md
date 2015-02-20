@@ -22,7 +22,7 @@ In addition to generating a new project, the Adaptive.js Generator has a sub-gen
 
     ![View Generator](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/VXQhsUYEz8Jjnqj/Screen%20Shot%202015-01-15%20at%205.05.49%20PM.png)
 
-4. Add the view to the router file. Navigate to your project folder in Finder. Locate the `adaptation` folder. Open the file `router.js` with an editor app.
+4. To add the view to the router file, navigate to your project folder in Finder. Locate the `adaptation` folder. Open the file `router.js` with an editor app.
 5. In the `router.js` file, in the `define` dependencies array code block, add the new `views/category` path for the new view file. Remember to append a comma the previous `views/home` last entry. 
 
     ![Add View to Router](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/6ShtDgoKJvxKuCq/Screen%20Shot%202015-02-05%20at%201.15.29%20PM.png)
