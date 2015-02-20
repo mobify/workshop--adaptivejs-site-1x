@@ -23,7 +23,7 @@ Start with the HTML definition for the page in the template file. Then in the vi
 
     As you change the category template and view files, refresh the preview page in the browser to see the changes.
 
-3. In your `workshop--adaptivejs-site` directory, navigate to the `adaptation/views` folder. Open the `category.js` category view file in an editor app.
+3. Launch Finder. In your `workshop--adaptivejs-site` directory, navigate to the `adaptation/views` folder. Open the `category.js` category view file in an editor app.
 
     As you remember from the Overview of the Mobify bundle, the view file is where you select and transform content from the original page.
 
