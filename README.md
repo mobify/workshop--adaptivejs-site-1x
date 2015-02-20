@@ -1,21 +1,35 @@
 #Step 2: Populate the Category View with Content
 
-Now that we have the new view working, we'll need to add some content to it. Currently the contents of the body tag for the desktop page is being included on the page, but that contains some elements that we don't need. 
+Now that the new view works, let's add content to it. Currently the contents of the body tag for the desktop page are included on the page but we don't need all of the original contents for the adapted site.
 
 ##Task
 
-###Add Content to the category view
+###Add Content to the Category View
 
-There are two main elements that we want to pull into our view. The page title, and the list of products. We'll start by defining the HTML for the page within the template file, then within the view file, we'll select the elements on the desktop site that we need to add to the template.
+There are two main elements to pull into our view:
 
-1. Run `grunt preview`
-2. [Preview](https://cloud.mobify.com/docs/adaptivejs/getting-started/new-project/#/start-adaptivejs-server) to http://www.merlinspotions.com/potions in your browser
+1. the page title, and 
+2. the list of products.
+ 
+Start with the HTML definition for the page in the template file. Then in the view file, select the elements on the desktop site to add to the template.
 
-    As we make changes to the category template and view files refresh the page to see the changes in the browser.
+1. In Terminal, enter the following command to start the preview:
 
-3. Open the file `category.js` found in /adaptation/views/
-4. Remove the `body` key found under `context` since we won't need it for this page
-5. Add the `title` key to the context object in your view file
+    ```
+    grunt preview
+    ```
+
+2. Work through Work through the third section, [Preview the Adaptive.js Site](https://cloud.mobify.com/docs/adaptivejs/getting-started/new-project/#/start-adaptivejs-server), of the Getting Started (New Project) guide.
+
+    As you change the category template and view files, refresh the preview page in the browser to see the changes.
+
+3. In your `workshop--adaptivejs-site` directory, navigate to the `adaptation/views` folder. Open the `category.js` category view file in an editor app.
+
+    As you remember from the Overview of the Mobify bundle, the view file is where you select and transform content from the original page.
+
+Templates: Templates define the layout of your page on mobile. They use the content from the views.
+4. In the `context` section of the file, remove the `body` key.
+5. In context object of the view file, add the `title` key with the following code snippet:
 
     ```javascript
     title: function() {
@@ -23,9 +37,9 @@ There are two main elements that we want to pull into our view. The page title, 
     }
     ```
 
-    This will select and return an item with the class `title`.
+    This selects and returns an item with the class `title`.
 
-6. Add the `listing` key that returns an element with the class `category-listing`
+6. Underneath the `title` key, add the `listing` key that returns an element with the class `category-listing` with the following code snippet:
 
     ```javascript
     title: function() {
@@ -35,19 +49,23 @@ There are two main elements that we want to pull into our view. The page title, 
         return $('.category-listing');
     }
     ```
+7. Save and close the `category.js` view file in your editor.
 
-7. Open the file `category.dust` found in /adaptation/templates
-8. Override the `contentBlock` that was defined in `base.dust` by adding the following:
+7. Navigate to the `adaptation/templates` directory and open the `category.dust` template file in an editor app.
+
+    As you remember from the Overview of the Mobify bundle, the template file defines the layout of your page on mobile. Each template uses the content from its corresponding view. This is why the `category.js` and `category.dust` files have parallel names.
+
+8. In the `category.dust` template file, override the `contentBlock` key from its default in `base.dust`.  Adding the following lines of code instead:
 
     ![Override the contentBlock](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/XQKwUSv5WGo064c/Screen%20Shot%202015-01-16%20at%2012.15.59%20PM.png)
 
-    If you remember in the previous step, we said that the new view should extend the base view. This means that the category template will use all of the mark up from the base dust file. Which by default just displays the full contents of the desktop HTML.
+    As you remember from the Step 1 branch, the new view extends the base view. This means that the category template uses all of the mark up from the base dust file. By default, the base simply displays the full contents of the desktop HTML.
 
     ![Base template contentBlock](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/Hehqa43UYdVBQxW/Screen%20Shot%202015-02-05%20at%201.41.56%20PM.png)
 
-    By overriding the contentBlock key, we can add our own markup that is specific to this new page. For more information, view our documentation on [view inheritance](https://cloud.mobify.com/docs/adaptivejs/adapting/views/#/view-inheritance/) and [block overrides](https://cloud.mobify.com/docs/adaptivejs/adapting/dustjs-cheat-sheet/#/block-overrides/).
+    When you override the `contentBlock` key, you can add your own markup that is specific to this new page. For more information, view our documentation on [view inheritance](https://cloud.mobify.com/docs/adaptivejs/adapting/views/#/view-inheritance/) and [block overrides](https://cloud.mobify.com/docs/adaptivejs/adapting/dustjs-cheat-sheet/#/block-overrides/).
 
-9. Within the contentBlock add the two keys defined in our view file
+9. In the `contentBlock` key, add the two keys that you defined in the corresponding view file:
 
     ```
     {<contentBlock}
@@ -56,18 +74,18 @@ There are two main elements that we want to pull into our view. The page title, 
     {/contentBlock}
     ```
 
-10. View the category page in your browser
+10. View the category page in your browser.
 
-    You should see a page very similar to the one in the previous step, but now we're only including the content we need.
+    A page similar to the one in the previous step appears but now only with the title and listing as contents.
 
-11. Stop preview by typing `ctrl c` in the terminal window.
+11. Stop the preview with the `[control] c` command on the command line.
 
-##Ready to Continue?
+##Continue to Step 3
 
-Once you've got the view set up we can move on to adding some styling to it. Run the following command to move on:
+Once you set up the miew, add some styling to it. Run the following command to move on:
 
 ```
 git reset --hard HEAD && git clean -df && git checkout step-3-style-category-page
 ```
 
-Then, follow the directions in that branch's [README](https://github.com/mobify/workshop--adaptivejs-site/blob/step-3-style-category-page/README.md)
+Then, follow the directions in the  [README](https://github.com/mobify/workshop--adaptivejs-site/blob/step-3-style-category-page/README.md) of the Step 3 branch.
