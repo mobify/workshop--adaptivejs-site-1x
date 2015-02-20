@@ -48,7 +48,7 @@ Start with the HTML definition for the page in the template file. Then in the vi
         return $('.category-listing');
     }
     ```
- Ensure that you put the `,` comma character after the title key.
+ Ensure that replace the entire code snippet with the one above, including the `,` comma character after the `title` block.
 
 7. Save and close the `category.js` view file in your editor.
 
