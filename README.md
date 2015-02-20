@@ -27,7 +27,6 @@ Start with the HTML definition for the page in the template file. Then in the vi
 
     As you remember from the Overview of the Mobify bundle, the view file is where you select and transform content from the original page.
 
-Templates: Templates define the layout of your page on mobile. They use the content from the views.
 4. In the `context` section of the file, remove the `body` key.
 5. In context object of the view file, add the `title` key with the following code snippet:
 
