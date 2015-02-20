@@ -71,14 +71,14 @@ Ensure that you change the path to reflect your project folder structure.
 
     ![Zepto Version](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/pgGyeLJEcpGlkbC/Screen%20Shot%202015-01-22%20at%204.21.34%20PM.png)
 
-The install concludes and returns the command line to your `workshop--adaptivejs-site` project folder. A new folder **also** named `workshop--adaptivejs-site` is now in your original project folder.
-This means that your project is now located in a path similar to:
+    The install concludes and returns the command line to your `workshop--adaptivejs-site` project folder. A new folder **also** named `workshop--adaptivejs-site` is now in your original project folder.
+    This means that your project is now located in a path similar to this one:
 
     ```
     path/to/project/workshop--adaptivejs-site/workshop--adaptivejs-site
     ```
     
-At the end of this tutorial, you change this directory structure to avoid confusion.
+    At the end of this tutorial, you change this directory structure to avoid confusion.
 
 12. Change directories into the new `workshop--adaptivejs-site` folder with the command:
 
@@ -96,15 +96,15 @@ At the end of this tutorial, you change this directory structure to avoid confus
 The folder includes these items:
 
     ```
-        adaptation/
-        assets/
-        bower_components/
-        node_modules/
-        tests/
-        tasks/
-        Gruntfile.js
-        package.json
-        bower.json
+    adaptation/
+    assets/
+    bower_components/
+    node_modules/
+    tests/
+    tasks/
+    Gruntfile.js
+    package.json
+    bower.json
     ```
 
     The **adaptation** folder contains the router, the view files, and the template files.
