@@ -103,21 +103,21 @@ The folder includes these items:
         package.json
         bower.json
 
-The **adaptation** folder contains the router, the view files, and the template files.
+    The **adaptation** folder contains the router, the view files, and the template files.
 
-The **assets** folder contains files that are used on the mobile version of the site. This includes the sites SCSS files, images that we add, and JavaScript that runs on the page after its adaptation.
+    The **assets** folder contains files that are used on the mobile version of the site. This includes the sites SCSS files, images that we add, and JavaScript that runs on the page after its adaptation.
 
-The **bower_components** folder contains plugins and other JavaScript tools for the adapted site.
+    The **bower_components** folder contains plugins and other JavaScript tools for the adapted site.
 
-The **node_modules** folder contains the project Node modules.
+    The **node_modules** folder contains the project Node modules.
 
-The **Gruntfile.js** file defines tasks to run such as building the project, running tests, and uploading bundles to Mobify Cloud.
+    The **Gruntfile.js** file defines tasks to run such as building the project, running tests, and uploading bundles to Mobify Cloud.
 
-The **package.json** file defines your project information such as its name, project slug, and dependencies.
+    The **package.json** file defines your project information such as its name, project slug, and dependencies.
 
-13. Test your installation with a preview. Follow the instructions in Section (3. Preview the Adaptive.js Site of our Getting Started (Existing Project))[https://cloud.mobify.com/docs/adaptivejs/getting-started/existing-project/#preview-adaptivejs-site] guide.
+13. Test your installation with a preview. Follow the instructions in Section (3. Preview the Adaptive.js Site of our Getting Started Existing Project)[https://cloud.mobify.com/docs/adaptivejs/getting-started/existing-project/#preview-adaptivejs-site] guide.
 
-14. Stop the preview with the command keyboard shortcut `control c` on the command line.
+14. Stop the preview with the command keyboard shortcut `[control] c` on the command line.
 
 15. Change directories back to the first level `workshop--adaptivejs-site`
 
@@ -131,9 +131,14 @@ We now change the folder structure to eliminate the additional `workshop--adapti
 
 ##Ready to Start
 
-1. Enter following command:
+1. Enter following command on the command line in Terminal:
 
-git reset --hard HEAD && git clean -df && git checkout step-1-generate-view
+```
+git reset --hard HEAD && git clean -df 
+```
+    This command
+    
+    git checkout step-1-generate-view
 
 2. Then, follow the directions in that branch's [README](https://github.com/mobify/workshop--adaptivejs-site/blob/step-1-generate-view/README.md)
 
