@@ -74,7 +74,9 @@ Ensure that you change the path to reflect your project folder structure.
 The install concludes and returns the command line to your `workshop--adaptivejs-site` project folder. A new folder **also** named `workshop--adaptivejs-site` is now in your original project folder.
 This means that your project is now located in a path similar to:
 
+    ```
     path/to/project/workshop--adaptivejs-site/workshop--adaptivejs-site
+    ```
     
 At the end of this tutorial, you change this directory structure to avoid confusion.
 
@@ -93,6 +95,7 @@ At the end of this tutorial, you change this directory structure to avoid confus
 
 The folder includes these items:
 
+    ```
         adaptation/
         assets/
         bower_components/
@@ -102,6 +105,7 @@ The folder includes these items:
         Gruntfile.js
         package.json
         bower.json
+    ```
 
     The **adaptation** folder contains the router, the view files, and the template files.
 
