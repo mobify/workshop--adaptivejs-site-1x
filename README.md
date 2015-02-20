@@ -1,30 +1,30 @@
 #Step 1: Generate a View
 
-In addition to generating a new project, the Adaptive.js Generator has a sub-generator that can be used to set up a new view for your project. The sub-generator will create:
-* a view file
-* the dust template
-* a view-script file
+In addition to generating a new project, the Adaptive.js Generator has a sub-generator that sets up a new view for your project. The sub-generator creates:
+* a view file,
+* the dust template,
+* a view-script file, and
 * a view test file.
 
 
 ##Task
 
-###Create a new view called 'category'
+###Create a New 'category' View 
 
-1. Run the following command in the terminal within your project folder.
+1. In your `workshop--adaptivejs-site` project folder, enter the following command to run the sub-generator with Yeoman:
 
     ```
     yo adaptivejs:view
     ```
 
-2. When prompted for a name type `category` and hit enter
-3. Select `base` as the view to extend and hit enter
+2. When the generator prompts you for a name, enter `category`.
+3. Enter `base` as the view to extend.
 
     ![View Generator](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/VXQhsUYEz8Jjnqj/Screen%20Shot%202015-01-15%20at%205.05.49%20PM.png)
 
-4. Now need to add the view to the router file. Open the file `router.js` found in the adaptation folder of your project
+4. Add the view to the router file. Navigate to your project folder in Finder. Locate the `adaptation` folder. Open the file `router.js` with an editor app.
 5. Add the path for the new view file to the dependecies array.
-6. List the view (Category) as an argument in corresponding function definition
+6. List the view (Category) as an argument in corresponding function definition:
 
 
     ![Add View to Router](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/6ShtDgoKJvxKuCq/Screen%20Shot%202015-02-05%20at%201.15.29%20PM.png)
