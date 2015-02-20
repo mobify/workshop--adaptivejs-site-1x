@@ -17,8 +17,8 @@ Ensure that you change the path to reflect your project folder structure.
     [sudo] yo adaptivejs
     ```
 
-    **Note:** This command will eventually run `npm install` so depending on your permissions for the current directory, you may need to use `sudo`. 
-    In general, if you run into permission errors when running any of the commands mentioned, try re-running the command using `sudo`.
+    **Note:** This command runs `npm install`. If you do not have administrative privilages in the current directory, precede the command with `sudo`. 
+    In general, if you run into permission errors when running any of the commands mentioned, try to re-run the command with `sudo`.
     Most of the errors that you could encounter in this installation are due to permissions.
     
 2. If this is your first time running Yeoman, answer the setup questions. If the Yeoman README License opens in the VI editor, read the document and enter `:q` to quit it.
@@ -76,7 +76,7 @@ This means that your project is now located in a path similar to:
 
     path/to/project/workshop--adaptivejs-site/workshop--adaptivejs-site
     
-In the following few steps, we change this to avoid confusion.
+At the end of this tutorial, you change this directory structure to avoid confusion.
 
 12. Change directories into the new `workshop--adaptivejs-site` folder with the command:
 
