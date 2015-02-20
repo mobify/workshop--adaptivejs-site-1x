@@ -2,7 +2,7 @@
 
 One of the tools that you installed previously was the Adaptive.js Generator. Set up the folder structure for a new project with this generator.
 
-##Create a New Project Using the Generator
+##Create a New Project with the Adaptive.js Generator
 
 Ensure that you have the terminal open to the workshop `workshop--adaptivejs-site` folder.
 If you closed your terminal, launch the Terminal app again change directories the workshop folder with the command:
