@@ -31,7 +31,7 @@ Templates: Templates define the layout of your page on mobile. They use the cont
 4. In the `context` section of the file, remove the `body` key.
 5. In context object of the view file, add the `title` key with the following code snippet:
 
-    ```javascript
+ ```javascript
     title: function() {
         return $('.title');
     }
