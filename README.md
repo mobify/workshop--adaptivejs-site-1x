@@ -85,7 +85,7 @@ Start with the HTML definition for the page in the template file. Then in the vi
 
 ##Continue to Step 3
 
-Once you set up the miew, add some styling to it. Run the following command to move on:
+Once you set up the category view, add some styling to it. Run the following command to move on:
 
 ```
 git reset --hard HEAD && git clean -df && git checkout step-3-style-category-page
