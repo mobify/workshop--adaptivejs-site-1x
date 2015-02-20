@@ -137,22 +137,27 @@ We now change the folder structure to eliminate the additional `workshop--adapti
 
 1. Enter following command on the command line in Terminal:
 
-```
-git reset --hard HEAD && git clean -df 
-```
-    This command
+    ```
+    git reset --hard HEAD && git clean -df 
+    ```
     
+    This command resets the branch. The end result of this command is that only the first folder is now the location of the project files.
+    
+2. Enter the following command to checkout the `step1-generate-view` branch of the workshop project.
+    
+    ```
     git checkout step-1-generate-view
-
-2. Then, follow the directions in that branch's [README](https://github.com/mobify/workshop--adaptivejs-site/blob/step-1-generate-view/README.md)
+    ```
+    
+3. Then, follow the directions in the  [README](https://github.com/mobify/workshop--adaptivejs-site/blob/step-1-generate-view/README.md) of the Step 1 branch.
 
 ##Additional Information
 
-The generator that we used to create the project also has a default setting, which will automatically choose the same settings that we used above. In the future you can generate projects using the defaults by typing:
+The generator that we used to create the project also has a default setting, which automatically chooses the same settings that we used above. In the future you can generate projects using the defaults by typing:
 
 ```
 yo adaptivejs --defaults mobify
 ```
 
-For more information on options available for the generator, view the [generator's readme](https://github.com/mobify/generator-adaptivejs).
+For more information on options available for the generator, view the [Adaptive.js Generator  README](https://github.com/mobify/generator-adaptivejs).
 
