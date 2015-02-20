@@ -7,9 +7,8 @@ One of the tools that you installed previously was the Adaptive.js Generator. Se
 Ensure that you have the terminal open to the workshop `workshop--adaptivejs-site` folder.
 If you closed your terminal, launch the Terminal app again change directories the workshop folder with the command:
 
-    ```
     cd path/to/project/workshop--adaptivejs-site
-    ```
+
 Ensure that you change the path to reflect your project folder structure.
 
 1. Run yeoman with the command:
