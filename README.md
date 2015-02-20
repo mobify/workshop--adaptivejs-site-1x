@@ -47,7 +47,7 @@ In addition to generating a new project, the Adaptive.js Generator has a sub-gen
 10. Work through the third section, [Preview the Adaptive.js Site](https://cloud.mobify.com/docs/adaptivejs/getting-started/new-project/#/start-adaptivejs-server) of the Getting Started (New Project) guide.
     Use the `http://www.merlinspotions.com/potions` URL for the site.
 
-    A page that is similar to the Merlin's Potions homepage appears but but with content from the category page included under the header.
+    A page that is similar to the Merlin's Potions homepage appears but with content from the category page included under the header.
 
 11. To stop the preview, enter `[control] c` on the command line.
 
