@@ -48,13 +48,15 @@ Start with the HTML definition for the page in the template file. Then in the vi
         return $('.category-listing');
     }
     ```
+ Ensure that you put the `,` comma character after the title key.
+
 7. Save and close the `category.js` view file in your editor.
 
-7. Navigate to the `adaptation/templates` directory and open the `category.dust` template file in an editor app.
+8. Navigate to the `adaptation/templates` directory and open the `category.dust` template file in an editor app.
 
     As you remember from the Overview of the Mobify bundle, the template file defines the layout of your page on mobile. Each template uses the content from its corresponding view. This is why the `category.js` and `category.dust` files have parallel names.
 
-8. In the `category.dust` template file, erase the contes of the `contentBlock` key to override it from its default in `base.dust`. 
+9. In the `category.dust` template file, erase the contes of the `contentBlock` key to override it from its default in `base.dust`. 
 
     ![Override the contentBlock](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/XQKwUSv5WGo064c/Screen%20Shot%202015-01-16%20at%2012.15.59%20PM.png)
 
@@ -64,7 +66,7 @@ Start with the HTML definition for the page in the template file. Then in the vi
 
     When you override the `contentBlock` key, you can add your own markup that is specific to this new page. For more information, view our documentation on [view inheritance](https://cloud.mobify.com/docs/adaptivejs/adapting/views/#/view-inheritance/) and [block overrides](https://cloud.mobify.com/docs/adaptivejs/adapting/dustjs-cheat-sheet/#/block-overrides/).
 
-9. In the `contentBlock` key, add the two keys that you defined in the corresponding view file:
+10. In the `contentBlock` key, add the two keys that you defined in the corresponding view file:
 
     ```
     {<contentBlock}
@@ -73,13 +75,13 @@ Start with the HTML definition for the page in the template file. Then in the vi
     {/contentBlock}
     ```
 
- Save and close the `category.dust` template file.
+11. Save and close the `category.dust` template file.
 
-10. View the category page in your browser.
+12. View the category page in your browser.
 
     A page similar to the one in the previous step appears but now only with the title and listing as contents.
 
-11. Stop the preview with the `[control] c` command on the command line.
+13. Stop the preview with the `[control] c` command on the command line.
 
 ##Continue to Step 3
 
