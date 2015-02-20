@@ -37,10 +37,10 @@ To install the workshop:
 
 Once you install the workshop, you're ready to move on to the next step. 
 
-In the `workshop--adaptivejs-site` directory, run the following command to proceed to the project set up branch:
+1. In the `workshop--adaptivejs-site` directory, run the following command to proceed to the project set up branch:
 
 ```
 git checkout set-up
 ```
 
-Now, follow this link to the directions in the set up branch [README](https://github.com/mobify/workshop--adaptivejs-site/blob/set-up/README.md).
+2. Now, follow this link to the directions in the set up branch [README](https://github.com/mobify/workshop--adaptivejs-site/blob/set-up/README.md).
