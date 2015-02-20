@@ -40,17 +40,16 @@ In addition to generating a new project, the Adaptive.js Generator has a sub-gen
         .add(Router.selectorMatch('body.category'), Category);
     ```
 
-    Save the `router.js` file with these changes in your editor.
-
     The `.add()` function creates a new route that loads the given view upon the return of a Boolean value from the function. The `Router.selectorMatch()` function returns true when an element that matches the selector exists on the current page.
 
-8. Back in the Terminal, enter the `grunt preview` command to start the browser preview.
-9. Work through the third section, [Preview the Adaptive.js Site](https://cloud.mobify.com/docs/adaptivejs/getting-started/new-project/#/start-adaptivejs-server) of the Getting Started (New Project) guide.
+8. Save the `router.js` file with these changes in your editor.
+9. Back in the Terminal, enter the `grunt preview` command to start the browser preview.
+10. Work through the third section, [Preview the Adaptive.js Site](https://cloud.mobify.com/docs/adaptivejs/getting-started/new-project/#/start-adaptivejs-server) of the Getting Started (New Project) guide.
     Use the `http://www.merlinspotions.com/potions` URL for the site.
 
     A page that is similar to the Merlin's Potions homepage appears but but with content from the category page included under the header.
 
-10. To stop the preview, enter `[control] c` on the command line.
+11. To stop the preview, enter `[control] c` on the command line.
 
 ##Continue to Step 2
 
