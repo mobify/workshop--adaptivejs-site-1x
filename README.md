@@ -1,34 +1,34 @@
 #Step 3: Style the Category page
 
-The CSS naming convention we use is a modified version of BEM that we call CSM (Component, Sub-component, Modifier). For more information on that and all of our CSS best practices check out the CSS section of our [Mobify code style project](https://github.com/mobify/mobify-code-style/tree/master/css).
+The CSS naming convention we use is a modified version of BEM that we call CSM (Component, Sub-component, Modifier). For more information on CSM and on all of our CSS best practices, read the CSS section of our [Mobify code style project](https://github.com/mobify/mobify-code-style/tree/master/css).
 
 
-In order to follow our best practices we often need to add classes to the desktop HTML, as well as make changes to the markup for elements. In this step will cover a few examples of that, and add the SCSS needed to style this page.
+To follow our best practices, we often add classes to the desktop HTML and we make changes to the markup for elements. This step covers a few examples of our best practices. We also show you how to add the SCSS to style this page.
 
 ##Task
 
-### Update the Template's HTML
+### Update the Template HTML
 
-There are a few different areas where we can affect the HTML that is output by the template. The first is within the template itself.
+There are a few different ways to affect HTML that the template outputs. The first way is to modify the template file iteself.
 
-1. Run `grunt preview`
-2. [Preview](https://cloud.mobify.com/docs/adaptivejs/getting-started/new-project/#/start-adaptivejs-server) to http://www.merlinspotions.com/potions in your browser
+1. On the command line, enter the `grunt preview` command to start the preview.
+2. Work through the third section, [Preview the Adaptive.js Site](https://cloud.mobify.com/docs/adaptivejs/getting-started/new-project/#/start-adaptivejs-server) of the Getting Started (New Project) guide. Use the `http://www.merlinspotions.com/potions` URL for the Site URL form field.
 
-    Refresh the page in your browser as we update the template's HTML and SCSS to view the changes.
+    Refresh the page in your browser as you update the template HTML and SCSS to view the changes.
 
-3. Open `category.dust` found in /adaptation/templates
-4. Wrap the `{title}` key in a div with the class `t-category__title`
+3. In Finder, locate your `workshop--adaptive-site` directory. Find the `adaptation/templates` folder. Open the `category.dust` dust template file with an editor app.
+4. Wrap the `{title}` key in a `div` with the class `t-category__title`
 
     ![Wrap title in a div](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/AoTbBtkdqrBznRL/Screen%20Shot%202015-01-16%20at%201.25.40%20PM.png)
 
-Let's break down the class name to understand how it follows our [class naming convention](https://github.com/mobify/mobify-code-style/tree/master/css/class-naming-conventions#class-naming-conventions). The `t-` prefix indicates that it is part of a template ([More on css class prefix conventions](https://github.com/mobify/mobify-code-style/tree/master/css/class-naming-conventions#class-prefix-conventions)).
-Next follows `category` which indicates the name of the template.
-Lastly `__title` indicates that this is a subcomponent of the category template, in this case a title.
+Inspect the class name to understand how it follows our [class naming convention](https://github.com/mobify/mobify-code-style/tree/master/css/class-naming-conventions#class-naming-conventions). The `t-` prefix indicates that the class is part of a template ([learn more on css class prefix conventions](https://github.com/mobify/mobify-code-style/tree/master/css/class-naming-conventions#class-prefix-conventions)).
+The next part indicates the name of the template, which is `category`.
+Finally the  `__title` part indicates a title subcomponent of the `category` template.
 
-We can also change the output HTML by modifying the elements that get returned by the view.
+Another way to change the output HTML is to modify the elements that the view returns.
 
-1. Open category view file found in /adaptation/views
-2. Add a `postProcess` function to the view. We'll need to make sure that this `postProcess` first calls the `postProcess` function in the base view file.
+1. In Finder, navigate to the `adaptation/views` folder. Open the `category.js` category view file in your editor app.
+2. Add a `postProcess` function to the view. Ensure that this `postProcess` first calls the `postProcess` function in the base view file.
 
     ```javascript
     {
@@ -43,9 +43,9 @@ We can also change the output HTML by modifying the elements that get returned b
         context: {
     ```
 
-    The `postProcess` function will be executed after we've selected all the elements for the view, so we can grab one of those elements and make a few changes to it. The base view contains it's own `postProcess` function that makes a few global changes, in order to keep these changes, we need to call the `postProcess` for the base. More information on the `postProcess` function can be found [here](https://cloud.mobify.com/docs/adaptivejs/adapting/views/#/postprocess/).
+    The `postProcess` function executes after all the elements for the view are selected, so we can grab one of those elements and make a few changes to it. The base view contains its own `postProcess` function that makes a few global changes. In order to keep these changes, call the `postProcess` for the base. More information on the `postProcess` function can be found in the [Views](https://cloud.mobify.com/docs/adaptivejs/adapting/views/#/postprocess/) guide.
 
-3. Store the `context.listing` zepto object in a variable
+3. Store the `context.listing` Zepto object in a variable.
 4. Add the class `c-product-list` to the listing element. The class name `c-product-list` indicates that it is a self-contained component, and by applying it to the listing element, the listing element acts as the container for the component.
 5. Add the class `c-product-list__item` to each li and remove the inline styles. The class name `c-product-list__item` indicates that it is a sub-component of the `c-product-list` component, and must be a child of the `c-product-list` element.
 6. Add the class `c-price` to the `.price` div. `c-price` is another self-contained component.
@@ -56,7 +56,7 @@ Your view file should end up looking like this:
 
 ![Update listing element](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/zcWcEqnWvtO36hx/Screen%20Shot%202015-02-06%20at%202.21.32%20PM.png)
 
-##TASK
+##Task
 
 ### Add SCSS files for the Template and Components
 
