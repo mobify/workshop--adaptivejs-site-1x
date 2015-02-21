@@ -19,7 +19,7 @@ Start with the HTML definition for the page in the template file. Then in the vi
     grunt preview
     ```
 
-2. Work through Work through the third section, [Preview the Adaptive.js Site](https://cloud.mobify.com/docs/adaptivejs/getting-started/new-project/#/start-adaptivejs-server), of the Getting Started (New Project) guide.
+2. Work through the third section, [Preview the Adaptive.js Site](https://cloud.mobify.com/docs/adaptivejs/getting-started/new-project/#/start-adaptivejs-server), of the Getting Started (New Project) guide.
 
     As you change the category template and view files, refresh the preview page in the browser to see the changes.
 
@@ -77,7 +77,7 @@ Start with the HTML definition for the page in the template file. Then in the vi
 
 11. Save and close the `category.dust` template file.
 
-12. View the category page in your browser.
+12. Work through the third section, [Preview the Adaptive.js Site](https://cloud.mobify.com/docs/adaptivejs/getting-started/new-project/#/start-adaptivejs-server), of the Getting Started (New Project) guide now with the URL `http://www.merlinspotions/potions` for the category product listing page.
 
     A page similar to the one in the previous step appears but now only with the title and listing as contents.
 
