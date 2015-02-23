@@ -150,7 +150,7 @@ Your newly modified view file looks like this:
     }
     ```
 
-7. Open the `_components.scss` SCSS file in the `/assets/styes` folder. This is where all of the component SCSS files are imported into.
+7. In your editor app, open the `_components.scss` SCSS file in the `/assets/styes` folder. This is where all of the component SCSS files are imported into.
 8. Add the `_product-list` scss file to the list of components
 
     ```scss
