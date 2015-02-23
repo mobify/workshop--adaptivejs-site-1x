@@ -13,7 +13,7 @@ There are two main elements to pull into our view:
  
 Start with the HTML definition for the page in the template file. Then in the view file, select the elements on the desktop site to add to the template.
 
-1. In Terminal, enter the following command to start the preview:
+1. In Terminal, ensure you are in your `workshop--adaptivejs-site` directory. There, enter the following command to start the preview:
 
     ```
     grunt preview
