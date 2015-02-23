@@ -48,13 +48,13 @@ Another way to change the output HTML is to modify the elements that the view re
     The `postProcess` function executes after all the elements for the view are selected, so we can grab one of those elements and make a few changes to it. The base view contains its own `postProcess` function that makes a few global changes. In order to keep these changes, call the `postProcess` for the base. More information on the `postProcess` function can be found in the [Views](https://cloud.mobify.com/docs/adaptivejs/adapting/views/#/postprocess/) guide.
 
 3. Store the `context.listing` Zepto object in a variable.
-4. Add the class `c-product-list` to the listing element. The class name `c-product-list` indicates that it is a self-contained component, and by applying it to the listing element, the listing element acts as the container for the component.
-5. Add the class `c-product-list__item` to each li and remove the inline styles. The class name `c-product-list__item` indicates that it is a sub-component of the `c-product-list` component, and must be a child of the `c-product-list` element.
-6. Add the class `c-price` to the `.price` div. `c-price` is another self-contained component.
+4. Add the class `c-product-list` to the listing element. The class name `c-product-list` indicates that it is a self-contained component. By the application of the `c-product-list` class name to the listing element, the listing element acts as the container for the component.
+5. Add the class `c-product-list__item` to each list item HTML tag and remove the inline styles. The `c-product-list__item` class name indicates that it is a sub-component of the `c-product-list` component. The `c-product-list__item` class name and must be a child of the `c-product-list` element.
+6. Add the class `c-price` to the `.price` div. The `c-price` class name is another self-contained component.
 
-    The `c-` prefix is used to indicate that the element is a component. In our case, we're dealing with two components `c-product-list` (which has a sub-component item) and `c-price`.
+    The `c-` prefix indicates that the element is a component. In our case, we deal with two components: `c-product-list` (which has a sub-component item), and `c-price`.
 
-Your view file should end up looking like this:
+Your newly modified view file looks like this:
 
 ![Update listing element](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/zcWcEqnWvtO36hx/Screen%20Shot%202015-02-06%20at%202.21.32%20PM.png)
 
