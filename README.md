@@ -62,6 +62,8 @@ The Adaptive.js generator created a header view and template for us already. Now
         </a>
     </div>
     ```
+    
+    Save the `_header.dust` header Dust file and close it.
 
     **Note:** `"{@getUrl path="images/logo.png" /}"` prepends the bundle URL to the image path during the build process. When you preview locally, the logo locations appear as `http://localhost:8080/images/logo.png`.
 
