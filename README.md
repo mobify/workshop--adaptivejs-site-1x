@@ -74,6 +74,8 @@ Another way to change the output HTML is to modify the elements that the view re
     ```
 
     The `c-` prefix indicates that the element is a component. In our case, we deal with two components: `c-product-list` (which has a sub-component item), and `c-price`.
+    
+7. Save the `category.js` file and close it.
 
 Your newly modified view file looks like this:
 
@@ -81,10 +83,10 @@ Your newly modified view file looks like this:
 
 ##Task
 
-### Add SCSS files for the Template and Components
+### Add SCSS Files for the Template and Components
 
-1. Create a new file under assets/styles/templates called `_category.scss` following the [file naming convention](https://github.com/mobify/mobify-code-style/tree/master/css/sass-best-practices#filename-naming-convention).
-2. Add the following styles for the `t-category__title` element
+1. In an editor app, create a new file in the `assets/styles/templates` directory. As a best practice, name the file `_category.scss` in a way that follows the [Mobify file name convention](https://github.com/mobify/mobify-code-style/tree/master/css/sass-best-practices#filename-naming-convention).
+2. Add the following styles for the `t-category__title` element:
 
     ```scss
     // Category
@@ -102,8 +104,10 @@ Your newly modified view file looks like this:
     }
     ```
 
-3. Open the file `_templates.scss` found under /assets/styles. This is where all of the template SCSS files get imported.
-4. Add the `_category.scss` file to the list of template SCSS partials.
+3. Save the `_category.scss` SCSS file.
+
+3. In the editor app, open the file `_templates.scss` in the `/assets/styles` folder. This is where all of the template SCSS files are imported into.
+4. Add the `_category.scss` file to the list of template SCSS partials. Save the file with your change.
 
     ```scss
     // Page Templates
@@ -113,8 +117,8 @@ Your newly modified view file looks like this:
     @import "templates/category";
     ```
 
-5. Create a new file under assets/styles/components called `_product-list.scss` for the product-list component.
-6. Add the following styles:
+5. Create a new `_product-list.scss` SCSS file for the `product-list` component in the `assets/styles/components` folder.
+6. Add the following styles to the `_product-list.scss` SCSS file. Save the file and close it.
 
     ```scss
     // Product List
@@ -146,7 +150,7 @@ Your newly modified view file looks like this:
     }
     ```
 
-7. Open the file `_components.scss` found under /assets/styes. This is where all of the component SCSS files get imported.
+7. Open the `_components.scss` SCSS file in the `/assets/styes` folder. This is where all of the component SCSS files are imported into.
 8. Add the `_product-list` scss file to the list of components
 
     ```scss
