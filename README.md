@@ -17,9 +17,11 @@ There are a few different ways to affect HTML that the template outputs. The fir
     Refresh the page in your browser as you update the template HTML and SCSS to view the changes.
 
 3. In Finder, locate your `workshop--adaptive-site` directory. Find the `adaptation/templates` folder. Open the `category.dust` dust template file with an editor app.
-4. Wrap the `{title}` key in a `div` with the class `t-category__title`
+4. Wrap the `{title}` key in a `div` element with the `t-category__title` class.
 
     ![Wrap title in a div](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/AoTbBtkdqrBznRL/Screen%20Shot%202015-01-16%20at%201.25.40%20PM.png)
+
+5. Save the `category.dust` file and close it.
 
 Inspect the class name to understand how it follows our [class naming convention](https://github.com/mobify/mobify-code-style/tree/master/css/class-naming-conventions#class-naming-conventions). The `t-` prefix indicates that the class is part of a template ([learn more on css class prefix conventions](https://github.com/mobify/mobify-code-style/tree/master/css/class-naming-conventions#class-prefix-conventions)).
 The next part indicates the name of the template, which is `category`.
