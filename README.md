@@ -195,4 +195,4 @@ Once the page looks good and you're ready to move on, run the following command:
 git reset --hard HEAD && git clean -df && git checkout step-4-update-header
 ```
 
-Then, follow the directions in the  [README](https://github.com/mobify/workshop--adaptivejs-site/blob/step-4-update-header/README.md) in the Step 4 branch.
+Follow the directions in the  [README](https://github.com/mobify/workshop--adaptivejs-site/blob/step-4-update-header/README.md) in the Step 4 branch.
