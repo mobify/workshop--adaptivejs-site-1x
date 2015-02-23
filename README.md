@@ -36,7 +36,7 @@ Another way to change the output HTML is to modify the elements that the view re
     {
         template: template,
         extend: Base, 
-        postProcess: function() {
+        postProcess: function(context) {
             context = Base.postProcess(context);
 
             return context;
