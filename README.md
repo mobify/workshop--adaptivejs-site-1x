@@ -22,6 +22,8 @@ The Adaptive.js generator created a header view and template for us already. Now
         return $('.header-count span').text();
     }
     ```
+    
+    Save the `_header.js` file and close it.
 
 5. From the `/adaptation/templates/partials` folder, open the `_header.dust` Dust file in your editor.
 6. Replace the whole content of the `<header> ... </header>` section in the Dust file with the following HTML snippet:
