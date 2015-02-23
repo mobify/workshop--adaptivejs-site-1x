@@ -63,7 +63,7 @@ Another way to change the output HTML is to modify the elements that the view re
     $listing.find('.price').addClass('c-price');
     ```
 
-5. Add the class `c-product-list__item` to each `&lt;li&gt;` list item HTML tag and remove the inline styles. The `c-product-list__item` class name indicates that it is a sub-component of the `c-product-list` component. The `c-product-list__item` class name and must be a child of the `c-product-list` element.
+5. Add the class `c-product-list__item` to each `<li>` list item HTML tag and remove the inline styles. The `c-product-list__item` class name indicates that it is a sub-component of the `c-product-list` component. The `c-product-list__item` class name and must be a child of the `c-product-list` element.
 
     ```javascript
     $listing.find('li').addClass('c-product-list__item').removeAttr('style');
