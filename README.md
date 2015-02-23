@@ -165,7 +165,7 @@ Your newly modified view file looks like this:
     @import 'components/product-list';
     ```
 
-9. Repeat Steps 5-9 in this Task to add a `_price.scss` component file in the `assets/styles/components` folder with the following styles. Remember to add the `_price` file to the list of compontent to the component list in `/assets/styles/_components.scss`. Save both your files in the editor when you are done.
+9. Repeat Steps 5-9 in this Task to add a `_price.scss` component file in the `assets/styles/components` folder with the following styles.
 
     ```scss
     // Price
@@ -177,6 +177,7 @@ Your newly modified view file looks like this:
         font-weight: bold;
     }
     ```
+**Remember** to add the `_price` file to the list of compontent to the component list in `/assets/styles/_components.scss`. Save both your files in the editor when you are done.
 
 10. View the potions category page in your browser. Refresh the page from Step 2 in the first Task in this README.
 
