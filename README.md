@@ -47,9 +47,29 @@ Another way to change the output HTML is to modify the elements that the view re
 
     The `postProcess` function executes after all the elements for the view are selected, so we can grab one of those elements and make a few changes to it. The base view contains its own `postProcess` function that makes a few global changes. In order to keep these changes, call the `postProcess` for the base. More information on the `postProcess` function can be found in the [Views](https://cloud.mobify.com/docs/adaptivejs/adapting/views/#/postprocess/) guide.
 
-3. Store the `context.listing` Zepto object in a variable.
-4. Add the class `c-product-list` to the listing element. The class name `c-product-list` indicates that it is a self-contained component. By the application of the `c-product-list` class name to the listing element, the listing element acts as the container for the component.
-5. Add the class `c-product-list__item` to each list item HTML tag and remove the inline styles. The `c-product-list__item` class name indicates that it is a sub-component of the `c-product-list` component. The `c-product-list__item` class name and must be a child of the `c-product-list` element.
+3. Inside the `postProcess` function, at the top of the function, store the `context.listing` Zepto object in a `context` variable.
+
+    ```javascript
+    context = Base.postProcess(context);
+    ```
+
+4. Store the listing in a new variable. Add the class `c-product-list` to the listing element. The class name `c-product-list` indicates that it is a self-contained component. By the application of the `c-product-list` class name to the listing element, the listing element acts as the container for the component.
+
+    ```javascript
+    var $listing = context.listing;
+    
+    $listing.addClass('c-product-list');
+    $listing.find('li').addClass('c-product-list__item').removeAttr('style');
+    $listing.find('.price').addClass('c-price');
+    ```
+
+5. Add the class `c-product-list__item` to each `&lt;li&gt;` list item HTML tag and remove the inline styles. The `c-product-list__item` class name indicates that it is a sub-component of the `c-product-list` component. The `c-product-list__item` class name and must be a child of the `c-product-list` element.
+
+    ```javascript
+    $listing.find('li').addClass('c-product-list__item').removeAttr('style');
+    $listing.find('.price').addClass('c-price');
+    ```
+
 6. Add the class `c-price` to the `.price` div. The `c-price` class name is another self-contained component.
 
     The `c-` prefix indicates that the element is a component. In our case, we deal with two components: `c-product-list` (which has a sub-component item), and `c-price`.
