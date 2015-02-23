@@ -151,7 +151,7 @@ Your newly modified view file looks like this:
     ```
 
 7. In your editor app, open the `_components.scss` SCSS file in the `/assets/styes` folder. This is where all of the component SCSS files are imported into.
-8. Add the `_product-list` scss file to the list of components
+8. Add the `_product-list` SCSS file to the list of components. Save the file and close it when you finish your edits.
 
     ```scss
     // Project Components
@@ -165,7 +165,7 @@ Your newly modified view file looks like this:
     @import 'components/product-list';
     ```
 
-9. Repeat steps 5-8 to add a component file called `_price.scss` with the following styles:
+9. Repeat Steps 5-8 in this Task to add a `_price.scss` component file in the `assets/styles/components` folder with the following styles. Remember to add the `_price` file to the list of compontent to the component list in `/assets/styles/_components.scss`. Save both your files in the editor when you are done.
 
     ```scss
     // Price
@@ -178,15 +178,15 @@ Your newly modified view file looks like this:
     }
     ```
 
-10. View the potions category page in your browser.
+10. View the potions category page in your browser. Refresh the page from Step 2 in the first Task in this README.
 
     The page should look like this:
 
     ![Potions page](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/sYtMKGfRqXkKOr4/Screen%20Shot%202015-01-16%20at%202.04.06%20PM.png)
 
-11. Stop preview by typing `ctrl c` in the terminal window.
+11. Stop preview with the command `[control] c` on the command line in the Terminal.
 
-##Ready to Continue?
+##Continue to Step 4
 
 Once the page looks good and you're ready to move on, run the following command:
 
@@ -194,4 +194,4 @@ Once the page looks good and you're ready to move on, run the following command:
 git reset --hard HEAD && git clean -df && git checkout step-4-update-header
 ```
 
-Then, follow the directions in that branch's [README](https://github.com/mobify/workshop--adaptivejs-site/blob/step-4-update-header/README.md)
+Then, follow the directions in the  [README](https://github.com/mobify/workshop--adaptivejs-site/blob/step-4-update-header/README.md) in the Step 4 branch.
