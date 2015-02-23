@@ -67,7 +67,8 @@ The Adaptive.js generator created a header view and template for us already. Now
 
     **Note:** `"{@getUrl path="images/logo.png" /}"` prepends the bundle URL to the image path during the build process. When you preview locally, the logo locations appear as `http://localhost:8080/images/logo.png`.
 
-10. Stop preview with the command `[control] c` on the command line.
+10. Refresh the Potions page preview to see the logo.
+11. Stop preview with the command `[control] c` in Terminal.
 
 ## Continue to Step 5
 
