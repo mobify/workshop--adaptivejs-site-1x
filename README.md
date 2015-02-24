@@ -101,6 +101,8 @@ Let's style the newsletter component of the footer. In this tutorial, you repeat
         font-size: 12px;
     }
     ```
+    
+    Save the `_footer.scss` file and close it.
 
 9. In the editor, from the `/assets/styles` folder, open the `_templates.scss` style file.
 10. Add the `_footer.scss` file to the list of templates. Ensure that you specify the path correctly.
