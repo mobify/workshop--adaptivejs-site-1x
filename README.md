@@ -145,7 +145,7 @@
     
     Save the `_components.scss` components list file and close it.
 
-6. In the editor, in the `` folder, create a new `_shipping-banner.scss` component SCSS file with the following styles:
+6. In the editor, in the `assets/styles/components` folder, create a new `_shipping-banner.scss` shipping banner component SCSS file with the following styles:
 
     ```SCSS
     // Shipping Banner
