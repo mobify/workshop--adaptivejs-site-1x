@@ -145,8 +145,8 @@ Now that you have experience with some of the basics, we work on the homepage. T
 14. In the editor, from the `/adaptation/templates` folder, open the `home.dust` Dust template file again.
 
     With list we built, we arrange the categories and products in tabs.
-
-15. Add the following markup to the home template:
+    
+15. Inside the `contentBlock` block, add the following markup toward the bottom of the block:
 
     ```html
          <div class="t-home__promo">
