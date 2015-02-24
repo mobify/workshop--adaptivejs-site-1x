@@ -57,8 +57,24 @@ With the header done, let's move on to last part of this page, the footer. Start
     Save your changes to the `_footer.dust` template file and close it.
 
 9. Open the `_footer.js` footer view file from Step 3 again to change the newsletter element.
-10. Add the `c-button` and `c--accent` classes to the button in the newsletter element.
-11. Wrap the `input` and `button` in a `c-newsletter` class div with the following code snippet:
+10. Inside the `newsletter` element function, add the `c-button` and `c--accent` classes to the button just above the return line.
+
+    ```javascript
+    context: {
+        newsletter: function() {
+            var $newsletter = $('.footer-newsletter');
+
+            $newsletter.find('button').addClass('c-button c--accent');
+
+            return $newsletter
+        },
+        copyright: function() {
+            return $('copyright');
+        }
+    }
+    ```
+
+11. Wrap the `input` and `button` in a `c-newsletter` class with the following code snippet:
 
     ```javascript
     context: {
@@ -78,7 +94,7 @@ With the header done, let's move on to last part of this page, the footer. Start
 
     Save the `_footer.js` footer file again and close it.
     
-    The view file for the footer should end up looking like this:
+    The view file now looks like this:
 
     ![Footer view file](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/UQGjgCJTk5owpRc/Screen%20Shot%202015-02-05%20at%204.27.54%20PM.png)
 
