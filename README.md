@@ -1,4 +1,4 @@
-#Step 5: Style the header
+#Step 5: Style the Header
 
 Now that there is content in the header, we add style to it.
 
