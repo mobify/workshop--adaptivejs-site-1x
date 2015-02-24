@@ -1,9 +1,8 @@
-#Step 3: Style the Category page
+#Step 3: Style the Category Page
 
-The CSS naming convention we use is a modified version of BEM that we call CSM (Component, Sub-component, Modifier). For more information on CSM and on all of our CSS best practices, read the CSS section of our [Mobify code style project](https://github.com/mobify/mobify-code-style/tree/master/css).
+The CSS naming convention we use is a modified version of BEM. We call it "CSM" (Component, Sub-component, Modifier). For more information on CSM and on all of our CSS best practices, read the CSS section of our [Mobify code style project](https://github.com/mobify/mobify-code-style/tree/master/css).
 
-
-To follow our best practices, we often add classes to the desktop HTML and we make changes to the markup for elements. This step covers a few examples of our best practices. We also show you how to add the SCSS to style this page.
+To follow our best practices, we often add classes to the desktop HTML and we change the markup for elements. This step covers a few examples of our best practices. We also show you how to add the SCSS to style this page.
 
 ##Task A
 
@@ -11,12 +10,12 @@ To follow our best practices, we often add classes to the desktop HTML and we ma
 
 There are a few different ways to affect HTML that the template outputs. The first way is to modify the template file iteself.
 
-1. In Terminal, ensure you are in the `workshop--adaptivejs-site` directory. On the command line, enter the `grunt preview` command to start the preview.
-2. Work through the third section, [Preview the Adaptive.js Site](https://cloud.mobify.com/docs/adaptivejs/getting-started/new-project/#/start-adaptivejs-server) of the Getting Started (New Project) guide. Use the `http://www.merlinspotions.com/potions` URL for the Site URL form field.
+1. In Terminal, ensure that you are in the `workshop--adaptivejs-site` directory. On the command line, enter the `grunt preview` command to start the preview.
+2. Work through the third section, [Preview the Adaptive.js Site](https://cloud.mobify.com/docs/adaptivejs/getting-started/new-project/#/start-adaptivejs-server) of the Getting Started (New Project) guide. Use the Merlin's Potions Potion page `http://www.merlinspotions.com/potions` URL for the Site URL form field.
 
     Refresh the page in your browser as you update the template HTML and SCSS to view the changes.
 
-3. In Finder, locate your `workshop--adaptive-site` directory. Find the `adaptation/templates` folder. Open the `category.dust` dust template file with an editor app.
+3. In an editor app, in the `adaptation/templates` folder, open the `category.dust` dust template file.
 4. Wrap the `{title}` key in a `div` element with the `t-category__title` class.
 
     ![Wrap title in a div](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/AoTbBtkdqrBznRL/Screen%20Shot%202015-01-16%20at%201.25.40%20PM.png)
@@ -29,7 +28,7 @@ Finally the  `__title` part indicates a title subcomponent of the `category` tem
 
 Another way to change the output HTML is to modify the elements that the view returns.
 
-1. In Finder, navigate to the `adaptation/views` folder. Open the `category.js` category view file in your editor app.
+1. In your editor app, in the `adaptation/views` folder, open the `category.js` category view file.
 2. Add a `postProcess` function to the view. Ensure that this `postProcess` first calls the `postProcess` function in the base view file.
 
     ```javascript
@@ -53,7 +52,7 @@ Another way to change the output HTML is to modify the elements that the view re
     context = Base.postProcess(context);
     ```
 
-4. Store the listing in a new variable. Add the class `c-product-list` to the listing element. The class name `c-product-list` indicates that it is a self-contained component. By the application of the `c-product-list` class name to the listing element, the listing element acts as the container for the component.
+4. Store the listing in a new `$listing` variable. Add the class `c-product-list` to the listing element. The `c-product-list` class name indicates that it is a self-contained component. As you apply the `c-product-list` class name to the listing element, the listing element acts as the container for the component.
 
     ```javascript
     var $listing = context.listing;
@@ -61,13 +60,13 @@ Another way to change the output HTML is to modify the elements that the view re
     $listing.addClass('c-product-list');
     ```
 
-5. Add the class `c-product-list__item` to each `<li>` list item HTML tag and remove the inline styles. The `c-product-list__item` class name indicates that it is a sub-component of the `c-product-list` component. The `c-product-list__item` class name and must be a child of the `c-product-list` element.
+5. Add the `c-product-list__item` class to each `<li>` list item HTML tag and remove the inline styles. The `c-product-list__item` class name indicates that it is a sub-component of the `c-product-list` component. The `c-product-list__item` class name and must be a child of the `c-product-list` element.
 
     ```javascript
     $listing.find('li').addClass('c-product-list__item').removeAttr('style');
     ```
 
-6. Add the class `c-price` to the `.price` div. The `c-price` class name is another self-contained component.
+6. Add the `c-price` class to the `.price` div. The `c-price` class name is another self-contained component.
 
     ```javascript
     $listing.find('.price').addClass('c-price');
@@ -104,10 +103,10 @@ Your newly modified view file looks like this:
     }
     ```
 
-3. Save the `_category.scss` SCSS file.
+    Save the `_category.scss` SCSS file and close it.
 
-3. In the editor app, open the file `_templates.scss` in the `/assets/styles` folder. This is where all of the template SCSS files are imported into.
-4. Add the `_category.scss` file to the list of template SCSS partials. Save the file with your change.
+3. In the editor app, from the `/assets/styles` folder, open the `_templates.scss` file. This is where all of the template SCSS files are imported into.
+4. Add the `_category.scss` file to the list of template SCSS partials.
 
     ```scss
     // Page Templates
@@ -117,8 +116,10 @@ Your newly modified view file looks like this:
     @import "templates/category";
     ```
 
-5. Create a new `_product-list.scss` SCSS file for the `product-list` component in the `assets/styles/components` folder.
-6. Add the following styles to the `_product-list.scss` SCSS file. Save the file and close it.
+    Save the `_templates.scss` file and close it.
+
+5. In the editor app, in the `assets/styles/components` folder, create a new `_product-list.scss` SCSS file for the `product-list` component.
+6. Add the following styles to the `_product-list.scss` product list SCSS file.
 
     ```scss
     // Product List
@@ -149,9 +150,10 @@ Your newly modified view file looks like this:
         }
     }
     ```
+    Save the `_product-list.scss` product list file and close it.
 
-7. In your editor app, open the `_components.scss` SCSS file in the `/assets/styes` folder. This is where all of the component SCSS files are imported into.
-8. Add the `_product-list` SCSS file to the list of components. Save the file and close it when you finish your edits.
+7. In your editor app, from the `/assets/styes` folder, open the `_components.scss` component SCSS file. This is where all of the component SCSS files are imported into.
+8. Add the `_product-list` SCSS file to the list of components.
 
     ```scss
     // Project Components
@@ -164,8 +166,9 @@ Your newly modified view file looks like this:
     @import 'components/card';
     @import 'components/product-list';
     ```
+    Save the `_components.scss` component list file and close it.
 
-9. Repeat Steps 5-9 in this Task to add a `_price.scss` component file in the `assets/styles/components` folder with the following styles.
+9. Repeat Steps 5-8 in Task B. In `assets/styles/components` folder, add a `_price.scss` component file with the following styles:
 
     ```scss
     // Price
@@ -179,9 +182,9 @@ Your newly modified view file looks like this:
     ```
 **Remember** to add the `_price` file to the list of compontent to the component list in `/assets/styles/_components.scss`. Save both your files in the editor when you are done.
 
-10. View the potions category page in your browser. Refresh the page from Step 2 in the first Task in this README.
+10. View the potions category page in your browser. Refresh the page from Step 2 in Task A in this README.
 
-    The page should look like this:
+    The Potions category page looks like this:
 
     ![Potions page](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/sYtMKGfRqXkKOr4/Screen%20Shot%202015-01-16%20at%202.04.06%20PM.png)
 
