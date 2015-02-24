@@ -13,7 +13,7 @@ Now that there is content in the header, we add style to it.
 
     This file was created by the Adaptive.js project generator with some default styles. We now replace these with styles for our site header.
 
-4. Replace the file contents with the following:
+4. Replace the contents of the file with the following:
 
     ```SCSS
     // Header
