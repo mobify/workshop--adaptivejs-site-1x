@@ -99,13 +99,17 @@ Now that there is content in the header, we add style to it.
 
     Now that we have common button styles, let's adjust our header menu button.
 9. In your editor app, from the `/assets/styles/templates/partials` directory, open the `_header.scss` header file.
-10. In the `.t-header__menu block` block, add button modifications with the following lines of code:
+10. In the `.t-header__menu block` block, add the button modifications with the following `c-button` code block:
 
     ```SCSS
     // Header: Menu
     // ---
 
     .t-header__menu {
+        display: flex;
+        justify-content: space-between;
+        padding: $v-space $small-h-space;
+    
         .c-button {
             display: block;
             min-width: 45px;
@@ -164,7 +168,7 @@ Now that there is content in the header, we add style to it.
     }
     ```
 
-    Remember to add the `_cart-count` to the list of components in the `_components.scss` file.
+    Remember to add the `_cart-count` component with the `@import 'components/button';` statement to the list of components in the `_components.scss` file.
 
 11. Refresh the Potions page from Step 2 of this Task.
 
