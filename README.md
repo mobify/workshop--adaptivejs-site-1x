@@ -179,6 +179,7 @@
     @import 'components/tab';
     @import 'components/shipping-banner'
     ```
+    Save the `_components.scss` component list SCSS file and close it.
 
 8. Refresh the homepage preview from Step 2 in your browser.
 
