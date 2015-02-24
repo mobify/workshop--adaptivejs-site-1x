@@ -39,7 +39,7 @@ With the header done, let's move on to last part of this page, the footer. Start
     {/footer}
     ```
 
-8. Wrap each element in a div within the template file. Use the classes below:
+8. Wrap each element in a `<div>` tag. Use the classes in the snippet below:
 
     ```html
     {#footer}
