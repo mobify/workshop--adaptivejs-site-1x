@@ -23,12 +23,12 @@ Start with the HTML definition for the page in the template file. Then in the vi
 
     As you change the category template and view files, refresh the preview page in the browser to see the changes.
 
-3. Launch Finder. In your `workshop--adaptivejs-site` directory, navigate to the `adaptation/views` folder. Open the `category.js` category view file in an editor app.
+3. Launch an editor app. In the `adaptation/views` folder, open the `category.js` category view file.
 
-    As you remember from the Overview of the Mobify bundle, the view file is where you select and transform content from the original page.
+    As you remember from the [Overview of the Mobify Bundle](https://cloud.mobify.com/docs/adaptivejs/overview/mobify-bundle/#views) guide, the view file is where you select and transform content from the original page.
 
 4. In the `context` section of the file, remove the `body` key.
-5. In context object of the view file, add the `title` key with the following code snippet:
+5. In `context` object of the view file, add the `title` key with the following code snippet:
 
  ```javascript
     title: function() {
@@ -36,9 +36,9 @@ Start with the HTML definition for the page in the template file. Then in the vi
     }
  ```
 
- This selects and returns an item with the class `title`.
+ This selects and returns an item with the `title` class.
 
-6. Underneath the `title` key, add the `listing` key that returns an element with the class `category-listing` with the following code snippet:
+6. Underneath the `title` key, add the `listing` key that returns an element with the `category-listing` class with the following code snippet:
 
     ```javascript
     title: function() {
@@ -52,9 +52,9 @@ Start with the HTML definition for the page in the template file. Then in the vi
 
 7. Save and close the `category.js` view file in your editor.
 
-8. Navigate to the `adaptation/templates` directory and open the `category.dust` template file in an editor app.
+8. In the editor, from the `adaptation/templates` folder, and open the `category.dust` template file.
 
-    As you remember from the Overview of the Mobify bundle, the template file defines the layout of your page on mobile. Each template uses the content from its corresponding view. This is why the `category.js` and `category.dust` files have parallel names.
+    As you remember from the [Overview of the Mobify Bundle](https://cloud.mobify.com/docs/adaptivejs/overview/mobify-bundle/#templates), the template file defines the layout of your page on mobile. Each template uses the content from its corresponding view. This is why the `category.js` and `category.dust` files have parallel name structure.
 
 9. In the `category.dust` template file, erase the contes of the `contentBlock` key to override it from its default in `base.dust`. 
 
@@ -66,7 +66,7 @@ Start with the HTML definition for the page in the template file. Then in the vi
 
     When you override the `contentBlock` key, you can add your own markup that is specific to this new page. For more information, view our documentation on [view inheritance](https://cloud.mobify.com/docs/adaptivejs/adapting/views/#/view-inheritance/) and [block overrides](https://cloud.mobify.com/docs/adaptivejs/adapting/dustjs-cheat-sheet/#/block-overrides/).
 
-10. In the `contentBlock` key, add the two keys that you defined in the corresponding view file:
+10. In the `contentBlock` key, add the two `title` and `listing` keys that you defined in the corresponding view file:
 
     ```
     {<contentBlock}
@@ -75,7 +75,7 @@ Start with the HTML definition for the page in the template file. Then in the vi
     {/contentBlock}
     ```
 
-11. Save and close the `category.dust` template file.
+11. Save the `category.dust` template file and close it.
 
 12. Work through the third section, [Preview the Adaptive.js Site](https://cloud.mobify.com/docs/adaptivejs/getting-started/new-project/#/start-adaptivejs-server), of the Getting Started (New Project) guide now with the URL `http://www.merlinspotions/potions` for the category product listing page.
 
@@ -91,4 +91,4 @@ Once you set up the category view, add some styling to it. Run the following com
 git reset --hard HEAD && git clean -df && git checkout step-3-style-category-page
 ```
 
-Then, follow the directions in the  [README](https://github.com/mobify/workshop--adaptivejs-site/blob/step-3-style-category-page/README.md) of the Step 3 branch.
+Then, follow the directions in the  [README](https://github.com/mobify/workshop--adaptivejs-site/blob/step-3-style-category-page/README.md) in the Step 3 branch.
