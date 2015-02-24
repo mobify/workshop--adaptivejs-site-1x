@@ -85,6 +85,8 @@ Now that you have experience with some of the basics, we work on the homepage. T
         }
     }
     ```
+    Ensure you place the `,` comma character after the `discountBanner` key.
+    
     Now, this code simply outputs the full markup for each carousel. Let's break it down even further.
 
 12. In the `home.js` view file, update the `categories` key to return a list of objects that contain the category title and collection of products for the category with the following code snippet:
