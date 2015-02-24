@@ -101,16 +101,16 @@
     });
     ```
 
-6. Run `grunt preview`
-7. Preview the homepage in your browser
-8. Test that the active classes are applied correctly by inspecting the tabs
+6. In Terminal, ensure you are in the `workshop--adaptivejs-site` directory. On the command line, enter the `grunt preview` command to start the preview.
+7. Work through the third section, [Preview the Adaptive.js Site](https://cloud.mobify.com/docs/adaptivejs/getting-started/new-project/#/start-adaptivejs-server) of the Getting Started (New Project) guide. Use the `http://www.merlinspotions.com/` URL for the Site URL form field.
+8. Inspect the tabs in the site preview to test the active classes.
 
-    We'll add the tab styling along with the styling for the active classes in the next step.
+    In Step 10, we add the tab styling and styling for the active classes.
 
-9. Stop preview by typing `ctrl c` in the terminal window.
+9. Stop the preview with the `[control] c` command in Terminal.
 
 
-## Ready to Continue?
+## Continue to Step 10
 
 When you're ready to continue, run the following command:
 
@@ -118,4 +118,4 @@ When you're ready to continue, run the following command:
 git reset --hard HEAD && git clean -df && git checkout step-10-style-homepage
 ```
 
-Then, follow the directions in that branch's [README](https://github.com/mobify/workshop--adaptivejs-site/blob/step-10-style-homepage/README.md)
+Then, follow the directions in the [README](https://github.com/mobify/workshop--adaptivejs-site/blob/step-10-style-homepage/README.md) in the Step 10 branch.
