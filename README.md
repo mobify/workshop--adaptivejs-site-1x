@@ -24,7 +24,7 @@ Now that you have experience with some of the basics, we work on the homepage. T
     As you work through these instructions and change the homepage view and template files, refresh the mobile preview homepage in your browser.
 
 5. In an editor app, from the `/adaptation/views` folder, open the `home.js` view file.
-6. Remove the 'firstp' key.
+6. Remove the `firstp` key.
 7. Add keys that select and return the hero banner, shipping message, and discount banner from the following code snippet:
 
     ```javascript
