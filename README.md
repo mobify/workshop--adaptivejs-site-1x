@@ -7,7 +7,7 @@ The Adaptive.js generator created a header view and template for us already. Now
 ###Add Content to the Header
 
 1. In Terminal, ensure you are in the `workshop--adaptivejs-site` directory. On the command line, enter the `grunt preview` command to start the preview.
-2. Work through the third section, [Preview the Adaptive.js Site](https://cloud.mobify.com/docs/adaptivejs/getting-started/new-project/#/start-adaptivejs-server) of the Getting Started (New Project) guide. Use the http://www.merlinspotions.com/potions URL for the Site URL form field.
+2. Work through the third section, [Preview the Adaptive.js Site](https://cloud.mobify.com/docs/adaptivejs/getting-started/new-project/#/start-adaptivejs-server) of the Getting Started (New Project) guide. Use the http://www.merlinspotions.com/potions Merlin's Potions Potion page URL for the Site URL form field.
 
     Now, we change the header HTML. Refresh the page as you work your way through the subsequent steps to see the results.
 
@@ -48,7 +48,7 @@ The Adaptive.js generator created a header view and template for us already. Now
 
     Save the `_header.dust` file and close it.
 
-7. Inspect the logo on the desktop site [Merlin's Potions at http://www.merlinspotion.com/](http://www.merlinspotion.com/) with the right click of your mouse and "Inspect Element" menu option. 
+7. Inspect the logo on the desktop site [Merlin's Potions at http://www.merlinspotion.com/](http://www.merlinspotion.com/) with the right click of your mouse and the **"Inspect Element"** menu option. 
 
     The logo is included as a background image. However, this approach does not work for our build because we do not include the desktop CSS on our adapted page. Instead, we add a copy of the logo to the project.
 
@@ -67,7 +67,7 @@ The Adaptive.js generator created a header view and template for us already. Now
 
     **Note:** `"{@getUrl path="images/logo.png" /}"` prepends the bundle URL to the image path during the build process. When you preview locally, the logo locations appear as `http://localhost:8080/images/logo.png`.
 
-10. Refresh the Potions page preview to see the logo.
+10. Refresh the Potions page preview from Step 2 to see the logo.
 11. Stop preview with the command `[control] c` in Terminal.
 
 ## Continue to Step 5
