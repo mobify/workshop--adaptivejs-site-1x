@@ -113,7 +113,7 @@ Let's style the newsletter component of the footer. In this tutorial, you repeat
     // Like headers, footers
 
     @import 'templates/partials/header';
-    @import 'templates/partials/footer
+    @import 'templates/partials/footer';
     ```
 
 11. Refresh the Potions category page from Step 2.
