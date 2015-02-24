@@ -1,33 +1,31 @@
-#Step 8: Update the homepage
+#Step 8: Update the Homepage
 
-Now that we've gone over some of the basics, we can get back to the homepage. We'll start by adding the content we want to the page. 
-
+Now that you have experience with some of the basics, we work on the homepage. To start, add the content we want to the page.
 
 ##Task
 
 ###Update the Homepage
 
-1. View the desktop version of the homepage in a new tab in your browser (http://www.merlinspotions.com)
-2. Inspect the HTML for the page
+1. View the desktop version of the [Merlin's Potions homepage](http://www.merlinspotions.com) in a new tab in your browser.
+2. Inspect the HTML for the page. Right click in the browser and select the **"Inspect Element"** menu option.
 
-    Specifically take a look at:
+    Specifically, look at:
 
     * the hero image
     * the free shipping banner
     * the discount banner
     * the three carousels for Potions, Ingredients and Books
 
-    We'll be adding these elements to our mobile version of the page.
+    We add these elements to our mobile version of the page.
 
-3. Run `grunt preview`
-4. [Preview](https://cloud.mobify.com/docs/adaptivejs/getting-started/new-project/#/start-adaptivejs-server)  to http://www.merlinspotions.com/ in your browser
+3. In Terminal, ensure you are in the `workshop--adaptivejs-site` directory. On the command line, enter the `grunt preview` command to start the preview.
+4. Work through the third section, [Preview the Adaptive.js Site](https://cloud.mobify.com/docs/adaptivejs/getting-started/new-project/#/start-adaptivejs-server) of the Getting Started (New Project) guide.
 
-    Refresh the page in the browser as you make changes to the homepage view and template files.
+    As you work through these instructions and change the homepage view and template files, refresh the mobile preview homepage in your browser.
 
-
-5. Open the file `home.js` under /adaptation/views
-6. Remove the 'firstp' key
-7. Add keys that select and return the hero banner, shipping message and discount banner:
+5. In an editor app, from the `/adaptation/views` folder, open the `home.js` view file.
+6. Remove the 'firstp' key.
+7. Add keys that select and return the hero banner, shipping message, and discount banner from the following code snippet:
 
     ```javascript
     context: {
@@ -43,9 +41,10 @@ Now that we've gone over some of the basics, we can get back to the homepage. We
         }
     }
     ```
+    Save the `home.js` file and close it.
 
-8. Open the file `home.dust` under /adaptation/templates
-9. Add the three elements to the template
+8. In the editor, from the `/adaptation/templates` folder, open the `home.dust` Dust template file. 
+9. Inside the content block, add the three elements from this snippet:
 
     ```html
     {<contentBlock}
@@ -62,10 +61,10 @@ Now that we've gone over some of the basics, we can get back to the homepage. We
     {/contentBlock}
     ```
 
-    Now we need to deal with the three carousels on the page. We'll be including these three sections as tabs instead of carousels, so we need to extract information out of the carousels. We can then define new markup for the tabs inside the template.
+    Now, we work with the three carousels on the page. We include these three sections as tabs instead of carousels, so we extract information from the carousels to place them in the tabs. We then define new markup for the tabs inside the template.
 
-10. Open the `home.js` view file
-11. Add a `categories` key that will return each `.categories .carousel` div
+10. In the editor, from the `/adaptation/views` folder, open the `home.js` view file.
+11. Inside the `context` block, add a `categories` key that returns each `.categories .carousel` div with the following code snippet:
 
     ```javascript
     context: {
@@ -84,10 +83,9 @@ Now that we've gone over some of the basics, we can get back to the homepage. We
         }
     }
     ```
+    Now, this code simply outputs the full markup for each carousel. Let's break it down even further.
 
-    This will just output the full markup for each carousel, which won't really work for us. So let's try breaking it down a bit more.
-
-12. Update the `categories` key so that it returns a list of objects that contain the category title, and collection of products for the category:
+12. In the `home.js` view file, update the `categories` key to return a list of objects that contain the category title and collection of products for the category with the following code snippet:
 
     ```javascript
         discountBanner: function() {
@@ -106,9 +104,9 @@ Now that we've gone over some of the basics, we can get back to the homepage. We
     }
     ```
 
-    Now let's take it one step further by changing the `products` zepto collection into a list of objects.
+    Now let's take it one step further: let's change the `products` Zepto collection into a list of objects.
 
-13. Map the `products` collection into a list of objects with each products href, image, title and price:
+13. In the `home.js` view file, map the `products` collection into a list of objects with each products href, image, title, and price with this code snippet:
 
     ```javascript
         discountBanner: function() {
@@ -138,9 +136,11 @@ Now that we've gone over some of the basics, we can get back to the homepage. We
     }
     ```
 
-14. Open the `home.dust` file again
+    Finally, save the `home.js` view file and close it.
 
-    Using the list we built we can arrange the categories and products in tabs.
+14. In the editor, from the `/adaptation/templates` folder, open the `home.dust` Dust template file again.
+
+    With list we built, we arrange the categories and products in tabs.
 
 15. Add the following markup to the home template:
 
@@ -174,15 +174,19 @@ Now that we've gone over some of the basics, we can get back to the homepage. We
     {/contentBlock}
     ```
 
-    We're using `{#keyName}{/keyName}` to loop through items in a list. More on that as well as a few more dust templating tricks can be found [here](https://cloud.mobify.com/docs/adaptivejs/adapting/dustjs-cheat-sheet).
+    Save the `home.dust` template file and close it.
+    
+    Refresh the homepage preview page from Step 3.
 
-16. Stop preview by typing `ctrl c` in the terminal window.
+    We use the `{#keyName}{/keyName}` block to loop through items in a list. Read our [Dust.js Cheat Sheet](https://cloud.mobify.com/docs/adaptivejs/adapting/dustjs-cheat-sheet) for more dust templating tricks.
+
+16. Stop the preview with the `[control] c` command in Terminal.
 
 
 
-## Ready to Continue?
+## Continue to Step 9
 
-We'll get the tab functionality working in the next step by adding some javascript event handlers to the page.
+In the next step, we add functionality to the tabs with some JavaScript event handler additions to the homepage.
 
 When you're ready to continue, run the following command:
 
@@ -190,4 +194,4 @@ When you're ready to continue, run the following command:
 git reset --hard HEAD && git clean -df && git checkout step-9-homepage-tabs
 ```
 
-Then, follow the directions in that branch's [README](https://github.com/mobify/workshop--adaptivejs-site/blob/step-9-homepage-tabs/README.md)
+Then, follow the directions in the  [README](https://github.com/mobify/workshop--adaptivejs-site/blob/step-9-homepage-tabs/README.md) in the Step 9 branch.
