@@ -98,7 +98,7 @@ Now that there is content in the header, we add style to it.
     Save the `_components.scss` file and close it.
 
     Now that we have common button styles, let's adjust our header menu button.
-9. In your editor app, from the `/assets/styles/templates/` (?partials?) directory, open the `_header.scss` header file.
+9. In your editor app, from the `/assets/styles/templates/partials` directory, open the `_header.scss` header file.
 10. In the `.t-header__menu block` block, add button modifications with the following lines of code:
 
     ```SCSS
