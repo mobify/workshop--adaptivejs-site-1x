@@ -5,7 +5,7 @@ The CSS naming convention we use is a modified version of BEM that we call CSM (
 
 To follow our best practices, we often add classes to the desktop HTML and we make changes to the markup for elements. This step covers a few examples of our best practices. We also show you how to add the SCSS to style this page.
 
-##Task
+##Task A
 
 ### Update the Template HTML
 
@@ -81,7 +81,7 @@ Your newly modified view file looks like this:
 
 ![Update listing element](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/zcWcEqnWvtO36hx/Screen%20Shot%202015-02-06%20at%202.21.32%20PM.png)
 
-##Task
+##Task B
 
 ### Add SCSS Files for the Template and Components
 
