@@ -45,7 +45,7 @@
 
     Save the `_home.scss` template file and close it.
 
-5. In the editor, in the `` folder, create a new `_tab.scss` component SCSS file for the tabs component with the following styles:
+5. In the editor, in the `assets/styles/components` folder, create a new `_tab.scss` tabs component SCSS file with the following styles:
 
     ``` SCSS
     // Tab
@@ -128,7 +128,7 @@
 
     Save the `_tab.scss` tab component SCSS file and close it.
 
-6. Import the new tab component file in the `_components.scss` components list file.
+6. In the editor, from the `assets/styles` folder, open the `_components.scss` components list file. Import the new tab component here.
 
     ```SCSS
     // Project Components
