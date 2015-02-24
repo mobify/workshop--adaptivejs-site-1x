@@ -128,7 +128,7 @@
 
     Save the `_tab.scss` tab component SCSS file and close it.
 
-6. In the editor, from the `assets/styles` folder, open the `_components.scss` components list file. Import the new tab component here.
+6. In the editor, from the `assets/styles` folder, open the `_components.scss` components list file. Import the new tab component at the bottom of the file.
 
     ```SCSS
     // Project Components
