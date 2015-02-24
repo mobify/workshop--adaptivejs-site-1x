@@ -4,13 +4,13 @@
 
 ###Style the Homepage
 
-1. Run `grunt preview`
-2. [Preview](https://cloud.mobify.com/docs/adaptivejs/getting-started/new-project/#/start-adaptivejs-server) the site in your browser
+1. In Terminal, ensure that you are in the `workshop--adaptivejs-site` directory. On the command line, enter the `grunt preview` command to start the preview.
+2. Work through the third section, [Preview the Adaptive.js Site](https://cloud.mobify.com/docs/adaptivejs/getting-started/new-project/#/start-adaptivejs-server) of the Getting Started (New Project) guide. Use the http://www.merlinspotions.com/ URL for the Site URL form field.
 
-    Refresh the page as we add styles to see the new styles applied to the page.
+    To see the new styles take effect, refresh this page.
 
-3. Open the file `_home.scss` found under **/assets/styles/templates**
-4. Remove the existing styles for the homepage template, and add some styling for the promo image and t-home__content block:
+3. Launch an editor app. From the `/assets/styles/templates` folder, open the `_home.scss` homepage template file.
+4. Remove the existing styles for the homepage template. Add this styling for the promo image and for the `t-home__content` block:
 
     ``` SCSS
     // Home
@@ -43,7 +43,9 @@
     }
     ```
 
-5. Create a new component scss file for the tabs component called `_tab.scss` with the following styles:
+    Save the `_home.scss` template file and close it.
+
+5. In the editor, in the `` folder, create a new `_tab.scss` component SCSS file for the tabs component with the following styles:
 
     ``` SCSS
     // Tab
@@ -124,7 +126,9 @@
     }
     ```
 
-    **Note:** Don't forget to import the tabs scss file in `_components.scss`
+    Save the `_tab.scss` tab component SCSS file and close it.
+
+6. Import the new tab component file in the `_components.scss` components list file.
 
     ```SCSS
     // Project Components
@@ -138,8 +142,10 @@
     @import 'components/newsletter';
     @import 'components/tab';
     ```
+    
+    Save the `_components.scss` components list file and close it.
 
-6. Create a component scss file called `_shipping-banner.scss` with the following styles:
+6. In the editor, in the `` folder, create a new `_shipping-banner.scss` component SCSS file with the following styles:
 
     ```SCSS
     // Shipping Banner
@@ -156,15 +162,16 @@
         text-align: center;
     }
     ```
+    
+    Save the `_shipping-banner.scss` shipping banner component file and close it.
 
-7. View the homepage in your browser
+7. Refresh the homepage preview from Step 2 in your browser.
 
-    The homepage should look something like this:
+    The homepage now looks like this:
 
     ![Homepage end result](https://s3.amazonaws.com/uploads.hipchat.com/15359/505985/z5EMBDFSro5vytT/upload.png)
 
 
-## Ready to Continue?
+## We're done!
 
-We're done! For now at least.
-
+Congratulations! You created and styled a sample Adaptive.js site.
