@@ -1,6 +1,6 @@
 #Step 8: Update the Homepage
 
-Now that you have experience with some of the basics, we work on the homepage. To start, add the content we want to the page.
+Now that you have experience with some of the basics, we work on the homepage. To start, we add the content we want to the page.
 
 ##Task
 
