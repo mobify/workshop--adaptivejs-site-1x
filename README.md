@@ -97,6 +97,8 @@ With the header done, let's move on to last part of this page, the footer. Start
     The view file now looks like this:
 
     ![Footer view file](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/UQGjgCJTk5owpRc/Screen%20Shot%202015-02-05%20at%204.27.54%20PM.png)
+    
+    Refresh the Potions preview page. Scroll to the bottom to see the footer.
 
 12. Stop the preview with the `[control] c` command in Terminal.
 
