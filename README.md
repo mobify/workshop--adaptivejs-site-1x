@@ -166,7 +166,7 @@ Now that there is content in the header, we add style to it.
 
     Remember to add the `_cart-count` to the list of components in the `_components.scss` file.
 
-11. View the mobile site in your browser
+11. Refresh the Potions page from Step 2 of this Task.
 
     The header now looks like this:
 
