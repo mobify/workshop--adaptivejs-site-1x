@@ -178,13 +178,13 @@ Now that you have experience with some of the basics, we work on the homepage. T
     {/contentBlock}
     ```
 
-    Save the `home.dust` template file and close it.
-    
-    Refresh the homepage preview page from Step 3.
-
     We use the `{#keyName}{/keyName}` block to loop through items in a list. Read our [Dust.js Cheat Sheet](https://cloud.mobify.com/docs/adaptivejs/adapting/dustjs-cheat-sheet) for more dust templating tricks.
 
-16. Stop the preview with the `[control] c` command in Terminal.
+    Save the `home.dust` template file and close it.
+    
+16. Refresh the homepage preview page from Step 3.
+
+17. Stop the preview with the `[control] c` command in Terminal.
 
 
 
