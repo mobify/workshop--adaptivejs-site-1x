@@ -31,6 +31,7 @@ Let's style the newsletter component of the footer. In this tutorial, you repeat
         }
     }
     ```
+    Save the `_newsletter.scss` file and close it.
 
 5. In your editor app, from the `/assets/styles/components` folder, open the `_button.scss` file.
 
