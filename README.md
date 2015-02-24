@@ -1,6 +1,6 @@
 #Step 5: Style the header
 
-Now that we've added content to the header, we need to style it.
+Now that there is content in the header, we add style to it.
 
 ##Task
 
