@@ -11,8 +11,8 @@ With the header done, let's move on to last part of this page, the footer. Start
     Make changes to the footer HTML. As you do, refresh the page to see your changes take effect.
 
 3. In an editor app, from the `/adaptation/views/includes` folder, open the `_footer.js` JavaScript footer file.
-4. Remove the `documentationLink` function.
-5. Add functions to select and to return the newsletter sign up and copyright text with the following code snippet:
+4. Inside the `context` block, remove the entire `documentationLink` function.
+5. Inside the `context` block, add these functions to select and to return the newsletter sign up and copyright text with the following code snippet:
 
     ```javascript
     context: {
