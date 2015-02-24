@@ -35,7 +35,7 @@ Let's style the newsletter component of the footer. In this tutorial, you repeat
 
 5. In your editor app, from the `/assets/styles/components` folder, open the `_button.scss` file.
 
-6. At the bottom of the file, add the following style to the file:
+6. At the bottom of the file, add the following button accent style:
 
     ```SCSS
     .c-button.c--accent {
