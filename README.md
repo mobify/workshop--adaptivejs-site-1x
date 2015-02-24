@@ -60,6 +60,8 @@ Now that you have experience with some of the basics, we work on the homepage. T
 
     {/contentBlock}
     ```
+    
+    Save the `home.dust` Dust template and close it.
 
     Now, we work with the three carousels on the page. We include these three sections as tabs instead of carousels, so we extract information from the carousels to place them in the tabs. We then define new markup for the tabs inside the template.
 
