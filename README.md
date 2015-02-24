@@ -182,7 +182,7 @@ Now that you have experience with some of the basics, we work on the homepage. T
 
     Save the `home.dust` template file and close it.
     
-16. Refresh the homepage preview page from Step 3.
+16. Refresh the homepage preview from Step 3.
 
 17. Stop the preview with the `[control] c` command in Terminal.
 
