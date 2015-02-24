@@ -1,6 +1,6 @@
 #Step 7: Style the Footer
 
-Let's style the newsletter component of the footer. In this tutorial, you repeat tasks that you are already familiar with:
+Let's style the newsletter component of the footer. In this tutorial, you repeat tasks that you are already familiar with from the header tutorial:
 
 * Add a new component SCSS file to style the footer. 
 * Then add styles to the existing button component. 
