@@ -104,7 +104,7 @@ Let's style the newsletter component of the footer. In this tutorial, you repeat
     
     Save the `_footer.scss` file and close it.
 
-9. In the editor, from the `/assets/styles` folder, open the `_templates.scss` style file.
+9. In the editor, from the `/assets/styles` folder, open the `_templates.scss` file.
 10. Add the `_footer.scss` file to the list of templates. Ensure that you specify the path correctly.
 
     ```SCSS
@@ -115,6 +115,7 @@ Let's style the newsletter component of the footer. In this tutorial, you repeat
     @import 'templates/partials/header';
     @import 'templates/partials/footer';
     ```
+    Save the `_templates.scss` file and close it.
 
 11. Refresh the Potions category page from Step 2.
 
