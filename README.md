@@ -1,13 +1,13 @@
 #Step 7: Style the Footer
 
-The footer contains a new component that we haven't styled yet, the newsletter. We'll need to add a new component SCSS file to style that. We also need to add a few styles to the existing button component. Finally, we'll add some template specific styles for the footer partial.
+Let's now style the newsletter component of the footer. In this tutorial, you repeat tasks that you are already familiar with. Add a new component SCSS file to style the footer. Then add styles to the existing button component. Finally, add template-specifc styles for the footer partial.
 
 ##Task
 
 ###Style the Footer
 
-1. Run `grunt preview`
-2. [Preview](https://cloud.mobify.com/docs/adaptivejs/getting-started/new-project/#/start-adaptivejs-server) the potions category page in your browser
+1. In Terminal, ensure you are in the `workshop--adaptivejs-site` directory. On the command line, enter the `grunt preview` command to start the preview.
+2. Work through the third section, [Preview the Adaptive.js Site](https://cloud.mobify.com/docs/adaptivejs/getting-started/new-project/#/start-adaptivejs-server) of the Getting Started (New Project) guide. Use the http://www.merlinspotions.com/potions URL for the Site URL form field.
 3. Add a new component scss file called `_newsletter.scss` with the following styles
 
     ```SCSS
@@ -27,9 +27,9 @@ The footer contains a new component that we haven't styled yet, the newsletter. 
     }
     ```
 
-4. Open `_button.scss` found under **/assets/styles/components**
+4. In your editor app, from the `/assets/styles/components` folder, open the `_button.scss` file.
 
-5. Add the following to the file:
+5. Add the style following to the file:
 
     ```SCSS
     .c-button.c--accent {
@@ -40,10 +40,12 @@ The footer contains a new component that we haven't styled yet, the newsletter. 
         color: white;
     }
     ```
+    
+    Save the `_button.scss` file and close it.
 
-6. Add a new file called `_footer.scss` under **/assets/styles/templates/partials**
+6. In the editor, in the `/assets/styles/templates/partials` folder, create a new `_footer.scss` file.
 
-7. Add the following to the new file:
+7. Add the following style snippet to the new file:
 
     ```SCSS
     // Footer
@@ -94,8 +96,8 @@ The footer contains a new component that we haven't styled yet, the newsletter. 
     }
     ```
 
-8. Open `_templates.scss` found under **/assets/styles**
-9. Add the `_footer.scss` file to the list of templates (make sure you have the correct path)
+8. In the editor, from the `/assets/styles` folder, open the `_templates.scss` style file.
+9. Add the `_footer.scss` file to the list of templates. Ensure that you specify the path correctly.
 
     ```SCSS
     // Partial Templates
@@ -106,16 +108,16 @@ The footer contains a new component that we haven't styled yet, the newsletter. 
     @import 'templates/partials/footer
     ```
 
-10. View the mobile version of the potions category page in your browser
+10. Refresh the Potions category page from Step 2.
 
-    Your footer should now look like this:
+    The footer now looks like this:
 
     ![Footer](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/KcuPmBLRbJMAG0Y/Screen%20Shot%202015-01-19%20at%201.28.56%20PM.png)
 
 
-11. Stop preview by typing `ctrl c` in the terminal window.
+11. Stop the preview with the `[control] c` command in Terminal.
 
-## Ready to Continue?
+## Continue to Step 8
 
 When you're ready to continue, run the following command:
 
@@ -123,4 +125,4 @@ When you're ready to continue, run the following command:
 git reset --hard HEAD && git clean -df && git checkout step-8-update-homepage
 ```
 
-Then, follow the directions in that branch's [README](https://github.com/mobify/workshop--adaptivejs-site/blob/step-8-update-homepage/README.md)
+Then, follow the directions in the  [README](https://github.com/mobify/workshop--adaptivejs-site/blob/step-8-update-homepage/README.md) in the Step 8 branch.
