@@ -28,7 +28,7 @@ With the header done, let's move on to last part of this page, the footer. Start
     Save the changes to your `_footer.js` file and close it.
 
 6. In your editor app, from the `/adaptation/templates/partials/` folder, open the `_footer.dust` Dust template footer file.
-7. Add the two footer elements to the template file:
+7. Remove the contents of the `<footer>...</footer>` block. Add the two new `newsletter` and `copyright` footer elements to the template file:
 
     ```html
     {#footer}
