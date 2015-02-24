@@ -52,7 +52,7 @@ The Adaptive.js generator created a header view and template for us already. Now
 
     The logo is included as a background image. However, this approach does not work for our build because we do not include the desktop CSS on our adapted page. Instead, we add a copy of the logo to the project.
 
-8. Browse to `http://www.merlinspotions.com/img/logo.62e1.png` and save the logo as `logo.png` in your `worksho--adaptive-js-site` project directory `/assets/images` sub-folder.
+8. In your browser, go to `http://www.merlinspotions.com/img/logo.62e1.png`. Save the logo as `logo.png` in your `worksho--adaptive-js-site` project directory `/assets/images` sub-folder.
 9. In your editor, open `_header.dust` again and add an `img` image element for the logo:
 
     ```html
@@ -65,7 +65,7 @@ The Adaptive.js generator created a header view and template for us already. Now
     
     Save the `_header.dust` header Dust file and close it.
 
-    **Note:** `"{@getUrl path="images/logo.png" /}"` prepends the bundle URL to the image path during the build process. When you preview locally, the logo locations appear as `http://localhost:8080/images/logo.png`.
+    The `{@getUrl path="images/logo.png" /}` part prepends the bundle URL to the image path during the build process. When you preview the site locally, the logo location appear as `http://localhost:8080/images/logo.png`.
 
 10. Refresh the Potions page preview from Step 2 to see the logo.
 11. Stop preview with the command `[control] c` in Terminal.
