@@ -56,7 +56,7 @@ With the header done, let's move on to last part of this page, the footer. Start
 
     Save your changes to the `_footer.dust` template file and close it.
 
-9. Open the `_footer.js` footer view file again to change the newsletter element.
+9. Open the `_footer.js` footer view file from Step 3 again to change the newsletter element.
 10. Add the `c-button` and `c--accent` classes to the button in the newsletter element.
 11. Wrap the `input` and `button` in a `c-newsletter` class div with the following code snippet:
 
