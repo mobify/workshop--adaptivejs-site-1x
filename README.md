@@ -19,7 +19,7 @@ Now that you have experience with some of the basics, we work on the homepage. T
     We add these elements to our mobile version of the page.
 
 3. In Terminal, ensure you are in the `workshop--adaptivejs-site` directory. On the command line, enter the `grunt preview` command to start the preview.
-4. Work through the third section, [Preview the Adaptive.js Site](https://cloud.mobify.com/docs/adaptivejs/getting-started/new-project/#/start-adaptivejs-server) of the Getting Started (New Project) guide.
+4. Work through the third section, [Preview the Adaptive.js Site](https://cloud.mobify.com/docs/adaptivejs/getting-started/new-project/#/start-adaptivejs-server) of the Getting Started (New Project) guide. Use the `http://www.merlinspotions.com/` URL for the Site URL form field.
 
     As you work through these instructions and change the homepage view and template files, refresh the mobile preview homepage in your browser.
 
