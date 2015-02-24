@@ -12,7 +12,8 @@ Let's style the newsletter component of the footer. In this tutorial, you repeat
 
 1. In Terminal, ensure you are in the `workshop--adaptivejs-site` directory. On the command line, enter the `grunt preview` command to start the preview.
 2. Work through the third section, [Preview the Adaptive.js Site](https://cloud.mobify.com/docs/adaptivejs/getting-started/new-project/#/start-adaptivejs-server) of the Getting Started (New Project) guide. Use the http://www.merlinspotions.com/potions URL for the Site URL form field.
-3. Add a new component scss file called `_newsletter.scss` with the following styles
+3. In your editor app, in the `/assets/styles/components` folder, create a new `_newsletter.scss` newsletter component SCSS file.
+4. Add the following style content to your file:
 
     ```SCSS
     // Newsletter
@@ -31,9 +32,9 @@ Let's style the newsletter component of the footer. In this tutorial, you repeat
     }
     ```
 
-4. In your editor app, from the `/assets/styles/components` folder, open the `_button.scss` file.
+5. In your editor app, from the `/assets/styles/components` folder, open the `_button.scss` file.
 
-5. Add the style following to the file:
+6. Add the style following to the file:
 
     ```SCSS
     .c-button.c--accent {
@@ -47,9 +48,9 @@ Let's style the newsletter component of the footer. In this tutorial, you repeat
     
     Save the `_button.scss` file and close it.
 
-6. In the editor, in the `/assets/styles/templates/partials` folder, create a new `_footer.scss` file.
+7. In the editor, in the `/assets/styles/templates/partials` folder, create a new `_footer.scss` file.
 
-7. Add the following style snippet to the new file:
+8. Add the following style snippet to the new file:
 
     ```SCSS
     // Footer
@@ -100,8 +101,8 @@ Let's style the newsletter component of the footer. In this tutorial, you repeat
     }
     ```
 
-8. In the editor, from the `/assets/styles` folder, open the `_templates.scss` style file.
-9. Add the `_footer.scss` file to the list of templates. Ensure that you specify the path correctly.
+9. In the editor, from the `/assets/styles` folder, open the `_templates.scss` style file.
+10. Add the `_footer.scss` file to the list of templates. Ensure that you specify the path correctly.
 
     ```SCSS
     // Partial Templates
@@ -112,14 +113,14 @@ Let's style the newsletter component of the footer. In this tutorial, you repeat
     @import 'templates/partials/footer
     ```
 
-10. Refresh the Potions category page from Step 2.
+11. Refresh the Potions category page from Step 2.
 
     The footer now looks like this:
 
     ![Footer](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/KcuPmBLRbJMAG0Y/Screen%20Shot%202015-01-19%20at%201.28.56%20PM.png)
 
 
-11. Stop the preview with the `[control] c` command in Terminal.
+12. Stop the preview with the `[control] c` command in Terminal.
 
 ## Continue to Step 8
 
