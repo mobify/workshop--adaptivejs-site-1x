@@ -128,7 +128,7 @@
 
     Save the `_tab.scss` tab component SCSS file and close it.
 
-6. In the editor, from the `assets/styles` folder, open the `_components.scss` components list file. Import the new tab component at the bottom of the file.
+6. In your editor, from the `assets/styles` folder, open the `_components.scss` components list file. Import the new tab component at the bottom of the file.
 
     ```SCSS
     // Project Components
@@ -143,7 +143,7 @@
     @import 'components/tab';
     ```
     
-    Save the `_components.scss` components list file and close it.
+    Save the `_components.scss` components list file.
 
 6. In the editor, in the `assets/styles/components` folder, create a new `_shipping-banner.scss` shipping banner component SCSS file with the following styles:
 
@@ -165,7 +165,22 @@
     
     Save the `_shipping-banner.scss` shipping banner component file and close it.
 
-7. Refresh the homepage preview from Step 2 in your browser.
+7. In your editor, from the `assets/styles` folder, open the `_components.scss` components list file. Import the new `_shipping-banner` shipping banner component at the bottom of the file.
+
+    ```SCSS
+    // Project Components
+    // ------------------
+    //
+    // Styles for project-specific components.
+    //
+    // eg. @import 'components/button';
+
+    ...
+    @import 'components/tab';
+    @import 'components/shipping-banner'
+    ```
+
+8. Refresh the homepage preview from Step 2 in your browser.
 
     The homepage now looks like this:
 
