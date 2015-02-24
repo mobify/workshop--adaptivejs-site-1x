@@ -1,14 +1,14 @@
-#Step 9: Implement Tab Behavior on the Home Page.
+#Step 9: Implement Tab Behavior on the Home Page
 
 ##Task
 
 ###Add Click Handlers to the Homepage `view-script`
 
-1. Open `home.js` found under /assets/js/ui/view-scripts
+1. Launch an editor app. From the `/assets/js/ui/view-scripts` folder, open the `home.js` view script.
 
-    The JavaScript files in this folder will be run on the page after it has been rendered. Any UI functionality for the page should be added here.
+    The JavaScript files in this folder run on the page after it is rendered. Any UI functionality for the page is added here.
 
-2. In the homeUI function, add a click handler for `.js-tab__header`
+2. In the `homeUI` function, add a click handler for `.js-tab__header`
 
     ```javascript
     define([
@@ -25,9 +25,9 @@
     });
     ```
 
-    We'll be setting up the tabs so that when a user clicks on a tab the matching section is displayed and all other panels are hidden. The click handler will add and remove classes from the tabs and tab section that we will then use to hide/show the elements with CSS.
+    We create the effect that as a user clicks on a tab, the matching section is displayed and all other panels are hidden. The click handler adds and removes classes from the tabs and tab section. Then, we hide or show the elements with CSS.
 
-3. Within the new click handler add an active class to the clicked tab, and remove the active class from all other tabs.
+3. In the new click handler, add an active class to the clicked tab. Remove the active class from all other tabs.
 
     ```javascript
     define([
@@ -47,9 +47,9 @@
     });
     ```
 
-    We'll use this class to highlight the active tab.
+    Use this class to highlight the active tab.
 
-4. Update the click handler so that an active class is added to the corresponding tab section and make sure that the active class is removed from other tab sections.
+4. Update the click handler to add an active class to the corresponding tab section. Ensure that the active class is removed from other tab sections.
 
     ```javascript
     define([
@@ -100,6 +100,8 @@
         return homeUI;
     });
     ```
+    
+    Finally, save the `home.js` view script and close it.
 
 6. In Terminal, ensure you are in the `workshop--adaptivejs-site` directory. On the command line, enter the `grunt preview` command to start the preview.
 7. Work through the third section, [Preview the Adaptive.js Site](https://cloud.mobify.com/docs/adaptivejs/getting-started/new-project/#/start-adaptivejs-server) of the Getting Started (New Project) guide. Use the `http://www.merlinspotions.com/` URL for the Site URL form field.
