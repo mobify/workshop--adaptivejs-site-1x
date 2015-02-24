@@ -74,7 +74,7 @@
     });
     ```
 
-5. Finally, trigger a click on the first tab.
+5. Trigger a click on the first tab.
 
     ```javascript
     define([
