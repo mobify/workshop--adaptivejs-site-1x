@@ -66,7 +66,7 @@ With the header done, let's move on to last part of this page, the footer. Start
 
             $newsletter.find('button').addClass('c-button c--accent');
 
-            return $newsletter
+            return $newsletter;
         },
         copyright: function() {
             return $('copyright');
@@ -84,7 +84,7 @@ With the header done, let's move on to last part of this page, the footer. Start
             $newsletter.find('input, button').wrapAll('<div class="c-newsletter"></div>');
             $newsletter.find('button').addClass('c-button c--accent');
 
-            return $newsletter
+            return $newsletter;
         },
         copyright: function() {
             return $('copyright');
