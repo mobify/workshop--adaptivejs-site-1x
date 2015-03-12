@@ -45,6 +45,7 @@ In addition to generating a new project, the Adaptive.js Generator has a sub-gen
 8. Save the `router.js` file with these changes in your editor.
     
     Your `router.js` file should look like this:
+
     ![Router Final](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/O2VKpjbisSE3clo/Screen%20Shot%202015-03-12%20at%204.06.32%20PM.png)
 
 9. Back in the Terminal, enter the `grunt preview` command to start the browser preview.
