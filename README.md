@@ -52,6 +52,10 @@ Start with the HTML definition for the page in the template file. Then in the vi
 
 7. Save and close the `category.js` view file in your editor.
 
+    Your `category.js` file should look like this:
+
+    ![Category View Final](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/55p5oVUIFiTduTJ/Screen%20Shot%202015-03-12%20at%204.31.59%20PM.png)
+
 8. In the editor, from the `adaptation/templates` folder, and open the `category.dust` template file.
 
     As you remember from the [Overview of the Mobify Bundle](https://cloud.mobify.com/docs/adaptivejs/overview/mobify-bundle/#templates), the template file defines the layout of your page on mobile. Each template uses the content from its corresponding view. This is why the `category.js` and `category.dust` files have parallel name structure.
