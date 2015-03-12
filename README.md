@@ -18,7 +18,7 @@ In addition to generating a new project, the Adaptive.js Generator has a sub-gen
     ```
 
 2. When the generator prompts you for a name, enter `category`.
-3. Enter `base` as the view to extend.
+3. Select `base` as the view to extend.
 
     ![View Generator](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/VXQhsUYEz8Jjnqj/Screen%20Shot%202015-01-15%20at%205.05.49%20PM.png)
 
@@ -43,6 +43,10 @@ In addition to generating a new project, the Adaptive.js Generator has a sub-gen
     The `.add()` function creates a new route that loads the given view upon the return of a Boolean value from the function. The `Router.selectorMatch()` function returns true when an element that matches the selector exists on the current page.
 
 8. Save the `router.js` file with these changes in your editor.
+    
+    Your `router.js` file should look like this:
+    ![Router Final](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/O2VKpjbisSE3clo/Screen%20Shot%202015-03-12%20at%204.06.32%20PM.png)
+
 9. Back in the Terminal, enter the `grunt preview` command to start the browser preview.
 10. Work through the third section, [Preview the Adaptive.js Site](https://cloud.mobify.com/docs/adaptivejs/getting-started/new-project/#/start-adaptivejs-server) of the Getting Started (New Project) guide.
     Use the `http://www.merlinspotions.com/potions` URL for the site.
