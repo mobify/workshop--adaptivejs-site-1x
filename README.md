@@ -140,7 +140,9 @@ Now that you have experience with some of the basics, we work on the homepage. T
     }
     ```
 
-    Finally, save the `home.js` view file and close it.
+    Finally, save the `home.js` view file and close it. Your file should look like this:
+
+    ![Home view final](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/wSQu07fJO1mpZUq/Screen%20Shot%202015-03-12%20at%204.51.00%20PM.png)
 
 14. In the editor, from the `/adaptation/templates` folder, open the `home.dust` Dust template file again.
 
