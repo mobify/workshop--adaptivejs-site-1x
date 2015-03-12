@@ -23,10 +23,14 @@ The Adaptive.js generator created a header view and template for us already. Now
     }
     ```
     
-    Save the `_header.js` file and close it.
+5. Save the `_header.js` file and close it.
 
-5. In the editor app, from the `/adaptation/templates/partials` folder, open the `_header.dust` Dust file in your editor.
-6. Replace the whole content of the `<header> ... </header>` section in the Dust file with the following HTML snippet:
+    Your `_header.js` file should look like this:
+
+    ![Header view final](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/ECIYK6QTDVSoQGE/Screen%20Shot%202015-03-12%20at%204.42.00%20PM.png)
+
+6. In the editor app, from the `/adaptation/templates/partials` folder, open the `_header.dust` Dust file in your editor.
+7. Replace the whole content of the `<header> ... </header>` section in the Dust file with the following HTML snippet:
 
     ```html
     <div class="t-header__menu">
@@ -46,14 +50,14 @@ The Adaptive.js generator created a header view and template for us already. Now
     </div>
     ```
 
-    Save the `_header.dust` file and close it.
+8. Save the `_header.dust` file and close it.
 
-7. Inspect the logo on the desktop site [Merlin's Potions at http://www.merlinspotion.com/](http://www.merlinspotion.com/) with the right click of your mouse and the **"Inspect Element"** menu option. 
+9. Inspect the logo on the desktop site [Merlin's Potions at http://www.merlinspotion.com/](http://www.merlinspotion.com/) with the right click of your mouse and the **"Inspect Element"** menu option. 
 
     The logo is included as a background image. However, this approach does not work for our build because we do not include the desktop CSS on our adapted page. Instead, we add a copy of the logo to the project.
 
-8. In your browser, go to `http://www.merlinspotions.com/img/logo.62e1.png`. Save the logo as `logo.png` in your `worksho--adaptive-js-site` project directory `/assets/images` sub-folder.
-9. In your editor, open `_header.dust` again and add an `img` image element for the logo:
+10. In your browser, go to `http://www.merlinspotions.com/img/logo.62e1.png`. Save the logo as `logo.png` in your `worksho--adaptive-js-site` project directory `/assets/images` sub-folder.
+11. In your editor, open `_header.dust` again and add an `img` image element for the logo:
 
     ```html
     <div class="t-header__logo">
@@ -65,10 +69,10 @@ The Adaptive.js generator created a header view and template for us already. Now
     
     Save the `_header.dust` header Dust file and close it.
 
-    The `{@getUrl path="images/logo.png" /}` part prepends the bundle URL to the image path during the build process. When you preview the site locally, the logo location appear as `http://localhost:8080/images/logo.png`.
+    The `{@getUrl path="images/logo.png" /}` part prepends the bundle URL to the image path during the build process. When you preview the site locally, the logo location will appear as `http://localhost:8080/images/logo.png`.
 
-10. Refresh the Potions page preview from Step 2 to see the logo.
-11. Stop preview with the command `[control] c` in Terminal.
+12. Refresh the Potions page preview from Step 2 to see the logo.
+13. Stop preview with the command `[control] c` in Terminal.
 
 ## Continue to Step 5
 
