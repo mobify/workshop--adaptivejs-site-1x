@@ -19,7 +19,7 @@ Start with the HTML definition for the page in the template file. Then in the vi
     grunt preview
     ```
 
-2. [Preview the Adaptive.js Site](https://cloud.mobify.com/docs/adaptivejs/getting-started/new-project/#/start-adaptivejs-server). Use the `http://www.merlinspotions.com/potions` URL for the site.
+2. [Preview the Adaptive.js Site](https://cloud.mobify.com/docs/adaptivejs/getting-started/new-project/#/start-adaptivejs-server), with the URL `http://www.merlinspotions.com/potions` for the site.
 
     As you change the category template and view files, refresh the preview page in the browser to see the changes.
 
