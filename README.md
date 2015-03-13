@@ -7,7 +7,7 @@ The Adaptive.js generator created a header view and template for us already. Now
 ###Add Content to the Header
 
 1. In Terminal, ensure you are in the `workshop--adaptivejs-site` directory. On the command line, enter the `grunt preview` command to start the preview.
-2. Work through the third section, [Preview the Adaptive.js Site](https://cloud.mobify.com/docs/adaptivejs/getting-started/new-project/#/start-adaptivejs-server) of the Getting Started (New Project) guide. Use the http://www.merlinspotions.com/potions Merlin's Potions Potion page URL for the Site URL form field.
+2. [Preview the Adaptive.js Site](https://cloud.mobify.com/docs/adaptivejs/getting-started/new-project/#/start-adaptivejs-server). Use `http://www.merlinspotions.com/potions` as the site URL.
 
     Now, we change the header HTML. Refresh the page as you work your way through the subsequent steps to see the results.
 
