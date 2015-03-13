@@ -11,7 +11,10 @@ Let's style the newsletter component of the footer. In this tutorial, you repeat
 ###Style the Footer
 
 1. In Terminal, ensure you are in the `workshop--adaptivejs-site` directory. On the command line, enter the `grunt preview` command to start the preview.
-2. [Preview the Adaptive.js Site](https://cloud.mobify.com/docs/adaptivejs/getting-started/new-project/#/start-adaptivejs-server) in your browser. Use `http://www.merlinspotions.com/potions` as the site URL.
+2. In your browser, [Preview the Adaptive.js Site](https://cloud.mobify.com/docs/adaptivejs/getting-started/new-project/#/start-adaptivejs-server).
+
+Use `http://www.merlinspotions.com/potions` as the site URL.
+
 3. In your editor app, in the `/assets/styles/components` folder, create a new `_newsletter.scss` newsletter component SCSS file.
 4. Add the following style content to your file:
 
