@@ -11,7 +11,9 @@ To follow our best practices, we often add classes to the desktop HTML and we ch
 There are a few different ways to affect HTML that the template outputs. The first way is to modify the template file iteself.
 
 1. In Terminal, ensure that you are in the `workshop--adaptivejs-site` directory. On the command line, enter the `grunt preview` command to start the preview.
-2. [Preview the Adaptive.js Site](https://cloud.mobify.com/docs/adaptivejs/getting-started/new-project/#/start-adaptivejs-server) in your browser. Use `http://www.merlinspotions.com/potions` as the site URL.
+2. In your browser, [Preview the Adaptive.js Site](https://cloud.mobify.com/docs/adaptivejs/getting-started/new-project/#/start-adaptivejs-server) .
+
+    Use `http://www.merlinspotions.com/potions` as the site URL.
 
     Refresh the page in your browser as you update the template HTML and SCSS to view the changes.
 
@@ -182,7 +184,7 @@ Your newly modified view file looks like this:
     ```
 **Remember** to add the `_price` file to the list of compontent to the component list in `/assets/styles/_components.scss`. Save both your files in the editor when you are done.
 
-10. View the potions category page in your browser. Refresh the page from Step 2 in Task A in this README.
+10. In your browser, view the potions category page. Refresh the page from Step 2 in Task A in this README.
 
     The Potions category page looks like this:
 
