@@ -11,7 +11,7 @@ To follow our best practices, we often add classes to the desktop HTML and we ch
 There are a few different ways to affect HTML that the template outputs. The first way is to modify the template file iteself.
 
 1. In Terminal, ensure that you are in the `workshop--adaptivejs-site` directory. On the command line, enter the `grunt preview` command to start the preview.
-2. Work through the third section, [Preview the Adaptive.js Site](https://cloud.mobify.com/docs/adaptivejs/getting-started/new-project/#/start-adaptivejs-server) of the Getting Started (New Project) guide. Use the Merlin's Potions Potion page `http://www.merlinspotions.com/potions` URL for the Site URL form field.
+2. [Preview the Adaptive.js Site](https://cloud.mobify.com/docs/adaptivejs/getting-started/new-project/#/start-adaptivejs-server). Use the Merlin's Potions Potion page `http://www.merlinspotions.com/potions` URL for the Site URL form field.
 
     Refresh the page in your browser as you update the template HTML and SCSS to view the changes.
 
