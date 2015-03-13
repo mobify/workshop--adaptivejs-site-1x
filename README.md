@@ -104,7 +104,10 @@
     Finally, save the `home.js` view script and close it.
 
 6. In Terminal, ensure you are in the `workshop--adaptivejs-site` directory. On the command line, enter the `grunt preview` command to start the preview.
-7. [Preview the Adaptive.js Site](https://cloud.mobify.com/docs/adaptivejs/getting-started/new-project/#/start-adaptivejs-server) in your browser. Use `http://www.merlinspotions.com/` as the site URL.
+7. In your browser, [Preview the Adaptive.js Site](https://cloud.mobify.com/docs/adaptivejs/getting-started/new-project/#/start-adaptivejs-server).
+    
+    Use `http://www.merlinspotions.com/` as the site URL.
+
 8. Inspect the tabs in the site preview to test the active classes.
 
     In Step 10, we add the tab styling and styling for the active classes.
