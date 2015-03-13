@@ -54,7 +54,7 @@ The Adaptive.js generator created a header view and template for us already. Now
 
 8. Save the `_header.dust` file and close it.
 
-9. Inspect the logo on the desktop site [Merlin's Potions at http://www.merlinspotion.com/](http://www.merlinspotion.com/) with the right click of your mouse and the **"Inspect Element"** menu option. 
+9. In your browser, to inspect the logo on the desktop site [Merlin's Potions at http://www.merlinspotion.com/](http://www.merlinspotion.com/), right click with your mouse and the **"Inspect Element"** menu option. 
 
     The logo is included as a background image. However, this approach does not work for our build because we do not include the desktop CSS on our adapted page. Instead, we add a copy of the logo to the project.
 
