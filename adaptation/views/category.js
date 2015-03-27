@@ -15,7 +15,7 @@ function($, Base, template) {
 
             // Apply missing component classes
             $listing.addClass('c-product-list');
-            $listing.find('li').addClass('c-product-list__item')
+            $listing.children().addClass('c-product-list__item')
                 .removeAttr('style');
             $listing.find('.price').addClass('c-price');
 
