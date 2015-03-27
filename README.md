@@ -65,7 +65,7 @@ Another way to change the output HTML is to modify the elements that the view re
 5. Add the `c-product-list__item` class to each `<li>` list item HTML tag and remove the inline styles. The `c-product-list__item` class name indicates that it is a sub-component of the `c-product-list` component. The `c-product-list__item` class name and must be a child of the `c-product-list` element.
 
     ```javascript
-    $listing.children('div').addClass('c-product-list__item').removeAttr('style');
+    $listing.children().addClass('c-product-list__item').removeAttr('style');
     ```
 
 6. Add the `c-price` class to the `.price` div. The `c-price` class name is another self-contained component.
@@ -80,7 +80,7 @@ Another way to change the output HTML is to modify the elements that the view re
 
 Your newly modified view file looks like this:
 
-![Update listing element](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/zcWcEqnWvtO36hx/Screen%20Shot%202015-02-06%20at%202.21.32%20PM.png)
+![Update listing element](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/jA3OWysySFbjwTM/Screen%20Shot%202015-03-27%20at%2011.45.02%20AM.png)
 
 ##Task B
 
