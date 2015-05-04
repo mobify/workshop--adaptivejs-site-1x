@@ -46,7 +46,7 @@ Another way to change the output HTML is to modify the elements that the view re
         context: {
     ```
 
-    The `postProcess` function executes after all the elements for the view are selected, so we can grab one of those elements and make a few changes to it. The base view contains its own `postProcess` function that makes a few global changes. In order to keep these changes, call the `postProcess` for the base. More information on the `postProcess` function can be found in the [Views](https://cloud.mobify.com/docs/adaptivejs/adapting/views/#/postprocess/) guide.
+    The `postProcess` function executes after all the elements for the view are selected, so we can grab one of those elements and make a few changes to it. The base view contains its own `postProcess` function that makes a few global changes. In order to keep these changes, call the `postProcess` for the base. More information on the `postProcess` function can be found in the [Views](http://docs.mobify.com/v1.0/docs/views/#c-view-postprocess) guide.
 
 3. Inside the `postProcess` function, at the top of the function, store the `context.listing` Zepto object in a `context` variable.
 
