@@ -8,7 +8,7 @@ Now that there is content in the header, we add style to it.
 
 
 1. In Terminal, ensure you are in the `workshop--adaptivejs-site directory`. On the command line, enter the `grunt preview` command to start the preview.
-2. In your browser, [Preview the Adaptive.js Site](https://cloud.mobify.com/docs/adaptivejs/getting-started/new-project/#/start-adaptivejs-server).
+2. In your browser, [Preview the Adaptive.js Site](http://docs.mobify.com/v1.0/docs/preview-your-project).
 
     Use `http://www.merlinspotions.com/potions` as the site URL.
     
@@ -102,7 +102,7 @@ Now that there is content in the header, we add style to it.
 
     Now that we have common button styles, let's adjust our header menu button.
 9. In your editor app, from the `/assets/styles/templates/partials` directory, open the `_header.scss` header file.
-10. In the `.t-header__menu block` block, add the button modifications with the following `c-button` code block:
+10. Add a new block `.t-header__menu` to modify buttons with the following `c-button` code block:
 
     ```SCSS
     // Header: Menu
@@ -171,7 +171,7 @@ Now that there is content in the header, we add style to it.
     }
     ```
 
-    Remember to add the `_cart-count` component with the `@import 'components/button';` statement to the list of components in the `_components.scss` file.
+    Remember to add the `_cart-count` component with the `@import 'components/cart-count';` statement to the list of components in the `_components.scss` file.
 
 11. Refresh the Potions page from Step 2 of this Task.
 
