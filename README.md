@@ -6,7 +6,7 @@ Now that you have experience with some of the basics, we work on the homepage. T
 
 ###Update the Homepage
 
-1. View the desktop version of the [Merlin's Potions homepage](http://www.merlinspotions.com) in a new tab in your browser.
+1. In your browser, in a new tab, view the desktop version of the [Merlin's Potions homepage](http://www.merlinspotions.com).
 2. To inspect the HTML for the page, right click in the browser and select the **"Inspect Element"** menu option.
 
     Specifically, look at:
@@ -19,9 +19,9 @@ Now that you have experience with some of the basics, we work on the homepage. T
     We add these elements to our mobile version of the page.
 
 3. In Terminal, ensure you are in the `workshop--adaptivejs-site` directory. On the command line, enter the `grunt preview` command to start the preview.
-4. In your browser, [Preview the Adaptive.js Site](https://cloud.mobify.com/docs/adaptivejs/getting-started/new-project/#/start-adaptivejs-server).
+4. [Preview your Project](http://adaptivejs.mobify.com/v1.0/docs/preview-your-project).
 
-    Use `http://www.merlinspotions.com/` as the site URL.
+    * Use `http://www.merlinspotions.com/` as the site URL.
 
     As you work through these instructions and change the homepage view and template files, refresh the mobile preview homepage in your browser.
 
