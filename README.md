@@ -5,9 +5,9 @@
 ###Style the Homepage
 
 1. In Terminal, ensure that you are in the `workshop--adaptivejs-site` directory. On the command line, enter the `grunt preview` command to start the preview.
-2. In your browser, [Preview the Adaptive.js Site](https://cloud.mobify.com/docs/adaptivejs/getting-started/new-project/#/start-adaptivejs-server).
+2. [Preview your Project](http://adaptivejs.mobify.com/v1.0/docs/preview-your-project).
 
-    Use `http://www.merlinspotions.com/` as the site URL.
+    * Use `http://www.merlinspotions.com/` as the site URL.
 
     To see the new styles take effect, refresh this page.
 
