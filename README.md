@@ -104,9 +104,9 @@
     Finally, save the `home.js` view script and close it.
 
 6. In Terminal, ensure you are in the `workshop--adaptivejs-site` directory. On the command line, enter the `grunt preview` command to start the preview.
-7. In your browser, [Preview the Adaptive.js Site](https://cloud.mobify.com/docs/adaptivejs/getting-started/new-project/#/start-adaptivejs-server).
+7. In your browser, [Preview your Project](http://adaptivejs.mobify.com/v1.0/docs/preview-your-project).
     
-    Use `http://www.merlinspotions.com/` as the site URL.
+    * Use `http://www.merlinspotions.com/` as the site URL.
 
 8. Inspect the tabs in the site preview to test the active classes.
 
