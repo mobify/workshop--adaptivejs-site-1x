@@ -13,7 +13,7 @@ function($, BaseView, template) {
                 return $('.hero');
             },
             shipping: function() {
-                return $('.header .shipping').text();
+                return $('.free-shipping');
             },
             discountBanner: function() {
                 return $('.banner-message');
