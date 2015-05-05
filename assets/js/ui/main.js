@@ -2,7 +2,8 @@
 require(
     [
         'view-scripts/global',
-        'view-scripts/home'
+        'view-scripts/home',
+        'view-scripts/category'
 
         // Add additional UI scripts here
     ],
