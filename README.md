@@ -36,7 +36,7 @@ Now that you have experience with some of the basics, we work on the homepage. T
             return $('.hero');
         },
         shipping: function() {
-            return $('.header .shipping').text();
+            return $('.free-shipping');
         },
         discountBanner: function() {
             return $('.banner-message');
