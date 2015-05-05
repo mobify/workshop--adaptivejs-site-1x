@@ -8,9 +8,9 @@ Now that there is content in the header, we add style to it.
 
 
 1. In Terminal, ensure you are in the `workshop--adaptivejs-site directory`. On the command line, enter the `grunt preview` command to start the preview.
-2. In your browser, [Preview the Adaptive.js Site](http://docs.mobify.com/v1.0/docs/preview-your-project).
+2. [Preview your Project](http://adaptivejs.mobify.com/v1.0/docs/preview-your-project).
 
-    Use `http://www.merlinspotions.com/potions` as the site URL.
+    * Use `http://www.merlinspotions.com/potions` as the site URL.
     
 3. In an editor app, from the `/assets/styles/templates/partials` directory, open the `_header.scss` header SCSS file.
 
