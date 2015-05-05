@@ -151,7 +151,7 @@
 
     The homepage now looks like this:
 
-    ![Homepage end result](https://s3.amazonaws.com/uploads.hipchat.com/15359/505985/z5EMBDFSro5vytT/upload.png)
+    ![Homepage end result](https://s3.amazonaws.com/uploads.hipchat.com/15359/1627975/zcuGs1MNCSY2FWE/Screen%20Shot%202015-05-05%20at%2010.58.22%20AM.png)
 
 
 ## We're done!
