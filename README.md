@@ -8,7 +8,7 @@ Follow the installation steps in the **Workshop Pre-requisites** section below t
 
 ##Workshop Pre-requisites
 
-To run this workshop, you need to have all the pre-requisites installed. Follow steps **1 A - F only** in the [Getting Started for an Existing Project](https://cloud.mobify.com/docs/adaptivejs/getting-started/existing-project/#/install-adaptivejs-sdk/) guide to install everything correctly.
+To run this workshop, install all the prerequisites. Follow steps in the [Install the Adaptive.js SDK](http://adaptivejs.mobify.com/v1.0/docs/install) tutorial to install everything correctly.
 
 To install the workshop:
 
