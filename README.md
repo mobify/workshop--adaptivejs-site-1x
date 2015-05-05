@@ -119,7 +119,7 @@ Ensure that you change the path to reflect your project folder structure.
 
     The **package.json** file defines your project information such as its name, project slug, and dependencies.
 
-13. Test your installation with a preview. Follow the instructions in Section 3, Preview the Adaptive.js Site, of our [Getting Started Existing Project](https://cloud.mobify.com/docs/adaptivejs/getting-started/existing-project/#preview-adaptivejs-site) guide.
+13. Test your installation with a preview. Follow the instructions in the [Preview your Project](http://adaptivejs.mobify.com/v1.0/docs/preview-your-project) tutorial.
 
 14. Stop the preview with the command keyboard shortcut `[control] c` on the command line.
 
