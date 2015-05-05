@@ -147,47 +147,11 @@
     
     Save the `_components.scss` components list file.
 
-6. In the editor, in the `assets/styles/components` folder, create a new `_shipping-banner.scss` shipping banner component SCSS file with the following styles:
-
-    ```SCSS
-    // Shipping Banner
-    // ===
-
-    .c-shipping-banner {
-        padding: $v-space 0;
-
-        background-color: $accent-color;
-
-        color: white;
-        font-family: $serif;
-        font-style: italic;
-        text-align: center;
-    }
-    ```
-    
-    Save the `_shipping-banner.scss` shipping banner component file and close it.
-
-7. In your editor, from the `assets/styles` folder, open the `_components.scss` components list file. Import the new `_shipping-banner` shipping banner component at the bottom of the file.
-
-    ```SCSS
-    // Project Components
-    // ------------------
-    //
-    // Styles for project-specific components.
-    //
-    // eg. @import 'components/button';
-
-    ...
-    @import 'components/tab';
-    @import 'components/shipping-banner'
-    ```
-    Save the `_components.scss` component list SCSS file and close it.
-
-8. Refresh the homepage preview from Step 2 in your browser.
+7. Refresh the homepage preview from Step 2 in your browser.
 
     The homepage now looks like this:
 
-    ![Homepage end result](https://s3.amazonaws.com/uploads.hipchat.com/15359/505985/z5EMBDFSro5vytT/upload.png)
+    ![Homepage end result](https://s3.amazonaws.com/uploads.hipchat.com/15359/1627975/zcuGs1MNCSY2FWE/Screen%20Shot%202015-05-05%20at%2010.58.22%20AM.png)
 
 
 ## We're done!
