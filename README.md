@@ -6,23 +6,25 @@ With the header done, let's move on to last part of this page, the footer. Start
 ###Add Content to the Footer
 
 1. In Terminal, ensure you are in the `workshop--adaptivejs-site` directory. On the command line, enter the `grunt preview` command to start the preview.
-2. In your browser, [Preview the Adaptive.js Site](https://cloud.mobify.com/docs/adaptivejs/getting-started/new-project/#/start-adaptivejs-server).
+2. In your browser, [Preview the Adaptive.js Site](http://adaptivejs.mobify.com/v1.0/docs/preview-your-project).
 
     Use `http://www.merlinspotions.com/potions` as the site URL.
 
     Make changes to the footer HTML. As you do, refresh the page to see your changes take effect.
-
+https://cloud.mobify.com/docs/adaptivejs/getting-started/new-project/#/start-adaptivejs-server
 3. In an editor app, from the `/adaptation/views/includes` folder, open the `_footer.js` JavaScript footer file.
 4. Inside the `context` block, remove the entire `documentationLink` function.
 5. Inside the `context` block, add these functions to select and to return the newsletter sign up and copyright text with the following code snippet:
 
     ```javascript
     context: {
-        newsletter: function() {
-            return $('.footer-newsletter');
-        },
-        copyright: function() {
-            return $('copyright');
+        context: {
+            newsletter: function() {
+                return $('footer table>tbody>tr>td[width="45%"]>div').children();
+            },
+            copyright: function() {
+                return $('footer table td:nth-child(1)>table tr:nth-child(3)');
+            }
         }
     }
     ```
@@ -64,7 +66,7 @@ With the header done, let's move on to last part of this page, the footer. Start
     ```javascript
     context: {
         newsletter: function() {
-            var $newsletter = $('.footer-newsletter');
+            var $newsletter = $('footer table>tbody>tr>td[width="45%"]>div').children();
 
             $newsletter.find('button').addClass('c-button c--accent');
 
@@ -89,7 +91,7 @@ With the header done, let's move on to last part of this page, the footer. Start
             return $newsletter;
         },
         copyright: function() {
-            return $('copyright');
+            return $('footer table td:nth-child(1)>table tr:nth-child(3)');
         }
     }
     ```
