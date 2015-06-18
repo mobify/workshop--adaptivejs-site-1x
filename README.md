@@ -1,159 +1,42 @@
-#Step 10: Style the Homepage
+#Adaptive.js Workshop
 
-##Task
+The example site for this workshop is [Merlin's Potions](http://www.merlinspotions.com), a mock e-commerce site that peddles potions and spell books.
 
-###Style the Homepage
+We use [Git](http://git-scm.com/documentation) to check out the completed code base for the mobile site adaptation of Merlin's Potions. Also, we use [Require.js](http://requirejs.org/docs/start.html) in most of the JavaScript files in the project.
 
-1. In Terminal, ensure that you are in the `workshop--adaptivejs-site` directory. On the command line, enter the `grunt preview` command to start the preview.
-2. [Preview your Project](http://adaptivejs.mobify.com/v1.0/docs/preview-your-project).
+##Workshop Pre-requisites
 
-    * Use `http://www.merlinspotions.com/` as the site URL.
+To run this workshop, install all the prerequisites. Follow steps in the [Install the Adaptive.js SDK](http://adaptivejs.mobify.com/v1.0/docs/install) tutorial to install everything correctly.
 
-    To see the new styles take effect, refresh this page.
+To install the workshop:
 
-3. Launch an editor app. From the `/assets/styles/templates` folder, open the `_home.scss` homepage template file.
-4. Remove the existing styles for the homepage template. Add this styling for the promo image and for the `t-home__content` block:
-
-    ``` SCSS
-    // Home
-    // ===
-
-    .t-home {
-    }
+1. Launch the Terminal app.
+2. In the terminal, change directories to your development folder with the command:
 
 
-    // Home: Promo
-    // ---
-
-    .t-home__promo {
-        padding: $v-space 0;
-
-        text-align: center;
-
-        .banner-message {
-            font-family: $serif;
-            font-style: italic;
-        }
-    }
-
-
-    // Home: Content
-    // ---
-
-    .t-home__content {
-        padding: 0 $small-h-space;
-    }
+    ```
+    cd path/to/my/project/folder
     ```
 
-    Save the `_home.scss` template file and close it.
+3. Run the following command to clone the Merlin's Potions sample site workshop repository:
 
-5. In the editor, in the `assets/styles/components` folder, create a new `_tab.scss` tabs component SCSS file with the following styles:
-
-    ``` SCSS
-    // Tab
-    // ===
-
-    .c-tab {
-    }
-
-
-    // Tab: Header
-    // ---
-
-    .c-tab__controls {
-        display: flex;
-        padding-bottom: $v-space;
-
-        color: $grey-55;
-        text-align: center;
-    }
-
-
-    // Tab: Button
-    // ---
-
-    .c-tab__button {
-        @extend %heading;
-
-        display: block;
-        width: 100%;
-        min-height: $line-height;
-        padding: 0;
-
-        font-size: $font-size - 1;
-        text-transform: uppercase;
-
-        &.c--active {
-            position: relative;
-
-            color: $accent-color;
-            font-weight: normal;
-            font-size: $font-size + 1;
-
-            &::after {
-                content: '';
-
-                position: absolute;
-                right: 0;
-                bottom: -12px;
-                left: 0;
-
-                width: 0;
-                margin: auto;
-                border-top: 5px solid $accent-color;
-                border-right: 5px solid transparent;
-                border-left: 5px solid transparent;
-
-                background-color: white;
-                box-shadow: 5px 0 0 0 white, -5px 0 0 0 white;
-            }
-        }
-    }
-
-
-    // Tab: Section
-    // ---
-
-    .c-tab__section {
-        @include clearfix;
-
-        display: none;
-        padding: $large-v-space 0;
-        border-top: 1px solid $grey-80;
-        border-bottom: 1px solid $grey-80;
-
-        &.c--active {
-            display: block;
-        }
-    }
+    ```
+    git clone https://github.com/mobify/workshop--adaptivejs-site.git
     ```
 
-    Save the `_tab.scss` tab component SCSS file and close it.
+4. Change directories to the newly-created folder for the workshop site:
 
-6. In your editor, from the `assets/styles` folder, open the `_components.scss` components list file. Import the new tab component at the bottom of the file.
-
-    ```SCSS
-    // Project Components
-    // ------------------
-    //
-    // Styles for project-specific components.
-    //
-    // eg. @import 'components/button';
-
-    ...
-    @import 'components/newsletter';
-    @import 'components/tab';
     ```
-    
-    Save the `_components.scss` components list file.
-
-7. Refresh the homepage preview from Step 2 in your browser.
-
-    The homepage now looks like this:
-
-    ![Homepage end result](https://s3.amazonaws.com/uploads.hipchat.com/15359/1627975/zcuGs1MNCSY2FWE/Screen%20Shot%202015-05-05%20at%2010.58.22%20AM.png)
+    cd workshop--adaptivejs-site/
+    ```
 
 
-## We're done!
+##Ready to Start
 
-Congratulations! You created and styled a sample Adaptive.js site.
+Once you install the workshop, you're ready to move on to the next step. 
+
+1. In the `workshop--adaptivejs-site` directory, run the following command to get the completed code for the project:
+
+```
+git checkout completed-workshop
+```
