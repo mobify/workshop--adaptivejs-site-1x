@@ -8,7 +8,7 @@ We use [Git](http://git-scm.com/documentation) to check out the completed code b
 
 To run this workshop, install all the prerequisites. Follow steps in the [Install the Adaptive.js SDK](http://adaptivejs.mobify.com/v1.0/docs/install) tutorial to install everything correctly.
 
-To install the workshop:
+## To install the workshop:
 
 1. Launch the Terminal app.
 2. In the terminal, change directories to your development folder with the command:
@@ -29,14 +29,8 @@ To install the workshop:
     ```
     cd workshop--adaptivejs-site/
     ```
+5. Get the completed code for the project:
 
-
-##Ready to Start
-
-Once you install the workshop, you're ready to move on to the next step. 
-
-1. In the `workshop--adaptivejs-site` directory, run the following command to get the completed code for the project:
-
-```
-git checkout completed-workshop
-```
+    ```
+    git checkout completed-workshop
+    ```
