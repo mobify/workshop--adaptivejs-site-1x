@@ -1,11 +1,28 @@
-.t-home {
-    padding: $v-space $h-space;
+// Home
+// ===
 
-    font-size: $font-size;
-    color: $font-color;
+.t-home {
+}
+
+
+// Home: Promo
+// ---
+
+.t-home__promo {
+    padding: $v-space 0;
+
     text-align: center;
-    
-    p {
-        margin: $v-space 0;
+
+    .banner-message {
+        font-family: $serif;
+        font-style: italic;
     }
+}
+
+
+// Home: Content
+// ---
+
+.t-home__content {
+    padding: 0 $small-h-space;
 }
