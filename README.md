@@ -14,12 +14,8 @@ Ensure that you change the path to reflect your project folder structure.
 1. Run yeoman with the command:
 
     ```
-    [sudo] yo adaptivejs
+    yo adaptivejs
     ```
-
-    **Note:** This command runs `npm install`. If you do not have administrative privilages in the current directory, precede the command with `sudo`. 
-    In general, if you run into permission errors when running any of the commands mentioned, try to re-run the command with `sudo`.
-    Most of the errors that you could encounter in this installation are due to permissions.
     
 2. If this is your first time running Yeoman, answer the setup questions. If the Yeoman README License opens in the VI editor, read the document and enter `:q` to quit it.
 
