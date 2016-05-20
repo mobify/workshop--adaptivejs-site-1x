@@ -88,7 +88,7 @@ Start with the HTML definition for the page in the template file. Then in the vi
     ![Category Dust Final](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/nF4HlNrhtHjDZh3/Screen%20Shot%202015-03-12%20at%204.34.21%20PM.png)
 
 12. [Preview your Project](http://adaptivejs.mobify.com/v1.0/docs/preview-your-project).
-    * use the `http://www.merlinspotions/potions` URL for the category product listing page.
+    * use the `http://training.merlinspotions/potions` URL for the category product listing page.
 
     A page similar to the one in the previous step appears but now only with the title and listing as contents.
 
@@ -102,4 +102,4 @@ Once you set up the category view, add some styling to it. Run the following com
 git reset --hard HEAD && git clean -df && git checkout step-3-style-category-page
 ```
 
-Then, follow the directions in the  [README](https://github.com/mobify/workshop--adaptivejs-site/blob/step-3-style-category-page/README.md) in the Step 3 branch.
+Then, follow the directions in the  [README](https://github.com/mobify/workshop--adaptivejs-site-1x/blob/step-3-style-category-page/README.md) in the Step 3 branch.
