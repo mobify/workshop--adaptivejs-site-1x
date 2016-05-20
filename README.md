@@ -23,7 +23,7 @@ To install the workshop:
 3. Run the following command to clone the Merlin's Potions sample site workshop repository:
 
     ```
-    git clone https://github.com/mobify/workshop--adaptivejs-site.git
+    git clone https://github.com/mobify/workshop--adaptivejs-site-1x.git
     ```
 
 4. Change directories to the newly-created folder for the workshop site:
