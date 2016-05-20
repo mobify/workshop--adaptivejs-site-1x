@@ -13,7 +13,7 @@ Let's style the newsletter component of the footer. In this tutorial, you repeat
 1. In Terminal, ensure you are in the `workshop--adaptivejs-site` directory. On the command line, enter the `grunt preview` command to start the preview.
 2. [Preview your Project](http://adaptivejs.mobify.com/v1.0/docs/preview-your-project).
 
-   * Use `http://www.merlinspotions.com/potions` as the site URL.
+   * Use `http://training.merlinspotions.com/potions` as the site URL.
 
 3. In your editor app, in the `/assets/styles/components` folder, create a new `_newsletter.scss` newsletter component SCSS file.
 4. Add the following style content to your file:
@@ -137,4 +137,4 @@ When you're ready to continue, run the following command:
 git reset --hard HEAD && git clean -df && git checkout step-8-update-homepage
 ```
 
-Then, follow the directions in the  [README](https://github.com/mobify/workshop--adaptivejs-site/blob/step-8-update-homepage/README.md) in the Step 8 branch.
+Then, follow the directions in the  [README](https://github.com/mobify/workshop--adaptivejs-site-1x/blob/step-8-update-homepage/README.md) in the Step 8 branch.
