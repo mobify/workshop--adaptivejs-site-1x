@@ -8,7 +8,7 @@ With the header done, let's move on to last part of this page, the footer. Start
 1. In Terminal, ensure you are in the `workshop--adaptivejs-site` directory. On the command line, enter the `grunt preview` command to start the preview.
 2. [Preview your Project](http://adaptivejs.mobify.com/v1.0/docs/preview-your-project).
 
-    * Use `http://www.merlinspotions.com/potions` as the site URL.
+    * Use `http://training.merlinspotions.com/potions` as the site URL.
 
     Make changes to the footer HTML. As you do, refresh the page to see your changes take effect.
 3. In an editor app, from the `/adaptation/views/includes` folder, open the `_footer.js` JavaScript footer file.
@@ -130,4 +130,4 @@ When you're ready to continue, run the following command:
 git reset --hard HEAD && git clean -df && git checkout step-7-style-footer
 ```
 
-Then, follow the directions in the [README](https://github.com/mobify/workshop--adaptivejs-site/blob/step-7-style-footer/README.md) in the Step 7 branch.
+Then, follow the directions in the [README](https://github.com/mobify/workshop--adaptivejs-site-1x/blob/step-7-style-footer/README.md) in the Step 7 branch.
