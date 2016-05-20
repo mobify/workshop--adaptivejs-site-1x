@@ -43,4 +43,4 @@ Once you install the workshop, you're ready to move on to the next step.
 git checkout set-up
 ```
 
-2. Now, follow this link to the directions in the set up branch [README](https://github.com/mobify/workshop--adaptivejs-site/blob/set-up/README.md).
+2. Now, follow this link to the directions in the set up branch [README](https://github.com/mobify/workshop--adaptivejs-site-1x/blob/set-up/README.md).
