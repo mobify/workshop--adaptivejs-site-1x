@@ -21,7 +21,7 @@ Start with the HTML definition for the page in the template file. Then in the vi
 
 2. [Preview your Project](http://adaptivejs.mobify.com/v1.0/docs/preview-your-project).
 
-    Use `http://www.merlinspotions.com/potions` as the site URL.
+    Use `http://training.merlinspotions.com/potions` as the site URL.
 
     As you change the category template and view files, refresh the preview page in the browser to see the changes.
 
