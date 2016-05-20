@@ -13,7 +13,7 @@ There are a few different ways to affect HTML that the template outputs. The fir
 1. In Terminal, ensure that you are in the `workshop--adaptivejs-site` directory. On the command line, enter the `grunt preview` command to start the preview.
 2. [Preview your Project](http://adaptivejs.mobify.com/v1.0/docs/preview-your-project) .
 
-    Use `http://www.merlinspotions.com/potions` as the site URL.
+    Use `http://training.merlinspotions.com/potions` as the site URL.
 
     Refresh the page in your browser as you update the template HTML and SCSS to view the changes.
 
@@ -200,4 +200,4 @@ Once the page looks good and you're ready to move on, run the following command:
 git reset --hard HEAD && git clean -df && git checkout step-4-update-header
 ```
 
-Follow the directions in the  [README](https://github.com/mobify/workshop--adaptivejs-site/blob/step-4-update-header/README.md) in the Step 4 branch.
+Follow the directions in the  [README](https://github.com/mobify/workshop--adaptivejs-site-1x/blob/step-4-update-header/README.md) in the Step 4 branch.
