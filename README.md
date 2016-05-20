@@ -50,7 +50,7 @@ In addition to generating a new project, the Adaptive.js Generator has a sub-gen
 
 9. Back in the Terminal, enter the `grunt preview` command to start the browser preview.
 10. Work through the [Preview your Project](http://adaptivejs.mobify.com/v1.0/docs/preview-your-project) tutorial.
-    Use the `http://www.merlinspotions.com/potions` URL for the site.
+    Use the `http://training.merlinspotions.com/potions` URL for the site.
 
     A page that is similar to the Merlin's Potions homepage appears but with content from the category page included under the header.
 
@@ -64,4 +64,4 @@ When you're ready to continue to Step 2, run the following command:
 git reset --hard HEAD && git clean -df && git checkout step-2-populate-category-page
 ```
 
-Then, follow the directions in the  [README](https://github.com/mobify/workshop--adaptivejs-site/blob/step-2-populate-category-page/README.md) for the Step 2 branch.
+Then, follow the directions in the  [README](https://github.com/mobify/workshop--adaptivejs-site-1x/blob/step-2-populate-category-page/README.md) for the Step 2 branch.
