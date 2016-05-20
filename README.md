@@ -9,7 +9,7 @@ The Adaptive.js generator created a header view and template for us already. Now
 1. In Terminal, ensure you are in the `workshop--adaptivejs-site` directory. On the command line, enter the `grunt preview` command to start the preview.
 2. [Preview your Project](http://adaptivejs.mobify.com/v1.0/docs/preview-your-project).
 
-    * Use `http://www.merlinspotions.com/potions` as the site URL.
+    * Use `http://training.merlinspotions.com/potions` as the site URL.
 
     Now, we change the header HTML. Refresh the page as you work your way through the subsequent steps to see the results.
 
@@ -54,11 +54,11 @@ The Adaptive.js generator created a header view and template for us already. Now
 
 8. Save the `_header.dust` file and close it.
 
-9. In your browser, to inspect the logo on the desktop site [Merlin's Potions at http://www.merlinspotion.com/](http://www.merlinspotion.com/), right click with your mouse and the **"Inspect Element"** menu option. 
+9. In your browser, to inspect the logo on the desktop site [Merlin's Potions at http://training.merlinspotion.com/](http://training.merlinspotion.com/), right click with your mouse and the **"Inspect Element"** menu option. 
 
     The logo is included as a background image. However, this approach does not work for our build because we do not include the desktop CSS on our adapted page. Instead, we add a copy of the logo to the project.
 
-10. In your browser, go to `http://www.merlinspotions.com/img/logo.62e1.png`. Save the logo as `logo.png` in your `worksho--adaptive-js-site` project directory `/assets/images` sub-folder.
+10. In your browser, go to `http://training.merlinspotions.com/img/logo.62e1.png`. Save the logo as `logo.png` in your `workshop--adaptive-js-site` project directory `/assets/images` sub-folder.
 11. In your editor, open `_header.dust` again and add an `img` image element for the logo:
 
     ```html
@@ -84,4 +84,4 @@ When you're ready to continue, run the following command:
 git reset --hard HEAD && git clean -df && git checkout step-5-style-header
 ```
 
-Follow the directions in the [README](https://github.com/mobify/workshop--adaptivejs-site/blob/step-5-style-header/README.md) of the Step 5 branch.
+Follow the directions in the [README](https://github.com/mobify/workshop--adaptivejs-site-1x/blob/step-5-style-header/README.md) of the Step 5 branch.
