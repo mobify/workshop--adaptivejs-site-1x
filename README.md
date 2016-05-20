@@ -1,6 +1,6 @@
 #Adaptive.js Workshop
 
-The example site for this workshop is [Merlin's Potions](http://www.merlinspotions.com), a mock e-commerce site that peddles potions and spell books.
+The example site for this workshop is [Merlin's Potions](http://training.merlinspotions.com), a mock e-commerce site that peddles potions and spell books.
 
 We use Git to switch between the steps in the workshop. Look through some of [Git's documentation](http://git-scm.com/documentation) if you're not already familiar with Git. Also, we use Require.js in most of the JavaScript files in the project. Its documentation is found [here](http://requirejs.org/docs/start.html).
 
