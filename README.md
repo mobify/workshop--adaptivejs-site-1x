@@ -106,7 +106,7 @@
 6. In Terminal, ensure you are in the `workshop--adaptivejs-site` directory. On the command line, enter the `grunt preview` command to start the preview.
 7. [Preview your Project](http://adaptivejs.mobify.com/v1.0/docs/preview-your-project).
     
-    * Use `http://www.merlinspotions.com/` as the site URL.
+    * Use `http://training.merlinspotions.com/` as the site URL.
 
 8. Inspect the tabs in the site preview to test the active classes.
 
@@ -123,4 +123,4 @@ When you're ready to continue, run the following command:
 git reset --hard HEAD && git clean -df && git checkout step-10-style-homepage
 ```
 
-Then, follow the directions in the [README](https://github.com/mobify/workshop--adaptivejs-site/blob/step-10-style-homepage/README.md) in the Step 10 branch.
+Then, follow the directions in the [README](https://github.com/mobify/workshop--adaptivejs-site-1x/blob/step-10-style-homepage/README.md) in the Step 10 branch.
