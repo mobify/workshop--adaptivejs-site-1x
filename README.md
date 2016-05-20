@@ -23,7 +23,7 @@ Ensure that you change the path to reflect your project folder structure.
 
     ![Project Name](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/UAfzq5whtPon5UV/Screen%20Shot%202015-01-22%20at%204.12.37%20PM.png)
 
-4. Enter `http://www.merlinspotions.com` for the project URL.
+4. Enter `http://training.merlinspotions.com` for the project URL.
 
     ![Project URL](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/7buMlNzOgC2laMf/Screen%20Shot%202015-01-22%20at%204.13.48%20PM.png)
 
@@ -139,7 +139,7 @@ We now change the folder structure to eliminate the additional `workshop--adapti
     git checkout step-1-generate-view
     ```
     
-3. Then, follow the directions in the  [README](https://github.com/mobify/workshop--adaptivejs-site/blob/step-1-generate-view/README.md) of the Step 1 branch.
+3. Then, follow the directions in the  [README](https://github.com/mobify/workshop--adaptivejs-site-1x/blob/step-1-generate-view/README.md) of the Step 1 branch.
 
 ##Additional Information
 
