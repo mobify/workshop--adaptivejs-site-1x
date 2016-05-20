@@ -10,7 +10,7 @@ Now that there is content in the header, we add style to it.
 1. In Terminal, ensure you are in the `workshop--adaptivejs-site directory`. On the command line, enter the `grunt preview` command to start the preview.
 2. [Preview your Project](http://adaptivejs.mobify.com/v1.0/docs/preview-your-project).
 
-    * Use `http://www.merlinspotions.com/potions` as the site URL.
+    * Use `http://training.merlinspotions.com/potions` as the site URL.
     
 3. In an editor app, from the `/assets/styles/templates/partials` directory, open the `_header.scss` header SCSS file.
 
@@ -190,4 +190,4 @@ When you're ready to continue, run the following command:
 git reset --hard HEAD && git clean -df && git checkout step-6-update-footer
 ```
 
-Then, follow the directions in the  [README](https://github.com/mobify/workshop--adaptivejs-site/blob/step-6-update-footer/README.md) in the Step 6 branch.
+Then, follow the directions in the  [README](https://github.com/mobify/workshop--adaptivejs-site-1x/blob/step-6-update-footer/README.md) in the Step 6 branch.
