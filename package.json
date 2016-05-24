@@ -14,7 +14,7 @@
         "grunt-autoprefixer": "2.0.0",
         "nightwatch": "0.5.6",
         "nightwatch-commands": "0.0.11",
-        "grunt-contrib-jshint": "0.10.0",
+        "grunt-contrib-jshint": "0.12.0",
         "jshint": "2.5.0",
         "grunt-jscs": "^0.7.1",
         "mobify-code-style": "1.0.0"
